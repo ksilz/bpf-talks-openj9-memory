@@ -1,0 +1,10 @@
+FROM adoptopenjdk/openjdk8-openj9:x86_64-debianslim-jre8u252-b09_openj9-0.20.0
+
+RUN mkdir -p /usr/app
+
+COPY simple-shop-1.0.0.jar /usr/app/simple-shop.jar
+COPY entrypoint.sh /usr/app/entrypoint.sh
+
+WORKDIR /usr/app
+
+ENTRYPOINT ["sh", "-c", "chmod +x /usr/app/entrypoint.sh && cd /usr/app && ./entrypoint.sh"]

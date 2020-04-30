@@ -1,0 +1,26 @@
+version: '2.2'
+
+services:
+  web-app-openj9-11:
+    image: 'joedata/bpf-talks-openj9-memory-web-app:openj9-11'
+    container_name: web-app-openj9-11
+    ports:
+      - '80:8080'
+    environment:
+      - >-
+        JAVA_OPTS=-Xmx1024m -Xms256m -Xtune:virtualized
+      - SPRING_PROFILES_ACTIVE=prod,faker
+      - SPRING_DATASOURCE_URL=jdbc:postgresql://postgresql:5432/simple_shop
+      - SPRING_DATASOURCE_PASSWORD=Q4Uh4o86L9suMY8E
+      - JHIPSTER_SLEEP=15 # gives time for other services to boot before the application
+    cpus: 2.0
+    mem_limit: 2147483648
+
+  postgresql:
+    image: postgres:12.2-alpine
+    environment:
+      - POSTGRES_USER=simple_shop
+      - POSTGRES_PASSWORD=Q4Uh4o86L9suMY8E
+    cpus: 2.0
+    mem_limit: 268435456
+        
