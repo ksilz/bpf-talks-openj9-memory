@@ -1,0 +1,13 @@
+version: '3.0'
+
+services:
+  benchmark-hotspot-11:
+    image: 'benchmark:hotspot-11'
+    container_name: benchmark-hotspot-11
+    environment:
+      - >-
+        JAVA_OPTS=-Xmx1024m -Xms256m -XX:+UseContainerSupport -Xtune:virtualized
+      - BENCHMARKS=-r 1 gauss-mix,movie-lens,akka-uct,fj-kmeans,mnemonics,scala-doku,finagle-chirper
+      cpus: 2.0
+      mem_limit: 2147483648
+        
