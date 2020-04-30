@@ -1,941 +1,939 @@
-[2J[H[2J[H[2J[H[2J[H[2J[H[2J[H[2J[H[2J[H[2J[H[2J[H[2J[H[2J[H[2J[H[2J[H[2J[H[2J[H[2J[H[2J[H[2J[H[2J[H[2J[H[2J[H[2J[H[2J[H[2J[H[2J[H[2J[H[2J[H[2J[H[2J[H[2J[H[2J[H[2J[H[2J[H[2J[H[2J[H[2J[H[2J[H[2J[H[2J[H[2J[H[2J[H[2J[H[2J[H[2J[H[2J[H[2J[H[2J[H[2J[H[2J[H[2J[H[2J[H[2J[H[2J[H[2J[H[2J[H[2J[Hbenchmark-openj9-8	3.289MiB / 1.943GiB	0.00%
-[2J[Hbenchmark-openj9-8	3.289MiB / 1.943GiB	0.00%
-[2J[Hbenchmark-openj9-8	61.34MiB / 1.943GiB	157.24%
-[2J[Hbenchmark-openj9-8	61.34MiB / 1.943GiB	157.24%
-[2J[Hbenchmark-openj9-8	103.4MiB / 1.943GiB	126.75%
-[2J[Hbenchmark-openj9-8	103.4MiB / 1.943GiB	126.75%
-[2J[Hbenchmark-openj9-8	136.2MiB / 1.943GiB	177.07%
-[2J[Hbenchmark-openj9-8	136.2MiB / 1.943GiB	177.07%
-[2J[Hbenchmark-openj9-8	154.1MiB / 1.943GiB	174.70%
-[2J[Hbenchmark-openj9-8	154.1MiB / 1.943GiB	174.70%
-[2J[Hbenchmark-openj9-8	165.1MiB / 1.943GiB	159.18%
-[2J[Hbenchmark-openj9-8	165.1MiB / 1.943GiB	159.18%
-[2J[Hbenchmark-openj9-8	180.3MiB / 1.943GiB	199.57%
-[2J[Hbenchmark-openj9-8	180.3MiB / 1.943GiB	199.57%
-[2J[Hbenchmark-openj9-8	209.1MiB / 1.943GiB	199.36%
-[2J[Hbenchmark-openj9-8	209.1MiB / 1.943GiB	199.36%
-[2J[Hbenchmark-openj9-8	182.3MiB / 1.943GiB	197.82%
-[2J[Hbenchmark-openj9-8	182.3MiB / 1.943GiB	197.82%
-[2J[Hbenchmark-openj9-8	182.6MiB / 1.943GiB	196.06%
-[2J[Hbenchmark-openj9-8	182.6MiB / 1.943GiB	196.06%
-[2J[Hbenchmark-openj9-8	182.6MiB / 1.943GiB	202.34%
-[2J[Hbenchmark-openj9-8	182.6MiB / 1.943GiB	202.34%
-[2J[Hbenchmark-openj9-8	261.8MiB / 1.943GiB	199.88%
-[2J[Hbenchmark-openj9-8	261.8MiB / 1.943GiB	199.88%
-[2J[Hbenchmark-openj9-8	185.5MiB / 1.943GiB	198.83%
-[2J[Hbenchmark-openj9-8	185.5MiB / 1.943GiB	198.83%
-[2J[Hbenchmark-openj9-8	185.4MiB / 1.943GiB	199.53%
-[2J[Hbenchmark-openj9-8	185.4MiB / 1.943GiB	199.53%
-[2J[Hbenchmark-openj9-8	187.5MiB / 1.943GiB	198.45%
-[2J[Hbenchmark-openj9-8	187.5MiB / 1.943GiB	198.45%
-[2J[Hbenchmark-openj9-8	187.5MiB / 1.943GiB	198.80%
-[2J[Hbenchmark-openj9-8	187.5MiB / 1.943GiB	198.80%
-[2J[Hbenchmark-openj9-8	189.8MiB / 1.943GiB	199.52%
-[2J[Hbenchmark-openj9-8	189.8MiB / 1.943GiB	199.52%
-[2J[Hbenchmark-openj9-8	192.3MiB / 1.943GiB	197.99%
-[2J[Hbenchmark-openj9-8	192.3MiB / 1.943GiB	197.99%
-[2J[Hbenchmark-openj9-8	198.4MiB / 1.943GiB	199.19%
-[2J[Hbenchmark-openj9-8	198.4MiB / 1.943GiB	199.19%
-[2J[Hbenchmark-openj9-8	198.5MiB / 1.943GiB	198.12%
-[2J[Hbenchmark-openj9-8	198.5MiB / 1.943GiB	198.12%
-[2J[Hbenchmark-openj9-8	200.5MiB / 1.943GiB	195.97%
-[2J[Hbenchmark-openj9-8	200.5MiB / 1.943GiB	195.97%
-[2J[Hbenchmark-openj9-8	200.5MiB / 1.943GiB	199.18%
-[2J[Hbenchmark-openj9-8	200.5MiB / 1.943GiB	199.18%
-[2J[Hbenchmark-openj9-8	202.7MiB / 1.943GiB	198.37%
-[2J[Hbenchmark-openj9-8	202.7MiB / 1.943GiB	198.37%
-[2J[Hbenchmark-openj9-8	202.9MiB / 1.943GiB	197.69%
-[2J[Hbenchmark-openj9-8	202.9MiB / 1.943GiB	197.69%
-[2J[Hbenchmark-openj9-8	207.5MiB / 1.943GiB	197.84%
-[2J[Hbenchmark-openj9-8	207.5MiB / 1.943GiB	197.84%
-[2J[Hbenchmark-openj9-8	209.5MiB / 1.943GiB	198.45%
-[2J[Hbenchmark-openj9-8	209.5MiB / 1.943GiB	198.45%
-[2J[Hbenchmark-openj9-8	211.2MiB / 1.943GiB	198.04%
-[2J[Hbenchmark-openj9-8	211.2MiB / 1.943GiB	198.04%
-[2J[Hbenchmark-openj9-8	211.1MiB / 1.943GiB	195.36%
-[2J[Hbenchmark-openj9-8	211.1MiB / 1.943GiB	195.36%
-[2J[Hbenchmark-openj9-8	208.4MiB / 1.943GiB	111.16%
-[2J[Hbenchmark-openj9-8	208.4MiB / 1.943GiB	111.16%
-[2J[Hbenchmark-openj9-8	241.6MiB / 1.943GiB	149.42%
-[2J[Hbenchmark-openj9-8	241.6MiB / 1.943GiB	149.42%
-[2J[Hbenchmark-openj9-8	250.2MiB / 1.943GiB	180.32%
-[2J[Hbenchmark-openj9-8	250.2MiB / 1.943GiB	180.32%
-[2J[Hbenchmark-openj9-8	255.3MiB / 1.943GiB	201.74%
-[2J[Hbenchmark-openj9-8	255.3MiB / 1.943GiB	201.74%
-[2J[Hbenchmark-openj9-8	260.3MiB / 1.943GiB	195.21%
-[2J[Hbenchmark-openj9-8	260.3MiB / 1.943GiB	195.21%
-[2J[Hbenchmark-openj9-8	263.6MiB / 1.943GiB	203.52%
-[2J[Hbenchmark-openj9-8	263.6MiB / 1.943GiB	203.52%
-[2J[Hbenchmark-openj9-8	297.8MiB / 1.943GiB	200.08%
-[2J[Hbenchmark-openj9-8	297.8MiB / 1.943GiB	200.08%
-[2J[Hbenchmark-openj9-8	301.7MiB / 1.943GiB	199.51%
-[2J[Hbenchmark-openj9-8	301.7MiB / 1.943GiB	199.51%
-[2J[Hbenchmark-openj9-8	305.5MiB / 1.943GiB	200.52%
-[2J[Hbenchmark-openj9-8	305.5MiB / 1.943GiB	200.52%
-[2J[Hbenchmark-openj9-8	308.1MiB / 1.943GiB	200.69%
-[2J[Hbenchmark-openj9-8	308.1MiB / 1.943GiB	200.69%
-[2J[Hbenchmark-openj9-8	308.7MiB / 1.943GiB	199.69%
-[2J[Hbenchmark-openj9-8	308.7MiB / 1.943GiB	199.69%
-[2J[Hbenchmark-openj9-8	310.9MiB / 1.943GiB	200.96%
-[2J[Hbenchmark-openj9-8	310.9MiB / 1.943GiB	200.96%
-[2J[Hbenchmark-openj9-8	312.9MiB / 1.943GiB	202.63%
-[2J[Hbenchmark-openj9-8	312.9MiB / 1.943GiB	202.63%
-[2J[Hbenchmark-openj9-8	313.4MiB / 1.943GiB	202.81%
-[2J[Hbenchmark-openj9-8	313.4MiB / 1.943GiB	202.81%
-[2J[Hbenchmark-openj9-8	316MiB / 1.943GiB	204.38%
-[2J[Hbenchmark-openj9-8	316MiB / 1.943GiB	204.38%
-[2J[Hbenchmark-openj9-8	318.3MiB / 1.943GiB	203.17%
-[2J[Hbenchmark-openj9-8	318.3MiB / 1.943GiB	203.17%
-[2J[Hbenchmark-openj9-8	318.5MiB / 1.943GiB	201.26%
-[2J[Hbenchmark-openj9-8	318.5MiB / 1.943GiB	201.26%
-[2J[Hbenchmark-openj9-8	323.4MiB / 1.943GiB	206.23%
-[2J[Hbenchmark-openj9-8	323.4MiB / 1.943GiB	206.23%
-[2J[Hbenchmark-openj9-8	323.8MiB / 1.943GiB	199.41%
-[2J[Hbenchmark-openj9-8	323.8MiB / 1.943GiB	199.41%
-[2J[Hbenchmark-openj9-8	326.2MiB / 1.943GiB	203.66%
-[2J[Hbenchmark-openj9-8	326.2MiB / 1.943GiB	203.66%
-[2J[Hbenchmark-openj9-8	328.3MiB / 1.943GiB	194.22%
-[2J[Hbenchmark-openj9-8	328.3MiB / 1.943GiB	194.22%
-[2J[Hbenchmark-openj9-8	333.4MiB / 1.943GiB	206.41%
-[2J[Hbenchmark-openj9-8	333.4MiB / 1.943GiB	206.41%
-[2J[Hbenchmark-openj9-8	335.9MiB / 1.943GiB	207.04%
-[2J[Hbenchmark-openj9-8	335.9MiB / 1.943GiB	207.04%
-[2J[Hbenchmark-openj9-8	337.9MiB / 1.943GiB	191.99%
-[2J[Hbenchmark-openj9-8	337.9MiB / 1.943GiB	191.99%
-[2J[Hbenchmark-openj9-8	338.7MiB / 1.943GiB	203.68%
-[2J[Hbenchmark-openj9-8	338.7MiB / 1.943GiB	203.68%
-[2J[Hbenchmark-openj9-8	366.3MiB / 1.943GiB	205.25%
-[2J[Hbenchmark-openj9-8	366.3MiB / 1.943GiB	205.25%
-[2J[Hbenchmark-openj9-8	349.8MiB / 1.943GiB	200.41%
-[2J[Hbenchmark-openj9-8	349.8MiB / 1.943GiB	200.41%
-[2J[Hbenchmark-openj9-8	384.1MiB / 1.943GiB	201.18%
-[2J[Hbenchmark-openj9-8	384.1MiB / 1.943GiB	201.18%
-[2J[Hbenchmark-openj9-8	352.6MiB / 1.943GiB	202.12%
-[2J[Hbenchmark-openj9-8	352.6MiB / 1.943GiB	202.12%
-[2J[Hbenchmark-openj9-8	354.8MiB / 1.943GiB	201.75%
-[2J[Hbenchmark-openj9-8	354.8MiB / 1.943GiB	201.75%
-[2J[Hbenchmark-openj9-8	354.8MiB / 1.943GiB	201.75%
-[2J[Hbenchmark-openj9-8	355.3MiB / 1.943GiB	198.95%
-[2J[Hbenchmark-openj9-8	355.3MiB / 1.943GiB	198.95%
-[2J[Hbenchmark-openj9-8	357.6MiB / 1.943GiB	201.20%
-[2J[Hbenchmark-openj9-8	357.6MiB / 1.943GiB	201.20%
-[2J[Hbenchmark-openj9-8	360.6MiB / 1.943GiB	200.27%
-[2J[Hbenchmark-openj9-8	360.6MiB / 1.943GiB	200.27%
-[2J[Hbenchmark-openj9-8	363.4MiB / 1.943GiB	200.89%
-[2J[Hbenchmark-openj9-8	363.4MiB / 1.943GiB	200.89%
-[2J[Hbenchmark-openj9-8	367.6MiB / 1.943GiB	201.82%
-[2J[Hbenchmark-openj9-8	367.6MiB / 1.943GiB	201.82%
-[2J[Hbenchmark-openj9-8	367.8MiB / 1.943GiB	193.57%
-[2J[Hbenchmark-openj9-8	367.8MiB / 1.943GiB	193.57%
-[2J[Hbenchmark-openj9-8	400.1MiB / 1.943GiB	200.56%
-[2J[Hbenchmark-openj9-8	400.1MiB / 1.943GiB	200.56%
-[2J[Hbenchmark-openj9-8	398.7MiB / 1.943GiB	200.73%
-[2J[Hbenchmark-openj9-8	398.7MiB / 1.943GiB	200.73%
-[2J[Hbenchmark-openj9-8	442.1MiB / 1.943GiB	203.57%
-[2J[Hbenchmark-openj9-8	442.1MiB / 1.943GiB	203.57%
-[2J[Hbenchmark-openj9-8	558.3MiB / 1.943GiB	199.17%
-[2J[Hbenchmark-openj9-8	558.3MiB / 1.943GiB	199.17%
-[2J[Hbenchmark-openj9-8	590.9MiB / 1.943GiB	202.39%
-[2J[Hbenchmark-openj9-8	590.9MiB / 1.943GiB	202.39%
-[2J[Hbenchmark-openj9-8	601.3MiB / 1.943GiB	204.80%
-[2J[Hbenchmark-openj9-8	601.3MiB / 1.943GiB	204.80%
-[2J[Hbenchmark-openj9-8	469.1MiB / 1.943GiB	201.47%
-[2J[Hbenchmark-openj9-8	469.1MiB / 1.943GiB	201.47%
-[2J[Hbenchmark-openj9-8	471.2MiB / 1.943GiB	191.62%
-[2J[Hbenchmark-openj9-8	471.2MiB / 1.943GiB	191.62%
-[2J[Hbenchmark-openj9-8	471.3MiB / 1.943GiB	210.93%
-[2J[Hbenchmark-openj9-8	471.3MiB / 1.943GiB	210.93%
-[2J[Hbenchmark-openj9-8	471.6MiB / 1.943GiB	198.97%
-[2J[Hbenchmark-openj9-8	471.6MiB / 1.943GiB	198.97%
-[2J[Hbenchmark-openj9-8	476.2MiB / 1.943GiB	194.37%
-[2J[Hbenchmark-openj9-8	476.2MiB / 1.943GiB	194.37%
-[2J[Hbenchmark-openj9-8	476.4MiB / 1.943GiB	197.20%
-[2J[Hbenchmark-openj9-8	476.4MiB / 1.943GiB	197.20%
-[2J[Hbenchmark-openj9-8	493.3MiB / 1.943GiB	206.40%
-[2J[Hbenchmark-openj9-8	493.3MiB / 1.943GiB	206.40%
-[2J[Hbenchmark-openj9-8	493.4MiB / 1.943GiB	192.62%
-[2J[Hbenchmark-openj9-8	493.4MiB / 1.943GiB	192.62%
-[2J[Hbenchmark-openj9-8	488.1MiB / 1.943GiB	187.62%
-[2J[Hbenchmark-openj9-8	488.1MiB / 1.943GiB	187.62%
-[2J[Hbenchmark-openj9-8	496.5MiB / 1.943GiB	203.56%
-[2J[Hbenchmark-openj9-8	496.5MiB / 1.943GiB	203.56%
-[2J[Hbenchmark-openj9-8	538.2MiB / 1.943GiB	201.93%
-[2J[Hbenchmark-openj9-8	538.2MiB / 1.943GiB	201.93%
-[2J[Hbenchmark-openj9-8	616.4MiB / 1.943GiB	200.76%
-[2J[Hbenchmark-openj9-8	616.4MiB / 1.943GiB	200.76%
-[2J[Hbenchmark-openj9-8	527.9MiB / 1.943GiB	200.68%
-[2J[Hbenchmark-openj9-8	527.9MiB / 1.943GiB	200.68%
-[2J[Hbenchmark-openj9-8	548.7MiB / 1.943GiB	200.60%
-[2J[Hbenchmark-openj9-8	548.7MiB / 1.943GiB	200.60%
-[2J[Hbenchmark-openj9-8	550.5MiB / 1.943GiB	192.47%
-[2J[Hbenchmark-openj9-8	550.5MiB / 1.943GiB	192.47%
-[2J[Hbenchmark-openj9-8	535MiB / 1.943GiB	200.57%
-[2J[Hbenchmark-openj9-8	535MiB / 1.943GiB	200.57%
-[2J[Hbenchmark-openj9-8	535.2MiB / 1.943GiB	201.10%
-[2J[Hbenchmark-openj9-8	535.2MiB / 1.943GiB	201.10%
-[2J[Hbenchmark-openj9-8	539.5MiB / 1.943GiB	199.18%
-[2J[Hbenchmark-openj9-8	539.5MiB / 1.943GiB	199.18%
-[2J[Hbenchmark-openj9-8	551.8MiB / 1.943GiB	202.07%
-[2J[Hbenchmark-openj9-8	551.8MiB / 1.943GiB	202.07%
-[2J[Hbenchmark-openj9-8	548.3MiB / 1.943GiB	197.88%
-[2J[Hbenchmark-openj9-8	548.3MiB / 1.943GiB	197.88%
-[2J[Hbenchmark-openj9-8	560.2MiB / 1.943GiB	198.55%
-[2J[Hbenchmark-openj9-8	560.2MiB / 1.943GiB	198.55%
-[2J[Hbenchmark-openj9-8	562.9MiB / 1.943GiB	193.77%
-[2J[Hbenchmark-openj9-8	562.9MiB / 1.943GiB	193.77%
-[2J[Hbenchmark-openj9-8	564.8MiB / 1.943GiB	204.26%
-[2J[Hbenchmark-openj9-8	564.8MiB / 1.943GiB	204.26%
-[2J[Hbenchmark-openj9-8	569.9MiB / 1.943GiB	196.53%
-[2J[Hbenchmark-openj9-8	569.9MiB / 1.943GiB	196.53%
-[2J[Hbenchmark-openj9-8	560.6MiB / 1.943GiB	194.88%
-[2J[Hbenchmark-openj9-8	560.6MiB / 1.943GiB	194.88%
-[2J[Hbenchmark-openj9-8	568.8MiB / 1.943GiB	198.69%
-[2J[Hbenchmark-openj9-8	568.8MiB / 1.943GiB	198.69%
-[2J[Hbenchmark-openj9-8	571.4MiB / 1.943GiB	192.12%
-[2J[Hbenchmark-openj9-8	571.4MiB / 1.943GiB	192.12%
-[2J[Hbenchmark-openj9-8	567.9MiB / 1.943GiB	208.19%
-[2J[Hbenchmark-openj9-8	567.9MiB / 1.943GiB	208.19%
-[2J[Hbenchmark-openj9-8	567.9MiB / 1.943GiB	194.81%
-[2J[Hbenchmark-openj9-8	567.9MiB / 1.943GiB	194.81%
-[2J[Hbenchmark-openj9-8	571.8MiB / 1.943GiB	198.38%
-[2J[Hbenchmark-openj9-8	571.8MiB / 1.943GiB	198.38%
-[2J[Hbenchmark-openj9-8	567.9MiB / 1.943GiB	187.29%
-[2J[Hbenchmark-openj9-8	567.9MiB / 1.943GiB	187.29%
-[2J[Hbenchmark-openj9-8	576.8MiB / 1.943GiB	206.19%
-[2J[Hbenchmark-openj9-8	576.8MiB / 1.943GiB	206.19%
-[2J[Hbenchmark-openj9-8	579MiB / 1.943GiB	201.04%
-[2J[Hbenchmark-openj9-8	579MiB / 1.943GiB	201.04%
-[2J[Hbenchmark-openj9-8	577.3MiB / 1.943GiB	194.99%
-[2J[Hbenchmark-openj9-8	577.3MiB / 1.943GiB	194.99%
-[2J[Hbenchmark-openj9-8	591.2MiB / 1.943GiB	200.87%
-[2J[Hbenchmark-openj9-8	591.2MiB / 1.943GiB	200.87%
-[2J[Hbenchmark-openj9-8	591.7MiB / 1.943GiB	193.91%
-[2J[Hbenchmark-openj9-8	591.7MiB / 1.943GiB	193.91%
-[2J[Hbenchmark-openj9-8	585.9MiB / 1.943GiB	195.48%
-[2J[Hbenchmark-openj9-8	585.9MiB / 1.943GiB	195.48%
-[2J[Hbenchmark-openj9-8	592.1MiB / 1.943GiB	199.15%
-[2J[Hbenchmark-openj9-8	592.1MiB / 1.943GiB	199.15%
-[2J[Hbenchmark-openj9-8	592.3MiB / 1.943GiB	190.95%
-[2J[Hbenchmark-openj9-8	592.3MiB / 1.943GiB	190.95%
-[2J[Hbenchmark-openj9-8	608.6MiB / 1.943GiB	193.24%
-[2J[Hbenchmark-openj9-8	608.6MiB / 1.943GiB	193.24%
-[2J[Hbenchmark-openj9-8	603.5MiB / 1.943GiB	200.19%
-[2J[Hbenchmark-openj9-8	603.5MiB / 1.943GiB	200.19%
-[2J[Hbenchmark-openj9-8	611.8MiB / 1.943GiB	191.27%
-[2J[Hbenchmark-openj9-8	611.8MiB / 1.943GiB	191.27%
-[2J[Hbenchmark-openj9-8	601.7MiB / 1.943GiB	201.38%
-[2J[Hbenchmark-openj9-8	601.7MiB / 1.943GiB	201.38%
-[2J[Hbenchmark-openj9-8	606MiB / 1.943GiB	192.83%
-[2J[Hbenchmark-openj9-8	606MiB / 1.943GiB	192.83%
-[2J[Hbenchmark-openj9-8	605.7MiB / 1.943GiB	195.72%
-[2J[Hbenchmark-openj9-8	605.7MiB / 1.943GiB	195.72%
-[2J[Hbenchmark-openj9-8	610.3MiB / 1.943GiB	197.13%
-[2J[Hbenchmark-openj9-8	610.3MiB / 1.943GiB	197.13%
-[2J[Hbenchmark-openj9-8	620.1MiB / 1.943GiB	205.22%
-[2J[Hbenchmark-openj9-8	620.1MiB / 1.943GiB	205.22%
-[2J[Hbenchmark-openj9-8	614.6MiB / 1.943GiB	189.36%
-[2J[Hbenchmark-openj9-8	614.6MiB / 1.943GiB	189.36%
-[2J[Hbenchmark-openj9-8	614.7MiB / 1.943GiB	195.22%
-[2J[Hbenchmark-openj9-8	614.7MiB / 1.943GiB	195.22%
-[2J[Hbenchmark-openj9-8	612.9MiB / 1.943GiB	203.43%
-[2J[Hbenchmark-openj9-8	612.9MiB / 1.943GiB	203.43%
-[2J[Hbenchmark-openj9-8	622.9MiB / 1.943GiB	205.36%
-[2J[Hbenchmark-openj9-8	622.9MiB / 1.943GiB	205.36%
-[2J[Hbenchmark-openj9-8	637.7MiB / 1.943GiB	201.02%
-[2J[Hbenchmark-openj9-8	637.7MiB / 1.943GiB	201.02%
-[2J[Hbenchmark-openj9-8	634.5MiB / 1.943GiB	193.81%
-[2J[Hbenchmark-openj9-8	634.5MiB / 1.943GiB	193.81%
-[2J[Hbenchmark-openj9-8	618.7MiB / 1.943GiB	206.11%
-[2J[Hbenchmark-openj9-8	618.7MiB / 1.943GiB	206.11%
-[2J[Hbenchmark-openj9-8	618.8MiB / 1.943GiB	195.61%
-[2J[Hbenchmark-openj9-8	618.8MiB / 1.943GiB	195.61%
-[2J[Hbenchmark-openj9-8	623.1MiB / 1.943GiB	193.63%
-[2J[Hbenchmark-openj9-8	623.1MiB / 1.943GiB	193.63%
-[2J[Hbenchmark-openj9-8	618.7MiB / 1.943GiB	193.38%
-[2J[Hbenchmark-openj9-8	618.7MiB / 1.943GiB	193.38%
-[2J[Hbenchmark-openj9-8	621.1MiB / 1.943GiB	192.68%
-[2J[Hbenchmark-openj9-8	621.1MiB / 1.943GiB	192.68%
-[2J[Hbenchmark-openj9-8	618.6MiB / 1.943GiB	193.63%
-[2J[Hbenchmark-openj9-8	618.6MiB / 1.943GiB	193.63%
-[2J[Hbenchmark-openj9-8	625.3MiB / 1.943GiB	190.13%
-[2J[Hbenchmark-openj9-8	625.3MiB / 1.943GiB	190.13%
-[2J[Hbenchmark-openj9-8	618.8MiB / 1.943GiB	204.55%
-[2J[Hbenchmark-openj9-8	618.8MiB / 1.943GiB	204.55%
-[2J[Hbenchmark-openj9-8	618.8MiB / 1.943GiB	190.07%
-[2J[Hbenchmark-openj9-8	618.8MiB / 1.943GiB	190.07%
-[2J[Hbenchmark-openj9-8	618.7MiB / 1.943GiB	198.64%
-[2J[Hbenchmark-openj9-8	618.7MiB / 1.943GiB	198.64%
-[2J[Hbenchmark-openj9-8	625MiB / 1.943GiB	194.86%
-[2J[Hbenchmark-openj9-8	625MiB / 1.943GiB	194.86%
-[2J[Hbenchmark-openj9-8	621.4MiB / 1.943GiB	204.54%
-[2J[Hbenchmark-openj9-8	621.4MiB / 1.943GiB	204.54%
-[2J[Hbenchmark-openj9-8	618.9MiB / 1.943GiB	187.77%
-[2J[Hbenchmark-openj9-8	618.9MiB / 1.943GiB	187.77%
-[2J[Hbenchmark-openj9-8	618.8MiB / 1.943GiB	200.30%
-[2J[Hbenchmark-openj9-8	618.8MiB / 1.943GiB	200.30%
-[2J[Hbenchmark-openj9-8	629MiB / 1.943GiB	173.72%
-[2J[Hbenchmark-openj9-8	629MiB / 1.943GiB	173.72%
-[2J[Hbenchmark-openj9-8	629.9MiB / 1.943GiB	211.73%
-[2J[Hbenchmark-openj9-8	629.9MiB / 1.943GiB	211.73%
-[2J[Hbenchmark-openj9-8	633.4MiB / 1.943GiB	205.16%
-[2J[Hbenchmark-openj9-8	633.4MiB / 1.943GiB	205.16%
-[2J[Hbenchmark-openj9-8	634.9MiB / 1.943GiB	203.30%
-[2J[Hbenchmark-openj9-8	634.9MiB / 1.943GiB	203.30%
-[2J[Hbenchmark-openj9-8	621.9MiB / 1.943GiB	199.31%
-[2J[Hbenchmark-openj9-8	621.9MiB / 1.943GiB	199.31%
-[2J[Hbenchmark-openj9-8	625.6MiB / 1.943GiB	188.48%
-[2J[Hbenchmark-openj9-8	625.6MiB / 1.943GiB	188.48%
-[2J[Hbenchmark-openj9-8	635.4MiB / 1.943GiB	212.26%
-[2J[Hbenchmark-openj9-8	635.4MiB / 1.943GiB	212.26%
-[2J[Hbenchmark-openj9-8	640.8MiB / 1.943GiB	199.96%
-[2J[Hbenchmark-openj9-8	640.8MiB / 1.943GiB	199.96%
-[2J[Hbenchmark-openj9-8	643.2MiB / 1.943GiB	197.93%
-[2J[Hbenchmark-openj9-8	643.2MiB / 1.943GiB	197.93%
-[2J[Hbenchmark-openj9-8	643.6MiB / 1.943GiB	189.73%
-[2J[Hbenchmark-openj9-8	643.6MiB / 1.943GiB	189.73%
-[2J[Hbenchmark-openj9-8	636.3MiB / 1.943GiB	206.66%
-[2J[Hbenchmark-openj9-8	636.3MiB / 1.943GiB	206.66%
-[2J[Hbenchmark-openj9-8	644.5MiB / 1.943GiB	191.12%
-[2J[Hbenchmark-openj9-8	644.5MiB / 1.943GiB	191.12%
-[2J[Hbenchmark-openj9-8	642.8MiB / 1.943GiB	173.80%
-[2J[Hbenchmark-openj9-8	642.8MiB / 1.943GiB	173.80%
-[2J[Hbenchmark-openj9-8	630.5MiB / 1.943GiB	198.30%
-[2J[Hbenchmark-openj9-8	630.5MiB / 1.943GiB	198.30%
-[2J[Hbenchmark-openj9-8	635.3MiB / 1.943GiB	195.77%
-[2J[Hbenchmark-openj9-8	635.3MiB / 1.943GiB	195.77%
-[2J[Hbenchmark-openj9-8	632.9MiB / 1.943GiB	199.85%
-[2J[Hbenchmark-openj9-8	632.9MiB / 1.943GiB	199.85%
-[2J[Hbenchmark-openj9-8	635.1MiB / 1.943GiB	199.02%
-[2J[Hbenchmark-openj9-8	635.1MiB / 1.943GiB	199.02%
-[2J[Hbenchmark-openj9-8	640.9MiB / 1.943GiB	200.51%
-[2J[Hbenchmark-openj9-8	640.9MiB / 1.943GiB	200.51%
-[2J[Hbenchmark-openj9-8	647.4MiB / 1.943GiB	199.69%
-[2J[Hbenchmark-openj9-8	647.4MiB / 1.943GiB	199.69%
-[2J[Hbenchmark-openj9-8	647.5MiB / 1.943GiB	198.34%
-[2J[Hbenchmark-openj9-8	647.5MiB / 1.943GiB	198.34%
-[2J[Hbenchmark-openj9-8	632.6MiB / 1.943GiB	198.17%
-[2J[Hbenchmark-openj9-8	632.6MiB / 1.943GiB	198.17%
-[2J[Hbenchmark-openj9-8	633.1MiB / 1.943GiB	205.53%
-[2J[Hbenchmark-openj9-8	633.1MiB / 1.943GiB	205.53%
-[2J[Hbenchmark-openj9-8	672.3MiB / 1.943GiB	198.68%
-[2J[Hbenchmark-openj9-8	672.3MiB / 1.943GiB	198.68%
-[2J[Hbenchmark-openj9-8	694.3MiB / 1.943GiB	204.73%
-[2J[Hbenchmark-openj9-8	694.3MiB / 1.943GiB	204.73%
-[2J[Hbenchmark-openj9-8	640.8MiB / 1.943GiB	198.07%
-[2J[Hbenchmark-openj9-8	640.8MiB / 1.943GiB	198.07%
-[2J[Hbenchmark-openj9-8	636.5MiB / 1.943GiB	185.26%
-[2J[Hbenchmark-openj9-8	636.5MiB / 1.943GiB	185.26%
-[2J[Hbenchmark-openj9-8	638.5MiB / 1.943GiB	190.23%
-[2J[Hbenchmark-openj9-8	638.5MiB / 1.943GiB	190.23%
-[2J[Hbenchmark-openj9-8	643.1MiB / 1.943GiB	212.30%
-[2J[Hbenchmark-openj9-8	643.1MiB / 1.943GiB	212.30%
-[2J[Hbenchmark-openj9-8	638.6MiB / 1.943GiB	199.32%
-[2J[Hbenchmark-openj9-8	638.6MiB / 1.943GiB	199.32%
-[2J[Hbenchmark-openj9-8	652.7MiB / 1.943GiB	195.34%
-[2J[Hbenchmark-openj9-8	652.7MiB / 1.943GiB	195.34%
-[2J[Hbenchmark-openj9-8	656.4MiB / 1.943GiB	199.88%
-[2J[Hbenchmark-openj9-8	656.4MiB / 1.943GiB	199.88%
-[2J[Hbenchmark-openj9-8	658.5MiB / 1.943GiB	201.44%
-[2J[Hbenchmark-openj9-8	658.5MiB / 1.943GiB	201.44%
-[2J[Hbenchmark-openj9-8	654MiB / 1.943GiB	199.23%
-[2J[Hbenchmark-openj9-8	654MiB / 1.943GiB	199.23%
-[2J[Hbenchmark-openj9-8	666.1MiB / 1.943GiB	196.69%
-[2J[Hbenchmark-openj9-8	666.1MiB / 1.943GiB	196.69%
-[2J[Hbenchmark-openj9-8	666.1MiB / 1.943GiB	196.69%
-[2J[Hbenchmark-openj9-8	664.1MiB / 1.943GiB	200.19%
-[2J[Hbenchmark-openj9-8	664.1MiB / 1.943GiB	200.19%
-[2J[Hbenchmark-openj9-8	661.9MiB / 1.943GiB	199.78%
-[2J[Hbenchmark-openj9-8	661.9MiB / 1.943GiB	199.78%
-[2J[Hbenchmark-openj9-8	676.2MiB / 1.943GiB	199.36%
-[2J[Hbenchmark-openj9-8	676.2MiB / 1.943GiB	199.36%
-[2J[Hbenchmark-openj9-8	655.7MiB / 1.943GiB	195.83%
-[2J[Hbenchmark-openj9-8	655.7MiB / 1.943GiB	195.83%
-[2J[Hbenchmark-openj9-8	653.6MiB / 1.943GiB	199.71%
-[2J[Hbenchmark-openj9-8	653.6MiB / 1.943GiB	199.71%
-[2J[Hbenchmark-openj9-8	653.6MiB / 1.943GiB	201.02%
-[2J[Hbenchmark-openj9-8	653.6MiB / 1.943GiB	201.02%
-[2J[Hbenchmark-openj9-8	653.5MiB / 1.943GiB	196.73%
-[2J[Hbenchmark-openj9-8	653.5MiB / 1.943GiB	196.73%
-[2J[Hbenchmark-openj9-8	651.6MiB / 1.943GiB	202.86%
-[2J[Hbenchmark-openj9-8	651.6MiB / 1.943GiB	202.86%
-[2J[Hbenchmark-openj9-8	662.1MiB / 1.943GiB	203.09%
-[2J[Hbenchmark-openj9-8	662.1MiB / 1.943GiB	203.09%
-[2J[Hbenchmark-openj9-8	651.6MiB / 1.943GiB	199.95%
-[2J[Hbenchmark-openj9-8	651.6MiB / 1.943GiB	199.95%
-[2J[Hbenchmark-openj9-8	641.4MiB / 1.943GiB	194.66%
-[2J[Hbenchmark-openj9-8	641.4MiB / 1.943GiB	194.66%
-[2J[Hbenchmark-openj9-8	641.7MiB / 1.943GiB	197.85%
-[2J[Hbenchmark-openj9-8	641.7MiB / 1.943GiB	197.85%
-[2J[Hbenchmark-openj9-8	641.8MiB / 1.943GiB	202.72%
-[2J[Hbenchmark-openj9-8	641.8MiB / 1.943GiB	202.72%
-[2J[Hbenchmark-openj9-8	641.6MiB / 1.943GiB	199.00%
-[2J[Hbenchmark-openj9-8	641.6MiB / 1.943GiB	199.00%
-[2J[Hbenchmark-openj9-8	641.7MiB / 1.943GiB	199.04%
-[2J[Hbenchmark-openj9-8	641.7MiB / 1.943GiB	199.04%
-[2J[Hbenchmark-openj9-8	652.3MiB / 1.943GiB	204.55%
-[2J[Hbenchmark-openj9-8	652.3MiB / 1.943GiB	204.55%
-[2J[Hbenchmark-openj9-8	641.9MiB / 1.943GiB	200.32%
-[2J[Hbenchmark-openj9-8	641.9MiB / 1.943GiB	200.32%
-[2J[Hbenchmark-openj9-8	646.2MiB / 1.943GiB	199.16%
-[2J[Hbenchmark-openj9-8	646.2MiB / 1.943GiB	199.16%
-[2J[Hbenchmark-openj9-8	646MiB / 1.943GiB	199.61%
-[2J[Hbenchmark-openj9-8	646MiB / 1.943GiB	199.61%
-[2J[Hbenchmark-openj9-8	646.2MiB / 1.943GiB	197.44%
-[2J[Hbenchmark-openj9-8	646.2MiB / 1.943GiB	197.44%
-[2J[Hbenchmark-openj9-8	646.2MiB / 1.943GiB	201.51%
-[2J[Hbenchmark-openj9-8	646.2MiB / 1.943GiB	201.51%
-[2J[Hbenchmark-openj9-8	642MiB / 1.943GiB	200.37%
-[2J[Hbenchmark-openj9-8	642MiB / 1.943GiB	200.37%
-[2J[Hbenchmark-openj9-8	642.6MiB / 1.943GiB	196.85%
-[2J[Hbenchmark-openj9-8	642.6MiB / 1.943GiB	196.85%
-[2J[Hbenchmark-openj9-8	642.9MiB / 1.943GiB	198.96%
-[2J[Hbenchmark-openj9-8	642.9MiB / 1.943GiB	198.96%
-[2J[Hbenchmark-openj9-8	642.6MiB / 1.943GiB	200.71%
-[2J[Hbenchmark-openj9-8	642.6MiB / 1.943GiB	200.71%
-[2J[Hbenchmark-openj9-8	642.6MiB / 1.943GiB	199.80%
-[2J[Hbenchmark-openj9-8	642.6MiB / 1.943GiB	199.80%
-[2J[Hbenchmark-openj9-8	642.6MiB / 1.943GiB	195.47%
-[2J[Hbenchmark-openj9-8	642.6MiB / 1.943GiB	195.47%
-[2J[Hbenchmark-openj9-8	651MiB / 1.943GiB	201.75%
-[2J[Hbenchmark-openj9-8	651MiB / 1.943GiB	201.75%
-[2J[Hbenchmark-openj9-8	644.9MiB / 1.943GiB	195.94%
-[2J[Hbenchmark-openj9-8	644.9MiB / 1.943GiB	195.94%
-[2J[Hbenchmark-openj9-8	642.8MiB / 1.943GiB	201.53%
-[2J[Hbenchmark-openj9-8	642.8MiB / 1.943GiB	201.53%
-[2J[Hbenchmark-openj9-8	643.3MiB / 1.943GiB	207.92%
-[2J[Hbenchmark-openj9-8	643.3MiB / 1.943GiB	207.92%
-[2J[Hbenchmark-openj9-8	643.3MiB / 1.943GiB	193.21%
-[2J[Hbenchmark-openj9-8	643.3MiB / 1.943GiB	193.21%
-[2J[Hbenchmark-openj9-8	643.2MiB / 1.943GiB	206.59%
-[2J[Hbenchmark-openj9-8	643.2MiB / 1.943GiB	206.59%
-[2J[Hbenchmark-openj9-8	643.2MiB / 1.943GiB	188.96%
-[2J[Hbenchmark-openj9-8	643.2MiB / 1.943GiB	188.96%
-[2J[Hbenchmark-openj9-8	643.2MiB / 1.943GiB	210.96%
-[2J[Hbenchmark-openj9-8	643.2MiB / 1.943GiB	210.96%
-[2J[Hbenchmark-openj9-8	643.2MiB / 1.943GiB	193.58%
-[2J[Hbenchmark-openj9-8	643.2MiB / 1.943GiB	193.58%
-[2J[Hbenchmark-openj9-8	643.1MiB / 1.943GiB	201.83%
-[2J[Hbenchmark-openj9-8	643.1MiB / 1.943GiB	201.83%
-[2J[Hbenchmark-openj9-8	652.3MiB / 1.943GiB	193.32%
-[2J[Hbenchmark-openj9-8	652.3MiB / 1.943GiB	193.32%
-[2J[Hbenchmark-openj9-8	652.5MiB / 1.943GiB	208.40%
-[2J[Hbenchmark-openj9-8	652.5MiB / 1.943GiB	208.40%
-[2J[Hbenchmark-openj9-8	652.4MiB / 1.943GiB	193.14%
-[2J[Hbenchmark-openj9-8	652.4MiB / 1.943GiB	193.14%
-[2J[Hbenchmark-openj9-8	652.3MiB / 1.943GiB	200.72%
-[2J[Hbenchmark-openj9-8	652.3MiB / 1.943GiB	200.72%
-[2J[Hbenchmark-openj9-8	643.2MiB / 1.943GiB	196.69%
-[2J[Hbenchmark-openj9-8	643.2MiB / 1.943GiB	196.69%
-[2J[Hbenchmark-openj9-8	643.3MiB / 1.943GiB	192.89%
-[2J[Hbenchmark-openj9-8	643.3MiB / 1.943GiB	192.89%
-[2J[Hbenchmark-openj9-8	643.1MiB / 1.943GiB	196.34%
-[2J[Hbenchmark-openj9-8	643.1MiB / 1.943GiB	196.34%
-[2J[Hbenchmark-openj9-8	643.1MiB / 1.943GiB	202.46%
-[2J[Hbenchmark-openj9-8	643.1MiB / 1.943GiB	202.46%
-[2J[Hbenchmark-openj9-8	643.1MiB / 1.943GiB	199.36%
-[2J[Hbenchmark-openj9-8	643.1MiB / 1.943GiB	199.36%
-[2J[Hbenchmark-openj9-8	643.2MiB / 1.943GiB	194.87%
-[2J[Hbenchmark-openj9-8	643.2MiB / 1.943GiB	194.87%
-[2J[Hbenchmark-openj9-8	643.3MiB / 1.943GiB	203.25%
-[2J[Hbenchmark-openj9-8	643.3MiB / 1.943GiB	203.25%
-[2J[Hbenchmark-openj9-8	643.3MiB / 1.943GiB	202.54%
-[2J[Hbenchmark-openj9-8	643.3MiB / 1.943GiB	202.54%
-[2J[Hbenchmark-openj9-8	643.2MiB / 1.943GiB	197.58%
-[2J[Hbenchmark-openj9-8	643.2MiB / 1.943GiB	197.58%
-[2J[Hbenchmark-openj9-8	643.7MiB / 1.943GiB	196.06%
-[2J[Hbenchmark-openj9-8	643.7MiB / 1.943GiB	196.06%
-[2J[Hbenchmark-openj9-8	643.9MiB / 1.943GiB	197.91%
-[2J[Hbenchmark-openj9-8	643.9MiB / 1.943GiB	197.91%
-[2J[Hbenchmark-openj9-8	643.8MiB / 1.943GiB	199.98%
-[2J[Hbenchmark-openj9-8	643.8MiB / 1.943GiB	199.98%
-[2J[Hbenchmark-openj9-8	643.8MiB / 1.943GiB	199.87%
-[2J[Hbenchmark-openj9-8	643.8MiB / 1.943GiB	199.87%
-[2J[Hbenchmark-openj9-8	643.8MiB / 1.943GiB	198.64%
-[2J[Hbenchmark-openj9-8	643.8MiB / 1.943GiB	198.64%
-[2J[Hbenchmark-openj9-8	643.9MiB / 1.943GiB	212.43%
-[2J[Hbenchmark-openj9-8	643.9MiB / 1.943GiB	212.43%
-[2J[Hbenchmark-openj9-8	643.9MiB / 1.943GiB	192.40%
-[2J[Hbenchmark-openj9-8	643.9MiB / 1.943GiB	192.40%
-[2J[Hbenchmark-openj9-8	644.4MiB / 1.943GiB	201.14%
-[2J[Hbenchmark-openj9-8	644.4MiB / 1.943GiB	201.14%
-[2J[Hbenchmark-openj9-8	652.7MiB / 1.943GiB	204.22%
-[2J[Hbenchmark-openj9-8	652.7MiB / 1.943GiB	204.22%
-[2J[Hbenchmark-openj9-8	644.1MiB / 1.943GiB	200.48%
-[2J[Hbenchmark-openj9-8	644.1MiB / 1.943GiB	200.48%
-[2J[Hbenchmark-openj9-8	644MiB / 1.943GiB	199.64%
-[2J[Hbenchmark-openj9-8	644MiB / 1.943GiB	199.64%
-[2J[Hbenchmark-openj9-8	652.1MiB / 1.943GiB	199.33%
-[2J[Hbenchmark-openj9-8	652.1MiB / 1.943GiB	199.33%
-[2J[Hbenchmark-openj9-8	654.4MiB / 1.943GiB	197.64%
-[2J[Hbenchmark-openj9-8	654.4MiB / 1.943GiB	197.64%
-[2J[Hbenchmark-openj9-8	652.1MiB / 1.943GiB	198.78%
-[2J[Hbenchmark-openj9-8	652.1MiB / 1.943GiB	198.78%
-[2J[Hbenchmark-openj9-8	651.9MiB / 1.943GiB	196.13%
-[2J[Hbenchmark-openj9-8	651.9MiB / 1.943GiB	196.13%
-[2J[Hbenchmark-openj9-8	651.9MiB / 1.943GiB	195.07%
-[2J[Hbenchmark-openj9-8	651.9MiB / 1.943GiB	195.07%
-[2J[Hbenchmark-openj9-8	643.7MiB / 1.943GiB	200.48%
-[2J[Hbenchmark-openj9-8	643.7MiB / 1.943GiB	200.48%
-[2J[Hbenchmark-openj9-8	643.6MiB / 1.943GiB	200.14%
-[2J[Hbenchmark-openj9-8	643.6MiB / 1.943GiB	200.14%
-[2J[Hbenchmark-openj9-8	643.6MiB / 1.943GiB	200.47%
-[2J[Hbenchmark-openj9-8	643.6MiB / 1.943GiB	200.47%
-[2J[Hbenchmark-openj9-8	643.7MiB / 1.943GiB	199.79%
-[2J[Hbenchmark-openj9-8	643.7MiB / 1.943GiB	199.79%
-[2J[Hbenchmark-openj9-8	643.7MiB / 1.943GiB	197.87%
-[2J[Hbenchmark-openj9-8	643.7MiB / 1.943GiB	197.87%
-[2J[Hbenchmark-openj9-8	643.7MiB / 1.943GiB	202.13%
-[2J[Hbenchmark-openj9-8	643.7MiB / 1.943GiB	202.13%
-[2J[Hbenchmark-openj9-8	643.7MiB / 1.943GiB	200.61%
-[2J[Hbenchmark-openj9-8	643.7MiB / 1.943GiB	200.61%
-[2J[Hbenchmark-openj9-8	643.7MiB / 1.943GiB	191.60%
-[2J[Hbenchmark-openj9-8	643.7MiB / 1.943GiB	191.60%
-[2J[Hbenchmark-openj9-8	643.7MiB / 1.943GiB	203.58%
-[2J[Hbenchmark-openj9-8	643.7MiB / 1.943GiB	203.58%
-[2J[Hbenchmark-openj9-8	643.7MiB / 1.943GiB	193.79%
-[2J[Hbenchmark-openj9-8	643.7MiB / 1.943GiB	193.79%
-[2J[Hbenchmark-openj9-8	643.6MiB / 1.943GiB	206.92%
-[2J[Hbenchmark-openj9-8	643.6MiB / 1.943GiB	206.92%
-[2J[Hbenchmark-openj9-8	643.6MiB / 1.943GiB	189.76%
-[2J[Hbenchmark-openj9-8	643.6MiB / 1.943GiB	189.76%
-[2J[Hbenchmark-openj9-8	643.7MiB / 1.943GiB	206.84%
-[2J[Hbenchmark-openj9-8	643.7MiB / 1.943GiB	206.84%
-[2J[Hbenchmark-openj9-8	643.7MiB / 1.943GiB	189.28%
-[2J[Hbenchmark-openj9-8	643.7MiB / 1.943GiB	189.28%
-[2J[Hbenchmark-openj9-8	643.7MiB / 1.943GiB	200.96%
-[2J[Hbenchmark-openj9-8	643.7MiB / 1.943GiB	200.96%
-[2J[Hbenchmark-openj9-8	643.7MiB / 1.943GiB	200.02%
-[2J[Hbenchmark-openj9-8	643.7MiB / 1.943GiB	200.02%
-[2J[Hbenchmark-openj9-8	643.7MiB / 1.943GiB	206.14%
-[2J[Hbenchmark-openj9-8	643.7MiB / 1.943GiB	206.14%
-[2J[Hbenchmark-openj9-8	643.6MiB / 1.943GiB	193.22%
-[2J[Hbenchmark-openj9-8	643.6MiB / 1.943GiB	193.22%
-[2J[Hbenchmark-openj9-8	647.8MiB / 1.943GiB	205.57%
-[2J[Hbenchmark-openj9-8	647.8MiB / 1.943GiB	205.57%
-[2J[Hbenchmark-openj9-8	647.8MiB / 1.943GiB	198.84%
-[2J[Hbenchmark-openj9-8	647.8MiB / 1.943GiB	198.84%
-[2J[Hbenchmark-openj9-8	648.2MiB / 1.943GiB	195.06%
-[2J[Hbenchmark-openj9-8	648.2MiB / 1.943GiB	195.06%
-[2J[Hbenchmark-openj9-8	648.1MiB / 1.943GiB	200.23%
-[2J[Hbenchmark-openj9-8	648.1MiB / 1.943GiB	200.23%
-[2J[Hbenchmark-openj9-8	646.3MiB / 1.943GiB	201.67%
-[2J[Hbenchmark-openj9-8	646.3MiB / 1.943GiB	201.67%
-[2J[Hbenchmark-openj9-8	648.6MiB / 1.943GiB	199.41%
-[2J[Hbenchmark-openj9-8	648.6MiB / 1.943GiB	199.41%
-[2J[Hbenchmark-openj9-8	646.3MiB / 1.943GiB	203.08%
-[2J[Hbenchmark-openj9-8	646.3MiB / 1.943GiB	203.08%
-[2J[Hbenchmark-openj9-8	646.3MiB / 1.943GiB	201.03%
-[2J[Hbenchmark-openj9-8	646.3MiB / 1.943GiB	201.03%
-[2J[Hbenchmark-openj9-8	645.8MiB / 1.943GiB	198.11%
-[2J[Hbenchmark-openj9-8	645.8MiB / 1.943GiB	198.11%
-[2J[Hbenchmark-openj9-8	648.3MiB / 1.943GiB	205.28%
-[2J[Hbenchmark-openj9-8	648.3MiB / 1.943GiB	205.28%
-[2J[Hbenchmark-openj9-8	646MiB / 1.943GiB	193.61%
-[2J[Hbenchmark-openj9-8	646MiB / 1.943GiB	193.61%
-[2J[Hbenchmark-openj9-8	645.8MiB / 1.943GiB	205.77%
-[2J[Hbenchmark-openj9-8	645.8MiB / 1.943GiB	205.77%
-[2J[Hbenchmark-openj9-8	645.9MiB / 1.943GiB	198.59%
-[2J[Hbenchmark-openj9-8	645.9MiB / 1.943GiB	198.59%
-[2J[Hbenchmark-openj9-8	645.9MiB / 1.943GiB	208.17%
-[2J[Hbenchmark-openj9-8	645.9MiB / 1.943GiB	208.17%
-[2J[Hbenchmark-openj9-8	645.9MiB / 1.943GiB	190.28%
-[2J[Hbenchmark-openj9-8	645.9MiB / 1.943GiB	190.28%
-[2J[Hbenchmark-openj9-8	645.8MiB / 1.943GiB	207.28%
-[2J[Hbenchmark-openj9-8	645.8MiB / 1.943GiB	207.28%
-[2J[Hbenchmark-openj9-8	643.8MiB / 1.943GiB	194.50%
-[2J[Hbenchmark-openj9-8	643.8MiB / 1.943GiB	194.50%
-[2J[Hbenchmark-openj9-8	644.1MiB / 1.943GiB	199.56%
-[2J[Hbenchmark-openj9-8	644.1MiB / 1.943GiB	199.56%
-[2J[Hbenchmark-openj9-8	646.3MiB / 1.943GiB	208.10%
-[2J[Hbenchmark-openj9-8	646.3MiB / 1.943GiB	208.10%
-[2J[Hbenchmark-openj9-8	644.8MiB / 1.943GiB	196.93%
-[2J[Hbenchmark-openj9-8	644.8MiB / 1.943GiB	196.93%
-[2J[Hbenchmark-openj9-8	644.8MiB / 1.943GiB	196.93%
-[2J[Hbenchmark-openj9-8	644.8MiB / 1.943GiB	196.93%
-[2J[Hbenchmark-openj9-8	645MiB / 1.943GiB	206.60%
-[2J[Hbenchmark-openj9-8	645MiB / 1.943GiB	206.60%
-[2J[Hbenchmark-openj9-8	644.9MiB / 1.943GiB	197.89%
-[2J[Hbenchmark-openj9-8	644.9MiB / 1.943GiB	197.89%
-[2J[Hbenchmark-openj9-8	648.9MiB / 1.943GiB	192.95%
-[2J[Hbenchmark-openj9-8	648.9MiB / 1.943GiB	192.95%
-[2J[Hbenchmark-openj9-8	657.8MiB / 1.943GiB	204.12%
-[2J[Hbenchmark-openj9-8	657.8MiB / 1.943GiB	204.12%
-[2J[Hbenchmark-openj9-8	657.8MiB / 1.943GiB	200.94%
-[2J[Hbenchmark-openj9-8	657.8MiB / 1.943GiB	200.94%
-[2J[Hbenchmark-openj9-8	657.8MiB / 1.943GiB	200.94%
-[2J[Hbenchmark-openj9-8	657.7MiB / 1.943GiB	200.66%
-[2J[Hbenchmark-openj9-8	657.7MiB / 1.943GiB	200.66%
-[2J[Hbenchmark-openj9-8	662.2MiB / 1.943GiB	198.61%
-[2J[Hbenchmark-openj9-8	662.2MiB / 1.943GiB	198.61%
-[2J[Hbenchmark-openj9-8	668.7MiB / 1.943GiB	197.72%
-[2J[Hbenchmark-openj9-8	668.7MiB / 1.943GiB	197.72%
-[2J[Hbenchmark-openj9-8	662.2MiB / 1.943GiB	202.37%
-[2J[Hbenchmark-openj9-8	662.2MiB / 1.943GiB	202.37%
-[2J[Hbenchmark-openj9-8	662.2MiB / 1.943GiB	202.14%
-[2J[Hbenchmark-openj9-8	662.2MiB / 1.943GiB	202.14%
-[2J[Hbenchmark-openj9-8	659.2MiB / 1.943GiB	200.93%
-[2J[Hbenchmark-openj9-8	659.2MiB / 1.943GiB	200.93%
-[2J[Hbenchmark-openj9-8	659.1MiB / 1.943GiB	202.20%
-[2J[Hbenchmark-openj9-8	659.1MiB / 1.943GiB	202.20%
-[2J[Hbenchmark-openj9-8	659.1MiB / 1.943GiB	194.98%
-[2J[Hbenchmark-openj9-8	659.1MiB / 1.943GiB	194.98%
-[2J[Hbenchmark-openj9-8	656.2MiB / 1.943GiB	207.46%
-[2J[Hbenchmark-openj9-8	656.2MiB / 1.943GiB	207.46%
-[2J[Hbenchmark-openj9-8	656.3MiB / 1.943GiB	197.06%
-[2J[Hbenchmark-openj9-8	656.3MiB / 1.943GiB	197.06%
-[2J[Hbenchmark-openj9-8	656.2MiB / 1.943GiB	198.44%
-[2J[Hbenchmark-openj9-8	656.2MiB / 1.943GiB	198.44%
-[2J[Hbenchmark-openj9-8	656.1MiB / 1.943GiB	206.38%
-[2J[Hbenchmark-openj9-8	656.1MiB / 1.943GiB	206.38%
-[2J[Hbenchmark-openj9-8	654.1MiB / 1.943GiB	193.27%
-[2J[Hbenchmark-openj9-8	654.1MiB / 1.943GiB	193.27%
-[2J[Hbenchmark-openj9-8	654.5MiB / 1.943GiB	201.89%
-[2J[Hbenchmark-openj9-8	654.5MiB / 1.943GiB	201.89%
-[2J[Hbenchmark-openj9-8	654.5MiB / 1.943GiB	201.80%
-[2J[Hbenchmark-openj9-8	654.5MiB / 1.943GiB	201.80%
-[2J[Hbenchmark-openj9-8	654.5MiB / 1.943GiB	200.41%
-[2J[Hbenchmark-openj9-8	654.5MiB / 1.943GiB	200.41%
-[2J[Hbenchmark-openj9-8	654.6MiB / 1.943GiB	207.79%
-[2J[Hbenchmark-openj9-8	654.6MiB / 1.943GiB	207.79%
-[2J[Hbenchmark-openj9-8	654.6MiB / 1.943GiB	191.82%
-[2J[Hbenchmark-openj9-8	654.6MiB / 1.943GiB	191.82%
-[2J[Hbenchmark-openj9-8	654.5MiB / 1.943GiB	200.30%
-[2J[Hbenchmark-openj9-8	654.5MiB / 1.943GiB	200.30%
-[2J[Hbenchmark-openj9-8	658.2MiB / 1.943GiB	202.62%
-[2J[Hbenchmark-openj9-8	658.2MiB / 1.943GiB	202.62%
-[2J[Hbenchmark-openj9-8	658.2MiB / 1.943GiB	201.78%
-[2J[Hbenchmark-openj9-8	658.2MiB / 1.943GiB	201.78%
-[2J[Hbenchmark-openj9-8	658.2MiB / 1.943GiB	197.59%
-[2J[Hbenchmark-openj9-8	658.2MiB / 1.943GiB	197.59%
-[2J[Hbenchmark-openj9-8	654.6MiB / 1.943GiB	203.78%
-[2J[Hbenchmark-openj9-8	654.6MiB / 1.943GiB	203.78%
-[2J[Hbenchmark-openj9-8	654.7MiB / 1.943GiB	199.21%
-[2J[Hbenchmark-openj9-8	654.7MiB / 1.943GiB	199.21%
-[2J[Hbenchmark-openj9-8	654.8MiB / 1.943GiB	198.78%
-[2J[Hbenchmark-openj9-8	654.8MiB / 1.943GiB	198.78%
-[2J[Hbenchmark-openj9-8	654.8MiB / 1.943GiB	196.81%
-[2J[Hbenchmark-openj9-8	654.8MiB / 1.943GiB	196.81%
-[2J[Hbenchmark-openj9-8	652.7MiB / 1.943GiB	197.80%
-[2J[Hbenchmark-openj9-8	652.7MiB / 1.943GiB	197.80%
-[2J[Hbenchmark-openj9-8	659.1MiB / 1.943GiB	203.50%
-[2J[Hbenchmark-openj9-8	659.1MiB / 1.943GiB	203.50%
-[2J[Hbenchmark-openj9-8	652.7MiB / 1.943GiB	198.00%
-[2J[Hbenchmark-openj9-8	652.7MiB / 1.943GiB	198.00%
-[2J[Hbenchmark-openj9-8	650.6MiB / 1.943GiB	201.36%
-[2J[Hbenchmark-openj9-8	650.6MiB / 1.943GiB	201.36%
-[2J[Hbenchmark-openj9-8	650.6MiB / 1.943GiB	198.60%
-[2J[Hbenchmark-openj9-8	650.6MiB / 1.943GiB	198.60%
-[2J[Hbenchmark-openj9-8	652.9MiB / 1.943GiB	194.53%
-[2J[Hbenchmark-openj9-8	652.9MiB / 1.943GiB	194.53%
-[2J[Hbenchmark-openj9-8	648.6MiB / 1.943GiB	200.50%
-[2J[Hbenchmark-openj9-8	648.6MiB / 1.943GiB	200.50%
-[2J[Hbenchmark-openj9-8	648.6MiB / 1.943GiB	200.66%
-[2J[Hbenchmark-openj9-8	648.6MiB / 1.943GiB	200.66%
-[2J[Hbenchmark-openj9-8	648.5MiB / 1.943GiB	188.98%
-[2J[Hbenchmark-openj9-8	648.5MiB / 1.943GiB	188.98%
-[2J[Hbenchmark-openj9-8	652.8MiB / 1.943GiB	210.33%
-[2J[Hbenchmark-openj9-8	652.8MiB / 1.943GiB	210.33%
-[2J[Hbenchmark-openj9-8	648.5MiB / 1.943GiB	190.87%
-[2J[Hbenchmark-openj9-8	648.5MiB / 1.943GiB	190.87%
-[2J[Hbenchmark-openj9-8	648.5MiB / 1.943GiB	209.58%
-[2J[Hbenchmark-openj9-8	648.5MiB / 1.943GiB	209.58%
-[2J[Hbenchmark-openj9-8	648.5MiB / 1.943GiB	195.06%
-[2J[Hbenchmark-openj9-8	648.5MiB / 1.943GiB	195.06%
-[2J[Hbenchmark-openj9-8	648.8MiB / 1.943GiB	200.32%
-[2J[Hbenchmark-openj9-8	648.8MiB / 1.943GiB	200.32%
-[2J[Hbenchmark-openj9-8	648.8MiB / 1.943GiB	191.74%
-[2J[Hbenchmark-openj9-8	648.8MiB / 1.943GiB	191.74%
-[2J[Hbenchmark-openj9-8	654.2MiB / 1.943GiB	208.63%
-[2J[Hbenchmark-openj9-8	654.2MiB / 1.943GiB	208.63%
-[2J[Hbenchmark-openj9-8	654.4MiB / 1.943GiB	197.21%
-[2J[Hbenchmark-openj9-8	654.4MiB / 1.943GiB	197.21%
-[2J[Hbenchmark-openj9-8	654.6MiB / 1.943GiB	199.14%
-[2J[Hbenchmark-openj9-8	654.6MiB / 1.943GiB	199.14%
-[2J[Hbenchmark-openj9-8	654.5MiB / 1.943GiB	198.66%
-[2J[Hbenchmark-openj9-8	654.5MiB / 1.943GiB	198.66%
-[2J[Hbenchmark-openj9-8	655.4MiB / 1.943GiB	200.00%
-[2J[Hbenchmark-openj9-8	655.4MiB / 1.943GiB	200.00%
-[2J[Hbenchmark-openj9-8	655.4MiB / 1.943GiB	198.78%
-[2J[Hbenchmark-openj9-8	655.4MiB / 1.943GiB	198.78%
-[2J[Hbenchmark-openj9-8	655.3MiB / 1.943GiB	204.44%
-[2J[Hbenchmark-openj9-8	655.3MiB / 1.943GiB	204.44%
-[2J[Hbenchmark-openj9-8	655.3MiB / 1.943GiB	200.27%
-[2J[Hbenchmark-openj9-8	655.3MiB / 1.943GiB	200.27%
-[2J[Hbenchmark-openj9-8	653.9MiB / 1.943GiB	199.64%
-[2J[Hbenchmark-openj9-8	653.9MiB / 1.943GiB	199.64%
-[2J[Hbenchmark-openj9-8	654.1MiB / 1.943GiB	204.29%
-[2J[Hbenchmark-openj9-8	654.1MiB / 1.943GiB	204.29%
-[2J[Hbenchmark-openj9-8	654.1MiB / 1.943GiB	198.02%
-[2J[Hbenchmark-openj9-8	654.1MiB / 1.943GiB	198.02%
-[2J[Hbenchmark-openj9-8	654MiB / 1.943GiB	199.86%
-[2J[Hbenchmark-openj9-8	654MiB / 1.943GiB	199.86%
-[2J[Hbenchmark-openj9-8	653.1MiB / 1.943GiB	205.41%
-[2J[Hbenchmark-openj9-8	653.1MiB / 1.943GiB	205.41%
-[2J[Hbenchmark-openj9-8	659MiB / 1.943GiB	195.38%
-[2J[Hbenchmark-openj9-8	659MiB / 1.943GiB	195.38%
-[2J[Hbenchmark-openj9-8	658.2MiB / 1.943GiB	177.70%
-[2J[Hbenchmark-openj9-8	658.2MiB / 1.943GiB	177.70%
-[2J[Hbenchmark-openj9-8	658.3MiB / 1.943GiB	202.80%
-[2J[Hbenchmark-openj9-8	658.3MiB / 1.943GiB	202.80%
-[2J[Hbenchmark-openj9-8	654.1MiB / 1.943GiB	195.12%
-[2J[Hbenchmark-openj9-8	654.1MiB / 1.943GiB	195.12%
-[2J[Hbenchmark-openj9-8	656.2MiB / 1.943GiB	196.23%
-[2J[Hbenchmark-openj9-8	656.2MiB / 1.943GiB	196.23%
-[2J[Hbenchmark-openj9-8	658.3MiB / 1.943GiB	199.31%
-[2J[Hbenchmark-openj9-8	658.3MiB / 1.943GiB	199.31%
-[2J[Hbenchmark-openj9-8	652.4MiB / 1.943GiB	193.43%
-[2J[Hbenchmark-openj9-8	652.4MiB / 1.943GiB	193.43%
-[2J[Hbenchmark-openj9-8	656.4MiB / 1.943GiB	195.91%
-[2J[Hbenchmark-openj9-8	656.4MiB / 1.943GiB	195.91%
-[2J[Hbenchmark-openj9-8	652.3MiB / 1.943GiB	196.58%
-[2J[Hbenchmark-openj9-8	652.3MiB / 1.943GiB	196.58%
-[2J[Hbenchmark-openj9-8	652.4MiB / 1.943GiB	195.82%
-[2J[Hbenchmark-openj9-8	652.4MiB / 1.943GiB	195.82%
-[2J[Hbenchmark-openj9-8	658.3MiB / 1.943GiB	203.26%
-[2J[Hbenchmark-openj9-8	658.3MiB / 1.943GiB	203.26%
-[2J[Hbenchmark-openj9-8	652.2MiB / 1.943GiB	191.89%
-[2J[Hbenchmark-openj9-8	652.2MiB / 1.943GiB	191.89%
-[2J[Hbenchmark-openj9-8	652.4MiB / 1.943GiB	195.71%
-[2J[Hbenchmark-openj9-8	652.4MiB / 1.943GiB	195.71%
-[2J[Hbenchmark-openj9-8	652.4MiB / 1.943GiB	198.69%
-[2J[Hbenchmark-openj9-8	652.4MiB / 1.943GiB	198.69%
-[2J[Hbenchmark-openj9-8	652.5MiB / 1.943GiB	187.44%
-[2J[Hbenchmark-openj9-8	652.5MiB / 1.943GiB	187.44%
-[2J[Hbenchmark-openj9-8	658.6MiB / 1.943GiB	195.39%
-[2J[Hbenchmark-openj9-8	658.6MiB / 1.943GiB	195.39%
-[2J[Hbenchmark-openj9-8	652.4MiB / 1.943GiB	197.20%
-[2J[Hbenchmark-openj9-8	652.4MiB / 1.943GiB	197.20%
-[2J[Hbenchmark-openj9-8	652.4MiB / 1.943GiB	196.65%
-[2J[Hbenchmark-openj9-8	652.4MiB / 1.943GiB	196.65%
-[2J[Hbenchmark-openj9-8	652.5MiB / 1.943GiB	198.01%
-[2J[Hbenchmark-openj9-8	652.5MiB / 1.943GiB	198.01%
-[2J[Hbenchmark-openj9-8	652.4MiB / 1.943GiB	198.05%
-[2J[Hbenchmark-openj9-8	652.4MiB / 1.943GiB	198.05%
-[2J[Hbenchmark-openj9-8	652.6MiB / 1.943GiB	193.62%
-[2J[Hbenchmark-openj9-8	652.6MiB / 1.943GiB	193.62%
-[2J[Hbenchmark-openj9-8	652.6MiB / 1.943GiB	196.65%
-[2J[Hbenchmark-openj9-8	652.6MiB / 1.943GiB	196.65%
-[2J[Hbenchmark-openj9-8	652.3MiB / 1.943GiB	194.76%
-[2J[Hbenchmark-openj9-8	652.3MiB / 1.943GiB	194.76%
-[2J[Hbenchmark-openj9-8	652.7MiB / 1.943GiB	198.46%
-[2J[Hbenchmark-openj9-8	652.7MiB / 1.943GiB	198.46%
-[2J[Hbenchmark-openj9-8	652.6MiB / 1.943GiB	197.38%
-[2J[Hbenchmark-openj9-8	652.6MiB / 1.943GiB	197.38%
-[2J[Hbenchmark-openj9-8	652.5MiB / 1.943GiB	195.18%
-[2J[Hbenchmark-openj9-8	652.5MiB / 1.943GiB	195.18%
-[2J[Hbenchmark-openj9-8	652.6MiB / 1.943GiB	195.45%
-[2J[Hbenchmark-openj9-8	652.6MiB / 1.943GiB	195.45%
-[2J[Hbenchmark-openj9-8	652.6MiB / 1.943GiB	197.12%
-[2J[Hbenchmark-openj9-8	652.6MiB / 1.943GiB	197.12%
-[2J[Hbenchmark-openj9-8	650.6MiB / 1.943GiB	196.01%
-[2J[Hbenchmark-openj9-8	650.6MiB / 1.943GiB	196.01%
-[2J[Hbenchmark-openj9-8	650.6MiB / 1.943GiB	193.54%
-[2J[Hbenchmark-openj9-8	650.6MiB / 1.943GiB	193.54%
-[2J[Hbenchmark-openj9-8	650.5MiB / 1.943GiB	195.41%
-[2J[Hbenchmark-openj9-8	650.5MiB / 1.943GiB	195.41%
-[2J[Hbenchmark-openj9-8	650.4MiB / 1.943GiB	196.78%
-[2J[Hbenchmark-openj9-8	650.4MiB / 1.943GiB	196.78%
-[2J[Hbenchmark-openj9-8	650.6MiB / 1.943GiB	193.87%
-[2J[Hbenchmark-openj9-8	650.6MiB / 1.943GiB	193.87%
-[2J[Hbenchmark-openj9-8	650.6MiB / 1.943GiB	198.00%
-[2J[Hbenchmark-openj9-8	650.6MiB / 1.943GiB	198.00%
-[2J[Hbenchmark-openj9-8	650.5MiB / 1.943GiB	195.04%
-[2J[Hbenchmark-openj9-8	650.5MiB / 1.943GiB	195.04%
-[2J[Hbenchmark-openj9-8	650.6MiB / 1.943GiB	195.11%
-[2J[Hbenchmark-openj9-8	650.6MiB / 1.943GiB	195.11%
-[2J[Hbenchmark-openj9-8	650.4MiB / 1.943GiB	195.17%
-[2J[Hbenchmark-openj9-8	650.4MiB / 1.943GiB	195.17%
-[2J[Hbenchmark-openj9-8	650.6MiB / 1.943GiB	197.04%
-[2J[Hbenchmark-openj9-8	650.6MiB / 1.943GiB	197.04%
-[2J[Hbenchmark-openj9-8	650.5MiB / 1.943GiB	196.84%
-[2J[Hbenchmark-openj9-8	650.5MiB / 1.943GiB	196.84%
-[2J[Hbenchmark-openj9-8	650.9MiB / 1.943GiB	151.86%
-[2J[Hbenchmark-openj9-8	650.9MiB / 1.943GiB	151.86%
-[2J[Hbenchmark-openj9-8	654.9MiB / 1.943GiB	105.28%
-[2J[Hbenchmark-openj9-8	654.9MiB / 1.943GiB	105.28%
-[2J[Hbenchmark-openj9-8	653.5MiB / 1.943GiB	105.18%
-[2J[Hbenchmark-openj9-8	653.5MiB / 1.943GiB	105.18%
-[2J[Hbenchmark-openj9-8	653.5MiB / 1.943GiB	105.22%
-[2J[Hbenchmark-openj9-8	653.5MiB / 1.943GiB	105.22%
-[2J[Hbenchmark-openj9-8	653.6MiB / 1.943GiB	111.10%
-[2J[Hbenchmark-openj9-8	653.6MiB / 1.943GiB	111.10%
-[2J[Hbenchmark-openj9-8	653.6MiB / 1.943GiB	105.78%
-[2J[Hbenchmark-openj9-8	653.6MiB / 1.943GiB	105.78%
-[2J[Hbenchmark-openj9-8	653.5MiB / 1.943GiB	109.59%
-[2J[Hbenchmark-openj9-8	653.5MiB / 1.943GiB	109.59%
-[2J[Hbenchmark-openj9-8	684.3MiB / 1.943GiB	130.64%
-[2J[Hbenchmark-openj9-8	684.3MiB / 1.943GiB	130.64%
-[2J[Hbenchmark-openj9-8	684.2MiB / 1.943GiB	102.52%
-[2J[Hbenchmark-openj9-8	684.2MiB / 1.943GiB	102.52%
-[2J[Hbenchmark-openj9-8	684.1MiB / 1.943GiB	108.56%
-[2J[Hbenchmark-openj9-8	684.1MiB / 1.943GiB	108.56%
-[2J[Hbenchmark-openj9-8	684.1MiB / 1.943GiB	105.71%
-[2J[Hbenchmark-openj9-8	684.1MiB / 1.943GiB	105.71%
-[2J[Hbenchmark-openj9-8	684MiB / 1.943GiB	110.47%
-[2J[Hbenchmark-openj9-8	684MiB / 1.943GiB	110.47%
-[2J[Hbenchmark-openj9-8	683.9MiB / 1.943GiB	108.16%
-[2J[Hbenchmark-openj9-8	683.9MiB / 1.943GiB	108.16%
-[2J[Hbenchmark-openj9-8	683.9MiB / 1.943GiB	102.23%
-[2J[Hbenchmark-openj9-8	683.9MiB / 1.943GiB	102.23%
-[2J[Hbenchmark-openj9-8	684MiB / 1.943GiB	123.40%
-[2J[Hbenchmark-openj9-8	684MiB / 1.943GiB	123.40%
-[2J[Hbenchmark-openj9-8	684MiB / 1.943GiB	115.11%
-[2J[Hbenchmark-openj9-8	684MiB / 1.943GiB	115.11%
-[2J[Hbenchmark-openj9-8	683.9MiB / 1.943GiB	106.69%
-[2J[Hbenchmark-openj9-8	683.9MiB / 1.943GiB	106.69%
-[2J[Hbenchmark-openj9-8	683.9MiB / 1.943GiB	110.53%
-[2J[Hbenchmark-openj9-8	683.9MiB / 1.943GiB	110.53%
-[2J[Hbenchmark-openj9-8	683.9MiB / 1.943GiB	105.32%
-[2J[Hbenchmark-openj9-8	683.9MiB / 1.943GiB	105.32%
-[2J[Hbenchmark-openj9-8	683.9MiB / 1.943GiB	103.61%
-[2J[Hbenchmark-openj9-8	683.9MiB / 1.943GiB	103.61%
-[2J[Hbenchmark-openj9-8	683.9MiB / 1.943GiB	120.31%
-[2J[Hbenchmark-openj9-8	683.9MiB / 1.943GiB	120.31%
-[2J[Hbenchmark-openj9-8	688MiB / 1.943GiB	107.58%
-[2J[Hbenchmark-openj9-8	688MiB / 1.943GiB	107.58%
-[2J[Hbenchmark-openj9-8	683.9MiB / 1.943GiB	106.62%
-[2J[Hbenchmark-openj9-8	683.9MiB / 1.943GiB	106.62%
-[2J[Hbenchmark-openj9-8	683.9MiB / 1.943GiB	108.08%
-[2J[Hbenchmark-openj9-8	683.9MiB / 1.943GiB	108.08%
-[2J[Hbenchmark-openj9-8	683.9MiB / 1.943GiB	106.91%
-[2J[Hbenchmark-openj9-8	683.9MiB / 1.943GiB	106.91%
-[2J[Hbenchmark-openj9-8	683.9MiB / 1.943GiB	106.64%
-[2J[Hbenchmark-openj9-8	683.9MiB / 1.943GiB	106.64%
-[2J[Hbenchmark-openj9-8	683.9MiB / 1.943GiB	114.37%
-[2J[Hbenchmark-openj9-8	683.9MiB / 1.943GiB	114.37%
-[2J[Hbenchmark-openj9-8	683.9MiB / 1.943GiB	105.40%
-[2J[Hbenchmark-openj9-8	683.9MiB / 1.943GiB	105.40%
-[2J[Hbenchmark-openj9-8	683.9MiB / 1.943GiB	106.17%
-[2J[Hbenchmark-openj9-8	683.9MiB / 1.943GiB	106.17%
-[2J[Hbenchmark-openj9-8	683.9MiB / 1.943GiB	108.50%
-[2J[Hbenchmark-openj9-8	683.9MiB / 1.943GiB	108.50%
-[2J[Hbenchmark-openj9-8	683.9MiB / 1.943GiB	105.46%
-[2J[Hbenchmark-openj9-8	683.9MiB / 1.943GiB	105.46%
-[2J[Hbenchmark-openj9-8	683.9MiB / 1.943GiB	105.23%
-[2J[Hbenchmark-openj9-8	683.9MiB / 1.943GiB	105.23%
-[2J[Hbenchmark-openj9-8	683.9MiB / 1.943GiB	105.23%
-[2J[Hbenchmark-openj9-8	692.7MiB / 1.943GiB	144.16%
-[2J[Hbenchmark-openj9-8	692.7MiB / 1.943GiB	144.16%
-[2J[Hbenchmark-openj9-8	703.7MiB / 1.943GiB	188.96%
-[2J[Hbenchmark-openj9-8	703.7MiB / 1.943GiB	188.96%
-[2J[Hbenchmark-openj9-8	705.8MiB / 1.943GiB	116.64%
-[2J[Hbenchmark-openj9-8	705.8MiB / 1.943GiB	116.64%
-[2J[Hbenchmark-openj9-8	689.8MiB / 1.943GiB	113.89%
-[2J[Hbenchmark-openj9-8	689.8MiB / 1.943GiB	113.89%
-[2J[Hbenchmark-openj9-8	691.7MiB / 1.943GiB	106.95%
-[2J[Hbenchmark-openj9-8	691.7MiB / 1.943GiB	106.95%
-[2J[Hbenchmark-openj9-8	690MiB / 1.943GiB	132.68%
-[2J[Hbenchmark-openj9-8	690MiB / 1.943GiB	132.68%
-[2J[Hbenchmark-openj9-8	692.1MiB / 1.943GiB	101.05%
-[2J[Hbenchmark-openj9-8	692.1MiB / 1.943GiB	101.05%
-[2J[Hbenchmark-openj9-8	690MiB / 1.943GiB	103.30%
-[2J[Hbenchmark-openj9-8	690MiB / 1.943GiB	103.30%
-[2J[Hbenchmark-openj9-8	690.1MiB / 1.943GiB	111.84%
-[2J[Hbenchmark-openj9-8	690.1MiB / 1.943GiB	111.84%
-[2J[Hbenchmark-openj9-8	690MiB / 1.943GiB	102.55%
-[2J[Hbenchmark-openj9-8	690MiB / 1.943GiB	102.55%
-[2J[Hbenchmark-openj9-8	698.1MiB / 1.943GiB	117.87%
-[2J[Hbenchmark-openj9-8	698.1MiB / 1.943GiB	117.87%
-[2J[Hbenchmark-openj9-8	690MiB / 1.943GiB	102.31%
-[2J[Hbenchmark-openj9-8	690MiB / 1.943GiB	102.31%
-[2J[Hbenchmark-openj9-8	690MiB / 1.943GiB	105.67%
-[2J[Hbenchmark-openj9-8	690MiB / 1.943GiB	105.67%
-[2J[Hbenchmark-openj9-8	690.1MiB / 1.943GiB	117.80%
-[2J[Hbenchmark-openj9-8	690.1MiB / 1.943GiB	117.80%
-[2J[Hbenchmark-openj9-8	690.1MiB / 1.943GiB	100.17%
-[2J[Hbenchmark-openj9-8	690.1MiB / 1.943GiB	100.17%
-[2J[Hbenchmark-openj9-8	696.1MiB / 1.943GiB	108.81%
-[2J[Hbenchmark-openj9-8	696.1MiB / 1.943GiB	108.81%
-[2J[Hbenchmark-openj9-8	690.2MiB / 1.943GiB	105.37%
-[2J[Hbenchmark-openj9-8	690.2MiB / 1.943GiB	105.37%
-[2J[Hbenchmark-openj9-8	690.1MiB / 1.943GiB	104.04%
-[2J[Hbenchmark-openj9-8	690.1MiB / 1.943GiB	104.04%
-[2J[Hbenchmark-openj9-8	690.2MiB / 1.943GiB	106.08%
-[2J[Hbenchmark-openj9-8	690.2MiB / 1.943GiB	106.08%
-[2J[Hbenchmark-openj9-8	690.2MiB / 1.943GiB	100.81%
-[2J[Hbenchmark-openj9-8	690.2MiB / 1.943GiB	100.81%
-[2J[Hbenchmark-openj9-8	690.1MiB / 1.943GiB	105.24%
-[2J[Hbenchmark-openj9-8	690.1MiB / 1.943GiB	105.24%
-[2J[Hbenchmark-openj9-8	690.1MiB / 1.943GiB	104.59%
-[2J[Hbenchmark-openj9-8	690.1MiB / 1.943GiB	104.59%
-[2J[Hbenchmark-openj9-8	690.1MiB / 1.943GiB	104.02%
-[2J[Hbenchmark-openj9-8	690.1MiB / 1.943GiB	104.02%
-[2J[Hbenchmark-openj9-8	694.2MiB / 1.943GiB	107.31%
-[2J[Hbenchmark-openj9-8	694.2MiB / 1.943GiB	107.31%
-[2J[Hbenchmark-openj9-8	690.2MiB / 1.943GiB	100.68%
-[2J[Hbenchmark-openj9-8	690.2MiB / 1.943GiB	100.68%
-[2J[Hbenchmark-openj9-8	690.1MiB / 1.943GiB	105.22%
-[2J[Hbenchmark-openj9-8	690.1MiB / 1.943GiB	105.22%
-[2J[Hbenchmark-openj9-8	690.2MiB / 1.943GiB	102.60%
-[2J[Hbenchmark-openj9-8	690.2MiB / 1.943GiB	102.60%
-[2J[Hbenchmark-openj9-8	690.2MiB / 1.943GiB	102.22%
-[2J[Hbenchmark-openj9-8	690.2MiB / 1.943GiB	102.22%
-[2J[Hbenchmark-openj9-8	694.2MiB / 1.943GiB	104.06%
-[2J[Hbenchmark-openj9-8	694.2MiB / 1.943GiB	104.06%
-[2J[Hbenchmark-openj9-8	709.8MiB / 1.943GiB	141.19%
-[2J[Hbenchmark-openj9-8	709.8MiB / 1.943GiB	141.19%
-[2J[Hbenchmark-openj9-8	731.5MiB / 1.943GiB	172.52%
-[2J[Hbenchmark-openj9-8	731.5MiB / 1.943GiB	172.52%
-[2J[Hbenchmark-openj9-8	735.2MiB / 1.943GiB	201.86%
-[2J[Hbenchmark-openj9-8	735.2MiB / 1.943GiB	201.86%
-[2J[Hbenchmark-openj9-8	736.4MiB / 1.943GiB	202.14%
-[2J[Hbenchmark-openj9-8	736.4MiB / 1.943GiB	202.14%
-[2J[Hbenchmark-openj9-8	737MiB / 1.943GiB	202.38%
-[2J[Hbenchmark-openj9-8	737MiB / 1.943GiB	202.38%
-[2J[Hbenchmark-openj9-8	737.3MiB / 1.943GiB	203.29%
-[2J[Hbenchmark-openj9-8	737.3MiB / 1.943GiB	203.29%
-[2J[Hbenchmark-openj9-8	737.6MiB / 1.943GiB	204.53%
-[2J[Hbenchmark-openj9-8	737.6MiB / 1.943GiB	204.53%
-[2J[Hbenchmark-openj9-8	737.7MiB / 1.943GiB	208.25%
-[2J[Hbenchmark-openj9-8	737.7MiB / 1.943GiB	208.25%
-[2J[Hbenchmark-openj9-8	738.1MiB / 1.943GiB	208.43%
-[2J[Hbenchmark-openj9-8	738.1MiB / 1.943GiB	208.43%
-[2J[Hbenchmark-openj9-8	738.6MiB / 1.943GiB	206.04%
-[2J[Hbenchmark-openj9-8	738.6MiB / 1.943GiB	206.04%
-[2J[Hbenchmark-openj9-8	740.9MiB / 1.943GiB	208.34%
-[2J[Hbenchmark-openj9-8	740.9MiB / 1.943GiB	208.34%
-[2J[Hbenchmark-openj9-8	743.1MiB / 1.943GiB	209.13%
-[2J[Hbenchmark-openj9-8	743.1MiB / 1.943GiB	209.13%
-[2J[Hbenchmark-openj9-8	741.4MiB / 1.943GiB	207.60%
-[2J[Hbenchmark-openj9-8	741.4MiB / 1.943GiB	207.60%
-[2J[Hbenchmark-openj9-8	741.8MiB / 1.943GiB	209.04%
-[2J[Hbenchmark-openj9-8	741.8MiB / 1.943GiB	209.04%
-[2J[Hbenchmark-openj9-8	741.9MiB / 1.943GiB	211.72%
-[2J[Hbenchmark-openj9-8	741.9MiB / 1.943GiB	211.72%
-[2J[Hbenchmark-openj9-8	742.1MiB / 1.943GiB	206.44%
-[2J[Hbenchmark-openj9-8	742.1MiB / 1.943GiB	206.44%
-[2J[Hbenchmark-openj9-8	742.5MiB / 1.943GiB	209.05%
-[2J[Hbenchmark-openj9-8	742.5MiB / 1.943GiB	209.05%
-[2J[Hbenchmark-openj9-8	728.6MiB / 1.943GiB	211.79%
-[2J[Hbenchmark-openj9-8	728.6MiB / 1.943GiB	211.79%
-[2J[Hbenchmark-openj9-8	726.5MiB / 1.943GiB	205.04%
-[2J[Hbenchmark-openj9-8	726.5MiB / 1.943GiB	205.04%
-[2J[Hbenchmark-openj9-8	734.5MiB / 1.943GiB	218.98%
-[2J[Hbenchmark-openj9-8	734.5MiB / 1.943GiB	218.98%
-[2J[Hbenchmark-openj9-8	730.5MiB / 1.943GiB	202.34%
-[2J[Hbenchmark-openj9-8	730.5MiB / 1.943GiB	202.34%
-[2J[Hbenchmark-openj9-8	726.8MiB / 1.943GiB	213.16%
-[2J[Hbenchmark-openj9-8	726.8MiB / 1.943GiB	213.16%
-[2J[Hbenchmark-openj9-8	728.8MiB / 1.943GiB	212.57%
-[2J[Hbenchmark-openj9-8	728.8MiB / 1.943GiB	212.57%
-[2J[Hbenchmark-openj9-8	726.7MiB / 1.943GiB	212.63%
-[2J[Hbenchmark-openj9-8	726.7MiB / 1.943GiB	212.63%
-[2J[Hbenchmark-openj9-8	736.9MiB / 1.943GiB	207.31%
-[2J[Hbenchmark-openj9-8	736.9MiB / 1.943GiB	207.31%
-[2J[Hbenchmark-openj9-8	730.9MiB / 1.943GiB	210.16%
-[2J[Hbenchmark-openj9-8	730.9MiB / 1.943GiB	210.16%
-[2J[Hbenchmark-openj9-8	734.9MiB / 1.943GiB	213.35%
-[2J[Hbenchmark-openj9-8	734.9MiB / 1.943GiB	213.35%
-[2J[Hbenchmark-openj9-8	726.8MiB / 1.943GiB	210.94%
-[2J[Hbenchmark-openj9-8	726.8MiB / 1.943GiB	210.94%
-[2J[Hbenchmark-openj9-8	731MiB / 1.943GiB	211.64%
-[2J[Hbenchmark-openj9-8	731MiB / 1.943GiB	211.64%
-[2J[Hbenchmark-openj9-8	729.1MiB / 1.943GiB	213.13%
-[2J[Hbenchmark-openj9-8	729.1MiB / 1.943GiB	213.13%
-[2J[Hbenchmark-openj9-8	733MiB / 1.943GiB	217.76%
-[2J[Hbenchmark-openj9-8	733MiB / 1.943GiB	217.76%
-[2J[Hbenchmark-openj9-8	733MiB / 1.943GiB	211.55%
-[2J[Hbenchmark-openj9-8	733MiB / 1.943GiB	211.55%
-[2J[Hbenchmark-openj9-8	735MiB / 1.943GiB	185.33%
-[2J[Hbenchmark-openj9-8	735MiB / 1.943GiB	185.33%
-[2J[H[2J[H[2J[H[2J[H[2J[H[2J[H[2J[H[2J[H[2J[H[2J[H[2J[H[2J[H[2J[H[2J[H[2J[H[2J[H[2J[H[2J[H[2J[H[2J[H[2J[H[2J[H[2J[H[2J[H[2J[H[2J[H[2J[H[2J[H[2J[H[2J[H[2J[H[2J[H[2J[H[2J[H[2J[H[2J[H[2J[H[2J[H[2J[H[2J[H[2J[H[2J[H[2J[H[2J[H[2J[H[2J[H
+Hbenchmark-openj9-8	61.34	157.24%
+Hbenchmark-openj9-8	61.34	157.24%
+Hbenchmark-openj9-8	103.4	126.75%
+Hbenchmark-openj9-8	103.4	126.75%
+Hbenchmark-openj9-8	136.2	177.07%
+Hbenchmark-openj9-8	136.2	177.07%
+Hbenchmark-openj9-8	154.1	174.70%
+Hbenchmark-openj9-8	154.1	174.70%
+Hbenchmark-openj9-8	165.1	159.18%
+Hbenchmark-openj9-8	165.1	159.18%
+Hbenchmark-openj9-8	180.3	199.57%
+Hbenchmark-openj9-8	180.3	199.57%
+Hbenchmark-openj9-8	209.1	199.36%
+Hbenchmark-openj9-8	209.1	199.36%
+Hbenchmark-openj9-8	182.3	197.82%
+Hbenchmark-openj9-8	182.3	197.82%
+Hbenchmark-openj9-8	182.6	196.06%
+Hbenchmark-openj9-8	182.6	196.06%
+Hbenchmark-openj9-8	182.6	202.34%
+Hbenchmark-openj9-8	182.6	202.34%
+Hbenchmark-openj9-8	261.8	199.88%
+Hbenchmark-openj9-8	261.8	199.88%
+Hbenchmark-openj9-8	185.5	198.83%
+Hbenchmark-openj9-8	185.5	198.83%
+Hbenchmark-openj9-8	185.4	199.53%
+Hbenchmark-openj9-8	185.4	199.53%
+Hbenchmark-openj9-8	187.5	198.45%
+Hbenchmark-openj9-8	187.5	198.45%
+Hbenchmark-openj9-8	187.5	198.80%
+Hbenchmark-openj9-8	187.5	198.80%
+Hbenchmark-openj9-8	189.8	199.52%
+Hbenchmark-openj9-8	189.8	199.52%
+Hbenchmark-openj9-8	192.3	197.99%
+Hbenchmark-openj9-8	192.3	197.99%
+Hbenchmark-openj9-8	198.4	199.19%
+Hbenchmark-openj9-8	198.4	199.19%
+Hbenchmark-openj9-8	198.5	198.12%
+Hbenchmark-openj9-8	198.5	198.12%
+Hbenchmark-openj9-8	200.5	195.97%
+Hbenchmark-openj9-8	200.5	195.97%
+Hbenchmark-openj9-8	200.5	199.18%
+Hbenchmark-openj9-8	200.5	199.18%
+Hbenchmark-openj9-8	202.7	198.37%
+Hbenchmark-openj9-8	202.7	198.37%
+Hbenchmark-openj9-8	202.9	197.69%
+Hbenchmark-openj9-8	202.9	197.69%
+Hbenchmark-openj9-8	207.5	197.84%
+Hbenchmark-openj9-8	207.5	197.84%
+Hbenchmark-openj9-8	209.5	198.45%
+Hbenchmark-openj9-8	209.5	198.45%
+Hbenchmark-openj9-8	211.2	198.04%
+Hbenchmark-openj9-8	211.2	198.04%
+Hbenchmark-openj9-8	211.1	195.36%
+Hbenchmark-openj9-8	211.1	195.36%
+Hbenchmark-openj9-8	208.4	111.16%
+Hbenchmark-openj9-8	208.4	111.16%
+Hbenchmark-openj9-8	241.6	149.42%
+Hbenchmark-openj9-8	241.6	149.42%
+Hbenchmark-openj9-8	250.2	180.32%
+Hbenchmark-openj9-8	250.2	180.32%
+Hbenchmark-openj9-8	255.3	201.74%
+Hbenchmark-openj9-8	255.3	201.74%
+Hbenchmark-openj9-8	260.3	195.21%
+Hbenchmark-openj9-8	260.3	195.21%
+Hbenchmark-openj9-8	263.6	203.52%
+Hbenchmark-openj9-8	263.6	203.52%
+Hbenchmark-openj9-8	297.8	200.08%
+Hbenchmark-openj9-8	297.8	200.08%
+Hbenchmark-openj9-8	301.7	199.51%
+Hbenchmark-openj9-8	301.7	199.51%
+Hbenchmark-openj9-8	305.5	200.52%
+Hbenchmark-openj9-8	305.5	200.52%
+Hbenchmark-openj9-8	308.1	200.69%
+Hbenchmark-openj9-8	308.1	200.69%
+Hbenchmark-openj9-8	308.7	199.69%
+Hbenchmark-openj9-8	308.7	199.69%
+Hbenchmark-openj9-8	310.9	200.96%
+Hbenchmark-openj9-8	310.9	200.96%
+Hbenchmark-openj9-8	312.9	202.63%
+Hbenchmark-openj9-8	312.9	202.63%
+Hbenchmark-openj9-8	313.4	202.81%
+Hbenchmark-openj9-8	313.4	202.81%
+Hbenchmark-openj9-8	316	204.38%
+Hbenchmark-openj9-8	316	204.38%
+Hbenchmark-openj9-8	318.3	203.17%
+Hbenchmark-openj9-8	318.3	203.17%
+Hbenchmark-openj9-8	318.5	201.26%
+Hbenchmark-openj9-8	318.5	201.26%
+Hbenchmark-openj9-8	323.4	206.23%
+Hbenchmark-openj9-8	323.4	206.23%
+Hbenchmark-openj9-8	323.8	199.41%
+Hbenchmark-openj9-8	323.8	199.41%
+Hbenchmark-openj9-8	326.2	203.66%
+Hbenchmark-openj9-8	326.2	203.66%
+Hbenchmark-openj9-8	328.3	194.22%
+Hbenchmark-openj9-8	328.3	194.22%
+Hbenchmark-openj9-8	333.4	206.41%
+Hbenchmark-openj9-8	333.4	206.41%
+Hbenchmark-openj9-8	335.9	207.04%
+Hbenchmark-openj9-8	335.9	207.04%
+Hbenchmark-openj9-8	337.9	191.99%
+Hbenchmark-openj9-8	337.9	191.99%
+Hbenchmark-openj9-8	338.7	203.68%
+Hbenchmark-openj9-8	338.7	203.68%
+Hbenchmark-openj9-8	366.3	205.25%
+Hbenchmark-openj9-8	366.3	205.25%
+Hbenchmark-openj9-8	349.8	200.41%
+Hbenchmark-openj9-8	349.8	200.41%
+Hbenchmark-openj9-8	384.1	201.18%
+Hbenchmark-openj9-8	384.1	201.18%
+Hbenchmark-openj9-8	352.6	202.12%
+Hbenchmark-openj9-8	352.6	202.12%
+Hbenchmark-openj9-8	354.8	201.75%
+Hbenchmark-openj9-8	354.8	201.75%
+Hbenchmark-openj9-8	354.8	201.75%
+Hbenchmark-openj9-8	355.3	198.95%
+Hbenchmark-openj9-8	355.3	198.95%
+Hbenchmark-openj9-8	357.6	201.20%
+Hbenchmark-openj9-8	357.6	201.20%
+Hbenchmark-openj9-8	360.6	200.27%
+Hbenchmark-openj9-8	360.6	200.27%
+Hbenchmark-openj9-8	363.4	200.89%
+Hbenchmark-openj9-8	363.4	200.89%
+Hbenchmark-openj9-8	367.6	201.82%
+Hbenchmark-openj9-8	367.6	201.82%
+Hbenchmark-openj9-8	367.8	193.57%
+Hbenchmark-openj9-8	367.8	193.57%
+Hbenchmark-openj9-8	400.1	200.56%
+Hbenchmark-openj9-8	400.1	200.56%
+Hbenchmark-openj9-8	398.7	200.73%
+Hbenchmark-openj9-8	398.7	200.73%
+Hbenchmark-openj9-8	442.1	203.57%
+Hbenchmark-openj9-8	442.1	203.57%
+Hbenchmark-openj9-8	558.3	199.17%
+Hbenchmark-openj9-8	558.3	199.17%
+Hbenchmark-openj9-8	590.9	202.39%
+Hbenchmark-openj9-8	590.9	202.39%
+Hbenchmark-openj9-8	601.3	204.80%
+Hbenchmark-openj9-8	601.3	204.80%
+Hbenchmark-openj9-8	469.1	201.47%
+Hbenchmark-openj9-8	469.1	201.47%
+Hbenchmark-openj9-8	471.2	191.62%
+Hbenchmark-openj9-8	471.2	191.62%
+Hbenchmark-openj9-8	471.3	210.93%
+Hbenchmark-openj9-8	471.3	210.93%
+Hbenchmark-openj9-8	471.6	198.97%
+Hbenchmark-openj9-8	471.6	198.97%
+Hbenchmark-openj9-8	476.2	194.37%
+Hbenchmark-openj9-8	476.2	194.37%
+Hbenchmark-openj9-8	476.4	197.20%
+Hbenchmark-openj9-8	476.4	197.20%
+Hbenchmark-openj9-8	493.3	206.40%
+Hbenchmark-openj9-8	493.3	206.40%
+Hbenchmark-openj9-8	493.4	192.62%
+Hbenchmark-openj9-8	493.4	192.62%
+Hbenchmark-openj9-8	488.1	187.62%
+Hbenchmark-openj9-8	488.1	187.62%
+Hbenchmark-openj9-8	496.5	203.56%
+Hbenchmark-openj9-8	496.5	203.56%
+Hbenchmark-openj9-8	538.2	201.93%
+Hbenchmark-openj9-8	538.2	201.93%
+Hbenchmark-openj9-8	616.4	200.76%
+Hbenchmark-openj9-8	616.4	200.76%
+Hbenchmark-openj9-8	527.9	200.68%
+Hbenchmark-openj9-8	527.9	200.68%
+Hbenchmark-openj9-8	548.7	200.60%
+Hbenchmark-openj9-8	548.7	200.60%
+Hbenchmark-openj9-8	550.5	192.47%
+Hbenchmark-openj9-8	550.5	192.47%
+Hbenchmark-openj9-8	535	200.57%
+Hbenchmark-openj9-8	535	200.57%
+Hbenchmark-openj9-8	535.2	201.10%
+Hbenchmark-openj9-8	535.2	201.10%
+Hbenchmark-openj9-8	539.5	199.18%
+Hbenchmark-openj9-8	539.5	199.18%
+Hbenchmark-openj9-8	551.8	202.07%
+Hbenchmark-openj9-8	551.8	202.07%
+Hbenchmark-openj9-8	548.3	197.88%
+Hbenchmark-openj9-8	548.3	197.88%
+Hbenchmark-openj9-8	560.2	198.55%
+Hbenchmark-openj9-8	560.2	198.55%
+Hbenchmark-openj9-8	562.9	193.77%
+Hbenchmark-openj9-8	562.9	193.77%
+Hbenchmark-openj9-8	564.8	204.26%
+Hbenchmark-openj9-8	564.8	204.26%
+Hbenchmark-openj9-8	569.9	196.53%
+Hbenchmark-openj9-8	569.9	196.53%
+Hbenchmark-openj9-8	560.6	194.88%
+Hbenchmark-openj9-8	560.6	194.88%
+Hbenchmark-openj9-8	568.8	198.69%
+Hbenchmark-openj9-8	568.8	198.69%
+Hbenchmark-openj9-8	571.4	192.12%
+Hbenchmark-openj9-8	571.4	192.12%
+Hbenchmark-openj9-8	567.9	208.19%
+Hbenchmark-openj9-8	567.9	208.19%
+Hbenchmark-openj9-8	567.9	194.81%
+Hbenchmark-openj9-8	567.9	194.81%
+Hbenchmark-openj9-8	571.8	198.38%
+Hbenchmark-openj9-8	571.8	198.38%
+Hbenchmark-openj9-8	567.9	187.29%
+Hbenchmark-openj9-8	567.9	187.29%
+Hbenchmark-openj9-8	576.8	206.19%
+Hbenchmark-openj9-8	576.8	206.19%
+Hbenchmark-openj9-8	579	201.04%
+Hbenchmark-openj9-8	579	201.04%
+Hbenchmark-openj9-8	577.3	194.99%
+Hbenchmark-openj9-8	577.3	194.99%
+Hbenchmark-openj9-8	591.2	200.87%
+Hbenchmark-openj9-8	591.2	200.87%
+Hbenchmark-openj9-8	591.7	193.91%
+Hbenchmark-openj9-8	591.7	193.91%
+Hbenchmark-openj9-8	585.9	195.48%
+Hbenchmark-openj9-8	585.9	195.48%
+Hbenchmark-openj9-8	592.1	199.15%
+Hbenchmark-openj9-8	592.1	199.15%
+Hbenchmark-openj9-8	592.3	190.95%
+Hbenchmark-openj9-8	592.3	190.95%
+Hbenchmark-openj9-8	608.6	193.24%
+Hbenchmark-openj9-8	608.6	193.24%
+Hbenchmark-openj9-8	603.5	200.19%
+Hbenchmark-openj9-8	603.5	200.19%
+Hbenchmark-openj9-8	611.8	191.27%
+Hbenchmark-openj9-8	611.8	191.27%
+Hbenchmark-openj9-8	601.7	201.38%
+Hbenchmark-openj9-8	601.7	201.38%
+Hbenchmark-openj9-8	606	192.83%
+Hbenchmark-openj9-8	606	192.83%
+Hbenchmark-openj9-8	605.7	195.72%
+Hbenchmark-openj9-8	605.7	195.72%
+Hbenchmark-openj9-8	610.3	197.13%
+Hbenchmark-openj9-8	610.3	197.13%
+Hbenchmark-openj9-8	620.1	205.22%
+Hbenchmark-openj9-8	620.1	205.22%
+Hbenchmark-openj9-8	614.6	189.36%
+Hbenchmark-openj9-8	614.6	189.36%
+Hbenchmark-openj9-8	614.7	195.22%
+Hbenchmark-openj9-8	614.7	195.22%
+Hbenchmark-openj9-8	612.9	203.43%
+Hbenchmark-openj9-8	612.9	203.43%
+Hbenchmark-openj9-8	622.9	205.36%
+Hbenchmark-openj9-8	622.9	205.36%
+Hbenchmark-openj9-8	637.7	201.02%
+Hbenchmark-openj9-8	637.7	201.02%
+Hbenchmark-openj9-8	634.5	193.81%
+Hbenchmark-openj9-8	634.5	193.81%
+Hbenchmark-openj9-8	618.7	206.11%
+Hbenchmark-openj9-8	618.7	206.11%
+Hbenchmark-openj9-8	618.8	195.61%
+Hbenchmark-openj9-8	618.8	195.61%
+Hbenchmark-openj9-8	623.1	193.63%
+Hbenchmark-openj9-8	623.1	193.63%
+Hbenchmark-openj9-8	618.7	193.38%
+Hbenchmark-openj9-8	618.7	193.38%
+Hbenchmark-openj9-8	621.1	192.68%
+Hbenchmark-openj9-8	621.1	192.68%
+Hbenchmark-openj9-8	618.6	193.63%
+Hbenchmark-openj9-8	618.6	193.63%
+Hbenchmark-openj9-8	625.3	190.13%
+Hbenchmark-openj9-8	625.3	190.13%
+Hbenchmark-openj9-8	618.8	204.55%
+Hbenchmark-openj9-8	618.8	204.55%
+Hbenchmark-openj9-8	618.8	190.07%
+Hbenchmark-openj9-8	618.8	190.07%
+Hbenchmark-openj9-8	618.7	198.64%
+Hbenchmark-openj9-8	618.7	198.64%
+Hbenchmark-openj9-8	625	194.86%
+Hbenchmark-openj9-8	625	194.86%
+Hbenchmark-openj9-8	621.4	204.54%
+Hbenchmark-openj9-8	621.4	204.54%
+Hbenchmark-openj9-8	618.9	187.77%
+Hbenchmark-openj9-8	618.9	187.77%
+Hbenchmark-openj9-8	618.8	200.30%
+Hbenchmark-openj9-8	618.8	200.30%
+Hbenchmark-openj9-8	629	173.72%
+Hbenchmark-openj9-8	629	173.72%
+Hbenchmark-openj9-8	629.9	211.73%
+Hbenchmark-openj9-8	629.9	211.73%
+Hbenchmark-openj9-8	633.4	205.16%
+Hbenchmark-openj9-8	633.4	205.16%
+Hbenchmark-openj9-8	634.9	203.30%
+Hbenchmark-openj9-8	634.9	203.30%
+Hbenchmark-openj9-8	621.9	199.31%
+Hbenchmark-openj9-8	621.9	199.31%
+Hbenchmark-openj9-8	625.6	188.48%
+Hbenchmark-openj9-8	625.6	188.48%
+Hbenchmark-openj9-8	635.4	212.26%
+Hbenchmark-openj9-8	635.4	212.26%
+Hbenchmark-openj9-8	640.8	199.96%
+Hbenchmark-openj9-8	640.8	199.96%
+Hbenchmark-openj9-8	643.2	197.93%
+Hbenchmark-openj9-8	643.2	197.93%
+Hbenchmark-openj9-8	643.6	189.73%
+Hbenchmark-openj9-8	643.6	189.73%
+Hbenchmark-openj9-8	636.3	206.66%
+Hbenchmark-openj9-8	636.3	206.66%
+Hbenchmark-openj9-8	644.5	191.12%
+Hbenchmark-openj9-8	644.5	191.12%
+Hbenchmark-openj9-8	642.8	173.80%
+Hbenchmark-openj9-8	642.8	173.80%
+Hbenchmark-openj9-8	630.5	198.30%
+Hbenchmark-openj9-8	630.5	198.30%
+Hbenchmark-openj9-8	635.3	195.77%
+Hbenchmark-openj9-8	635.3	195.77%
+Hbenchmark-openj9-8	632.9	199.85%
+Hbenchmark-openj9-8	632.9	199.85%
+Hbenchmark-openj9-8	635.1	199.02%
+Hbenchmark-openj9-8	635.1	199.02%
+Hbenchmark-openj9-8	640.9	200.51%
+Hbenchmark-openj9-8	640.9	200.51%
+Hbenchmark-openj9-8	647.4	199.69%
+Hbenchmark-openj9-8	647.4	199.69%
+Hbenchmark-openj9-8	647.5	198.34%
+Hbenchmark-openj9-8	647.5	198.34%
+Hbenchmark-openj9-8	632.6	198.17%
+Hbenchmark-openj9-8	632.6	198.17%
+Hbenchmark-openj9-8	633.1	205.53%
+Hbenchmark-openj9-8	633.1	205.53%
+Hbenchmark-openj9-8	672.3	198.68%
+Hbenchmark-openj9-8	672.3	198.68%
+Hbenchmark-openj9-8	694.3	204.73%
+Hbenchmark-openj9-8	694.3	204.73%
+Hbenchmark-openj9-8	640.8	198.07%
+Hbenchmark-openj9-8	640.8	198.07%
+Hbenchmark-openj9-8	636.5	185.26%
+Hbenchmark-openj9-8	636.5	185.26%
+Hbenchmark-openj9-8	638.5	190.23%
+Hbenchmark-openj9-8	638.5	190.23%
+Hbenchmark-openj9-8	643.1	212.30%
+Hbenchmark-openj9-8	643.1	212.30%
+Hbenchmark-openj9-8	638.6	199.32%
+Hbenchmark-openj9-8	638.6	199.32%
+Hbenchmark-openj9-8	652.7	195.34%
+Hbenchmark-openj9-8	652.7	195.34%
+Hbenchmark-openj9-8	656.4	199.88%
+Hbenchmark-openj9-8	656.4	199.88%
+Hbenchmark-openj9-8	658.5	201.44%
+Hbenchmark-openj9-8	658.5	201.44%
+Hbenchmark-openj9-8	654	199.23%
+Hbenchmark-openj9-8	654	199.23%
+Hbenchmark-openj9-8	666.1	196.69%
+Hbenchmark-openj9-8	666.1	196.69%
+Hbenchmark-openj9-8	666.1	196.69%
+Hbenchmark-openj9-8	664.1	200.19%
+Hbenchmark-openj9-8	664.1	200.19%
+Hbenchmark-openj9-8	661.9	199.78%
+Hbenchmark-openj9-8	661.9	199.78%
+Hbenchmark-openj9-8	676.2	199.36%
+Hbenchmark-openj9-8	676.2	199.36%
+Hbenchmark-openj9-8	655.7	195.83%
+Hbenchmark-openj9-8	655.7	195.83%
+Hbenchmark-openj9-8	653.6	199.71%
+Hbenchmark-openj9-8	653.6	199.71%
+Hbenchmark-openj9-8	653.6	201.02%
+Hbenchmark-openj9-8	653.6	201.02%
+Hbenchmark-openj9-8	653.5	196.73%
+Hbenchmark-openj9-8	653.5	196.73%
+Hbenchmark-openj9-8	651.6	202.86%
+Hbenchmark-openj9-8	651.6	202.86%
+Hbenchmark-openj9-8	662.1	203.09%
+Hbenchmark-openj9-8	662.1	203.09%
+Hbenchmark-openj9-8	651.6	199.95%
+Hbenchmark-openj9-8	651.6	199.95%
+Hbenchmark-openj9-8	641.4	194.66%
+Hbenchmark-openj9-8	641.4	194.66%
+Hbenchmark-openj9-8	641.7	197.85%
+Hbenchmark-openj9-8	641.7	197.85%
+Hbenchmark-openj9-8	641.8	202.72%
+Hbenchmark-openj9-8	641.8	202.72%
+Hbenchmark-openj9-8	641.6	199.00%
+Hbenchmark-openj9-8	641.6	199.00%
+Hbenchmark-openj9-8	641.7	199.04%
+Hbenchmark-openj9-8	641.7	199.04%
+Hbenchmark-openj9-8	652.3	204.55%
+Hbenchmark-openj9-8	652.3	204.55%
+Hbenchmark-openj9-8	641.9	200.32%
+Hbenchmark-openj9-8	641.9	200.32%
+Hbenchmark-openj9-8	646.2	199.16%
+Hbenchmark-openj9-8	646.2	199.16%
+Hbenchmark-openj9-8	646	199.61%
+Hbenchmark-openj9-8	646	199.61%
+Hbenchmark-openj9-8	646.2	197.44%
+Hbenchmark-openj9-8	646.2	197.44%
+Hbenchmark-openj9-8	646.2	201.51%
+Hbenchmark-openj9-8	646.2	201.51%
+Hbenchmark-openj9-8	642	200.37%
+Hbenchmark-openj9-8	642	200.37%
+Hbenchmark-openj9-8	642.6	196.85%
+Hbenchmark-openj9-8	642.6	196.85%
+Hbenchmark-openj9-8	642.9	198.96%
+Hbenchmark-openj9-8	642.9	198.96%
+Hbenchmark-openj9-8	642.6	200.71%
+Hbenchmark-openj9-8	642.6	200.71%
+Hbenchmark-openj9-8	642.6	199.80%
+Hbenchmark-openj9-8	642.6	199.80%
+Hbenchmark-openj9-8	642.6	195.47%
+Hbenchmark-openj9-8	642.6	195.47%
+Hbenchmark-openj9-8	651	201.75%
+Hbenchmark-openj9-8	651	201.75%
+Hbenchmark-openj9-8	644.9	195.94%
+Hbenchmark-openj9-8	644.9	195.94%
+Hbenchmark-openj9-8	642.8	201.53%
+Hbenchmark-openj9-8	642.8	201.53%
+Hbenchmark-openj9-8	643.3	207.92%
+Hbenchmark-openj9-8	643.3	207.92%
+Hbenchmark-openj9-8	643.3	193.21%
+Hbenchmark-openj9-8	643.3	193.21%
+Hbenchmark-openj9-8	643.2	206.59%
+Hbenchmark-openj9-8	643.2	206.59%
+Hbenchmark-openj9-8	643.2	188.96%
+Hbenchmark-openj9-8	643.2	188.96%
+Hbenchmark-openj9-8	643.2	210.96%
+Hbenchmark-openj9-8	643.2	210.96%
+Hbenchmark-openj9-8	643.2	193.58%
+Hbenchmark-openj9-8	643.2	193.58%
+Hbenchmark-openj9-8	643.1	201.83%
+Hbenchmark-openj9-8	643.1	201.83%
+Hbenchmark-openj9-8	652.3	193.32%
+Hbenchmark-openj9-8	652.3	193.32%
+Hbenchmark-openj9-8	652.5	208.40%
+Hbenchmark-openj9-8	652.5	208.40%
+Hbenchmark-openj9-8	652.4	193.14%
+Hbenchmark-openj9-8	652.4	193.14%
+Hbenchmark-openj9-8	652.3	200.72%
+Hbenchmark-openj9-8	652.3	200.72%
+Hbenchmark-openj9-8	643.2	196.69%
+Hbenchmark-openj9-8	643.2	196.69%
+Hbenchmark-openj9-8	643.3	192.89%
+Hbenchmark-openj9-8	643.3	192.89%
+Hbenchmark-openj9-8	643.1	196.34%
+Hbenchmark-openj9-8	643.1	196.34%
+Hbenchmark-openj9-8	643.1	202.46%
+Hbenchmark-openj9-8	643.1	202.46%
+Hbenchmark-openj9-8	643.1	199.36%
+Hbenchmark-openj9-8	643.1	199.36%
+Hbenchmark-openj9-8	643.2	194.87%
+Hbenchmark-openj9-8	643.2	194.87%
+Hbenchmark-openj9-8	643.3	203.25%
+Hbenchmark-openj9-8	643.3	203.25%
+Hbenchmark-openj9-8	643.3	202.54%
+Hbenchmark-openj9-8	643.3	202.54%
+Hbenchmark-openj9-8	643.2	197.58%
+Hbenchmark-openj9-8	643.2	197.58%
+Hbenchmark-openj9-8	643.7	196.06%
+Hbenchmark-openj9-8	643.7	196.06%
+Hbenchmark-openj9-8	643.9	197.91%
+Hbenchmark-openj9-8	643.9	197.91%
+Hbenchmark-openj9-8	643.8	199.98%
+Hbenchmark-openj9-8	643.8	199.98%
+Hbenchmark-openj9-8	643.8	199.87%
+Hbenchmark-openj9-8	643.8	199.87%
+Hbenchmark-openj9-8	643.8	198.64%
+Hbenchmark-openj9-8	643.8	198.64%
+Hbenchmark-openj9-8	643.9	212.43%
+Hbenchmark-openj9-8	643.9	212.43%
+Hbenchmark-openj9-8	643.9	192.40%
+Hbenchmark-openj9-8	643.9	192.40%
+Hbenchmark-openj9-8	644.4	201.14%
+Hbenchmark-openj9-8	644.4	201.14%
+Hbenchmark-openj9-8	652.7	204.22%
+Hbenchmark-openj9-8	652.7	204.22%
+Hbenchmark-openj9-8	644.1	200.48%
+Hbenchmark-openj9-8	644.1	200.48%
+Hbenchmark-openj9-8	644	199.64%
+Hbenchmark-openj9-8	644	199.64%
+Hbenchmark-openj9-8	652.1	199.33%
+Hbenchmark-openj9-8	652.1	199.33%
+Hbenchmark-openj9-8	654.4	197.64%
+Hbenchmark-openj9-8	654.4	197.64%
+Hbenchmark-openj9-8	652.1	198.78%
+Hbenchmark-openj9-8	652.1	198.78%
+Hbenchmark-openj9-8	651.9	196.13%
+Hbenchmark-openj9-8	651.9	196.13%
+Hbenchmark-openj9-8	651.9	195.07%
+Hbenchmark-openj9-8	651.9	195.07%
+Hbenchmark-openj9-8	643.7	200.48%
+Hbenchmark-openj9-8	643.7	200.48%
+Hbenchmark-openj9-8	643.6	200.14%
+Hbenchmark-openj9-8	643.6	200.14%
+Hbenchmark-openj9-8	643.6	200.47%
+Hbenchmark-openj9-8	643.6	200.47%
+Hbenchmark-openj9-8	643.7	199.79%
+Hbenchmark-openj9-8	643.7	199.79%
+Hbenchmark-openj9-8	643.7	197.87%
+Hbenchmark-openj9-8	643.7	197.87%
+Hbenchmark-openj9-8	643.7	202.13%
+Hbenchmark-openj9-8	643.7	202.13%
+Hbenchmark-openj9-8	643.7	200.61%
+Hbenchmark-openj9-8	643.7	200.61%
+Hbenchmark-openj9-8	643.7	191.60%
+Hbenchmark-openj9-8	643.7	191.60%
+Hbenchmark-openj9-8	643.7	203.58%
+Hbenchmark-openj9-8	643.7	203.58%
+Hbenchmark-openj9-8	643.7	193.79%
+Hbenchmark-openj9-8	643.7	193.79%
+Hbenchmark-openj9-8	643.6	206.92%
+Hbenchmark-openj9-8	643.6	206.92%
+Hbenchmark-openj9-8	643.6	189.76%
+Hbenchmark-openj9-8	643.6	189.76%
+Hbenchmark-openj9-8	643.7	206.84%
+Hbenchmark-openj9-8	643.7	206.84%
+Hbenchmark-openj9-8	643.7	189.28%
+Hbenchmark-openj9-8	643.7	189.28%
+Hbenchmark-openj9-8	643.7	200.96%
+Hbenchmark-openj9-8	643.7	200.96%
+Hbenchmark-openj9-8	643.7	200.02%
+Hbenchmark-openj9-8	643.7	200.02%
+Hbenchmark-openj9-8	643.7	206.14%
+Hbenchmark-openj9-8	643.7	206.14%
+Hbenchmark-openj9-8	643.6	193.22%
+Hbenchmark-openj9-8	643.6	193.22%
+Hbenchmark-openj9-8	647.8	205.57%
+Hbenchmark-openj9-8	647.8	205.57%
+Hbenchmark-openj9-8	647.8	198.84%
+Hbenchmark-openj9-8	647.8	198.84%
+Hbenchmark-openj9-8	648.2	195.06%
+Hbenchmark-openj9-8	648.2	195.06%
+Hbenchmark-openj9-8	648.1	200.23%
+Hbenchmark-openj9-8	648.1	200.23%
+Hbenchmark-openj9-8	646.3	201.67%
+Hbenchmark-openj9-8	646.3	201.67%
+Hbenchmark-openj9-8	648.6	199.41%
+Hbenchmark-openj9-8	648.6	199.41%
+Hbenchmark-openj9-8	646.3	203.08%
+Hbenchmark-openj9-8	646.3	203.08%
+Hbenchmark-openj9-8	646.3	201.03%
+Hbenchmark-openj9-8	646.3	201.03%
+Hbenchmark-openj9-8	645.8	198.11%
+Hbenchmark-openj9-8	645.8	198.11%
+Hbenchmark-openj9-8	648.3	205.28%
+Hbenchmark-openj9-8	648.3	205.28%
+Hbenchmark-openj9-8	646	193.61%
+Hbenchmark-openj9-8	646	193.61%
+Hbenchmark-openj9-8	645.8	205.77%
+Hbenchmark-openj9-8	645.8	205.77%
+Hbenchmark-openj9-8	645.9	198.59%
+Hbenchmark-openj9-8	645.9	198.59%
+Hbenchmark-openj9-8	645.9	208.17%
+Hbenchmark-openj9-8	645.9	208.17%
+Hbenchmark-openj9-8	645.9	190.28%
+Hbenchmark-openj9-8	645.9	190.28%
+Hbenchmark-openj9-8	645.8	207.28%
+Hbenchmark-openj9-8	645.8	207.28%
+Hbenchmark-openj9-8	643.8	194.50%
+Hbenchmark-openj9-8	643.8	194.50%
+Hbenchmark-openj9-8	644.1	199.56%
+Hbenchmark-openj9-8	644.1	199.56%
+Hbenchmark-openj9-8	646.3	208.10%
+Hbenchmark-openj9-8	646.3	208.10%
+Hbenchmark-openj9-8	644.8	196.93%
+Hbenchmark-openj9-8	644.8	196.93%
+Hbenchmark-openj9-8	644.8	196.93%
+Hbenchmark-openj9-8	644.8	196.93%
+Hbenchmark-openj9-8	645	206.60%
+Hbenchmark-openj9-8	645	206.60%
+Hbenchmark-openj9-8	644.9	197.89%
+Hbenchmark-openj9-8	644.9	197.89%
+Hbenchmark-openj9-8	648.9	192.95%
+Hbenchmark-openj9-8	648.9	192.95%
+Hbenchmark-openj9-8	657.8	204.12%
+Hbenchmark-openj9-8	657.8	204.12%
+Hbenchmark-openj9-8	657.8	200.94%
+Hbenchmark-openj9-8	657.8	200.94%
+Hbenchmark-openj9-8	657.8	200.94%
+Hbenchmark-openj9-8	657.7	200.66%
+Hbenchmark-openj9-8	657.7	200.66%
+Hbenchmark-openj9-8	662.2	198.61%
+Hbenchmark-openj9-8	662.2	198.61%
+Hbenchmark-openj9-8	668.7	197.72%
+Hbenchmark-openj9-8	668.7	197.72%
+Hbenchmark-openj9-8	662.2	202.37%
+Hbenchmark-openj9-8	662.2	202.37%
+Hbenchmark-openj9-8	662.2	202.14%
+Hbenchmark-openj9-8	662.2	202.14%
+Hbenchmark-openj9-8	659.2	200.93%
+Hbenchmark-openj9-8	659.2	200.93%
+Hbenchmark-openj9-8	659.1	202.20%
+Hbenchmark-openj9-8	659.1	202.20%
+Hbenchmark-openj9-8	659.1	194.98%
+Hbenchmark-openj9-8	659.1	194.98%
+Hbenchmark-openj9-8	656.2	207.46%
+Hbenchmark-openj9-8	656.2	207.46%
+Hbenchmark-openj9-8	656.3	197.06%
+Hbenchmark-openj9-8	656.3	197.06%
+Hbenchmark-openj9-8	656.2	198.44%
+Hbenchmark-openj9-8	656.2	198.44%
+Hbenchmark-openj9-8	656.1	206.38%
+Hbenchmark-openj9-8	656.1	206.38%
+Hbenchmark-openj9-8	654.1	193.27%
+Hbenchmark-openj9-8	654.1	193.27%
+Hbenchmark-openj9-8	654.5	201.89%
+Hbenchmark-openj9-8	654.5	201.89%
+Hbenchmark-openj9-8	654.5	201.80%
+Hbenchmark-openj9-8	654.5	201.80%
+Hbenchmark-openj9-8	654.5	200.41%
+Hbenchmark-openj9-8	654.5	200.41%
+Hbenchmark-openj9-8	654.6	207.79%
+Hbenchmark-openj9-8	654.6	207.79%
+Hbenchmark-openj9-8	654.6	191.82%
+Hbenchmark-openj9-8	654.6	191.82%
+Hbenchmark-openj9-8	654.5	200.30%
+Hbenchmark-openj9-8	654.5	200.30%
+Hbenchmark-openj9-8	658.2	202.62%
+Hbenchmark-openj9-8	658.2	202.62%
+Hbenchmark-openj9-8	658.2	201.78%
+Hbenchmark-openj9-8	658.2	201.78%
+Hbenchmark-openj9-8	658.2	197.59%
+Hbenchmark-openj9-8	658.2	197.59%
+Hbenchmark-openj9-8	654.6	203.78%
+Hbenchmark-openj9-8	654.6	203.78%
+Hbenchmark-openj9-8	654.7	199.21%
+Hbenchmark-openj9-8	654.7	199.21%
+Hbenchmark-openj9-8	654.8	198.78%
+Hbenchmark-openj9-8	654.8	198.78%
+Hbenchmark-openj9-8	654.8	196.81%
+Hbenchmark-openj9-8	654.8	196.81%
+Hbenchmark-openj9-8	652.7	197.80%
+Hbenchmark-openj9-8	652.7	197.80%
+Hbenchmark-openj9-8	659.1	203.50%
+Hbenchmark-openj9-8	659.1	203.50%
+Hbenchmark-openj9-8	652.7	198.00%
+Hbenchmark-openj9-8	652.7	198.00%
+Hbenchmark-openj9-8	650.6	201.36%
+Hbenchmark-openj9-8	650.6	201.36%
+Hbenchmark-openj9-8	650.6	198.60%
+Hbenchmark-openj9-8	650.6	198.60%
+Hbenchmark-openj9-8	652.9	194.53%
+Hbenchmark-openj9-8	652.9	194.53%
+Hbenchmark-openj9-8	648.6	200.50%
+Hbenchmark-openj9-8	648.6	200.50%
+Hbenchmark-openj9-8	648.6	200.66%
+Hbenchmark-openj9-8	648.6	200.66%
+Hbenchmark-openj9-8	648.5	188.98%
+Hbenchmark-openj9-8	648.5	188.98%
+Hbenchmark-openj9-8	652.8	210.33%
+Hbenchmark-openj9-8	652.8	210.33%
+Hbenchmark-openj9-8	648.5	190.87%
+Hbenchmark-openj9-8	648.5	190.87%
+Hbenchmark-openj9-8	648.5	209.58%
+Hbenchmark-openj9-8	648.5	209.58%
+Hbenchmark-openj9-8	648.5	195.06%
+Hbenchmark-openj9-8	648.5	195.06%
+Hbenchmark-openj9-8	648.8	200.32%
+Hbenchmark-openj9-8	648.8	200.32%
+Hbenchmark-openj9-8	648.8	191.74%
+Hbenchmark-openj9-8	648.8	191.74%
+Hbenchmark-openj9-8	654.2	208.63%
+Hbenchmark-openj9-8	654.2	208.63%
+Hbenchmark-openj9-8	654.4	197.21%
+Hbenchmark-openj9-8	654.4	197.21%
+Hbenchmark-openj9-8	654.6	199.14%
+Hbenchmark-openj9-8	654.6	199.14%
+Hbenchmark-openj9-8	654.5	198.66%
+Hbenchmark-openj9-8	654.5	198.66%
+Hbenchmark-openj9-8	655.4	200.00%
+Hbenchmark-openj9-8	655.4	200.00%
+Hbenchmark-openj9-8	655.4	198.78%
+Hbenchmark-openj9-8	655.4	198.78%
+Hbenchmark-openj9-8	655.3	204.44%
+Hbenchmark-openj9-8	655.3	204.44%
+Hbenchmark-openj9-8	655.3	200.27%
+Hbenchmark-openj9-8	655.3	200.27%
+Hbenchmark-openj9-8	653.9	199.64%
+Hbenchmark-openj9-8	653.9	199.64%
+Hbenchmark-openj9-8	654.1	204.29%
+Hbenchmark-openj9-8	654.1	204.29%
+Hbenchmark-openj9-8	654.1	198.02%
+Hbenchmark-openj9-8	654.1	198.02%
+Hbenchmark-openj9-8	654	199.86%
+Hbenchmark-openj9-8	654	199.86%
+Hbenchmark-openj9-8	653.1	205.41%
+Hbenchmark-openj9-8	653.1	205.41%
+Hbenchmark-openj9-8	659	195.38%
+Hbenchmark-openj9-8	659	195.38%
+Hbenchmark-openj9-8	658.2	177.70%
+Hbenchmark-openj9-8	658.2	177.70%
+Hbenchmark-openj9-8	658.3	202.80%
+Hbenchmark-openj9-8	658.3	202.80%
+Hbenchmark-openj9-8	654.1	195.12%
+Hbenchmark-openj9-8	654.1	195.12%
+Hbenchmark-openj9-8	656.2	196.23%
+Hbenchmark-openj9-8	656.2	196.23%
+Hbenchmark-openj9-8	658.3	199.31%
+Hbenchmark-openj9-8	658.3	199.31%
+Hbenchmark-openj9-8	652.4	193.43%
+Hbenchmark-openj9-8	652.4	193.43%
+Hbenchmark-openj9-8	656.4	195.91%
+Hbenchmark-openj9-8	656.4	195.91%
+Hbenchmark-openj9-8	652.3	196.58%
+Hbenchmark-openj9-8	652.3	196.58%
+Hbenchmark-openj9-8	652.4	195.82%
+Hbenchmark-openj9-8	652.4	195.82%
+Hbenchmark-openj9-8	658.3	203.26%
+Hbenchmark-openj9-8	658.3	203.26%
+Hbenchmark-openj9-8	652.2	191.89%
+Hbenchmark-openj9-8	652.2	191.89%
+Hbenchmark-openj9-8	652.4	195.71%
+Hbenchmark-openj9-8	652.4	195.71%
+Hbenchmark-openj9-8	652.4	198.69%
+Hbenchmark-openj9-8	652.4	198.69%
+Hbenchmark-openj9-8	652.5	187.44%
+Hbenchmark-openj9-8	652.5	187.44%
+Hbenchmark-openj9-8	658.6	195.39%
+Hbenchmark-openj9-8	658.6	195.39%
+Hbenchmark-openj9-8	652.4	197.20%
+Hbenchmark-openj9-8	652.4	197.20%
+Hbenchmark-openj9-8	652.4	196.65%
+Hbenchmark-openj9-8	652.4	196.65%
+Hbenchmark-openj9-8	652.5	198.01%
+Hbenchmark-openj9-8	652.5	198.01%
+Hbenchmark-openj9-8	652.4	198.05%
+Hbenchmark-openj9-8	652.4	198.05%
+Hbenchmark-openj9-8	652.6	193.62%
+Hbenchmark-openj9-8	652.6	193.62%
+Hbenchmark-openj9-8	652.6	196.65%
+Hbenchmark-openj9-8	652.6	196.65%
+Hbenchmark-openj9-8	652.3	194.76%
+Hbenchmark-openj9-8	652.3	194.76%
+Hbenchmark-openj9-8	652.7	198.46%
+Hbenchmark-openj9-8	652.7	198.46%
+Hbenchmark-openj9-8	652.6	197.38%
+Hbenchmark-openj9-8	652.6	197.38%
+Hbenchmark-openj9-8	652.5	195.18%
+Hbenchmark-openj9-8	652.5	195.18%
+Hbenchmark-openj9-8	652.6	195.45%
+Hbenchmark-openj9-8	652.6	195.45%
+Hbenchmark-openj9-8	652.6	197.12%
+Hbenchmark-openj9-8	652.6	197.12%
+Hbenchmark-openj9-8	650.6	196.01%
+Hbenchmark-openj9-8	650.6	196.01%
+Hbenchmark-openj9-8	650.6	193.54%
+Hbenchmark-openj9-8	650.6	193.54%
+Hbenchmark-openj9-8	650.5	195.41%
+Hbenchmark-openj9-8	650.5	195.41%
+Hbenchmark-openj9-8	650.4	196.78%
+Hbenchmark-openj9-8	650.4	196.78%
+Hbenchmark-openj9-8	650.6	193.87%
+Hbenchmark-openj9-8	650.6	193.87%
+Hbenchmark-openj9-8	650.6	198.00%
+Hbenchmark-openj9-8	650.6	198.00%
+Hbenchmark-openj9-8	650.5	195.04%
+Hbenchmark-openj9-8	650.5	195.04%
+Hbenchmark-openj9-8	650.6	195.11%
+Hbenchmark-openj9-8	650.6	195.11%
+Hbenchmark-openj9-8	650.4	195.17%
+Hbenchmark-openj9-8	650.4	195.17%
+Hbenchmark-openj9-8	650.6	197.04%
+Hbenchmark-openj9-8	650.6	197.04%
+Hbenchmark-openj9-8	650.5	196.84%
+Hbenchmark-openj9-8	650.5	196.84%
+Hbenchmark-openj9-8	650.9	151.86%
+Hbenchmark-openj9-8	650.9	151.86%
+Hbenchmark-openj9-8	654.9	105.28%
+Hbenchmark-openj9-8	654.9	105.28%
+Hbenchmark-openj9-8	653.5	105.18%
+Hbenchmark-openj9-8	653.5	105.18%
+Hbenchmark-openj9-8	653.5	105.22%
+Hbenchmark-openj9-8	653.5	105.22%
+Hbenchmark-openj9-8	653.6	111.10%
+Hbenchmark-openj9-8	653.6	111.10%
+Hbenchmark-openj9-8	653.6	105.78%
+Hbenchmark-openj9-8	653.6	105.78%
+Hbenchmark-openj9-8	653.5	109.59%
+Hbenchmark-openj9-8	653.5	109.59%
+Hbenchmark-openj9-8	684.3	130.64%
+Hbenchmark-openj9-8	684.3	130.64%
+Hbenchmark-openj9-8	684.2	102.52%
+Hbenchmark-openj9-8	684.2	102.52%
+Hbenchmark-openj9-8	684.1	108.56%
+Hbenchmark-openj9-8	684.1	108.56%
+Hbenchmark-openj9-8	684.1	105.71%
+Hbenchmark-openj9-8	684.1	105.71%
+Hbenchmark-openj9-8	684	110.47%
+Hbenchmark-openj9-8	684	110.47%
+Hbenchmark-openj9-8	683.9	108.16%
+Hbenchmark-openj9-8	683.9	108.16%
+Hbenchmark-openj9-8	683.9	102.23%
+Hbenchmark-openj9-8	683.9	102.23%
+Hbenchmark-openj9-8	684	123.40%
+Hbenchmark-openj9-8	684	123.40%
+Hbenchmark-openj9-8	684	115.11%
+Hbenchmark-openj9-8	684	115.11%
+Hbenchmark-openj9-8	683.9	106.69%
+Hbenchmark-openj9-8	683.9	106.69%
+Hbenchmark-openj9-8	683.9	110.53%
+Hbenchmark-openj9-8	683.9	110.53%
+Hbenchmark-openj9-8	683.9	105.32%
+Hbenchmark-openj9-8	683.9	105.32%
+Hbenchmark-openj9-8	683.9	103.61%
+Hbenchmark-openj9-8	683.9	103.61%
+Hbenchmark-openj9-8	683.9	120.31%
+Hbenchmark-openj9-8	683.9	120.31%
+Hbenchmark-openj9-8	688	107.58%
+Hbenchmark-openj9-8	688	107.58%
+Hbenchmark-openj9-8	683.9	106.62%
+Hbenchmark-openj9-8	683.9	106.62%
+Hbenchmark-openj9-8	683.9	108.08%
+Hbenchmark-openj9-8	683.9	108.08%
+Hbenchmark-openj9-8	683.9	106.91%
+Hbenchmark-openj9-8	683.9	106.91%
+Hbenchmark-openj9-8	683.9	106.64%
+Hbenchmark-openj9-8	683.9	106.64%
+Hbenchmark-openj9-8	683.9	114.37%
+Hbenchmark-openj9-8	683.9	114.37%
+Hbenchmark-openj9-8	683.9	105.40%
+Hbenchmark-openj9-8	683.9	105.40%
+Hbenchmark-openj9-8	683.9	106.17%
+Hbenchmark-openj9-8	683.9	106.17%
+Hbenchmark-openj9-8	683.9	108.50%
+Hbenchmark-openj9-8	683.9	108.50%
+Hbenchmark-openj9-8	683.9	105.46%
+Hbenchmark-openj9-8	683.9	105.46%
+Hbenchmark-openj9-8	683.9	105.23%
+Hbenchmark-openj9-8	683.9	105.23%
+Hbenchmark-openj9-8	683.9	105.23%
+Hbenchmark-openj9-8	692.7	144.16%
+Hbenchmark-openj9-8	692.7	144.16%
+Hbenchmark-openj9-8	703.7	188.96%
+Hbenchmark-openj9-8	703.7	188.96%
+Hbenchmark-openj9-8	705.8	116.64%
+Hbenchmark-openj9-8	705.8	116.64%
+Hbenchmark-openj9-8	689.8	113.89%
+Hbenchmark-openj9-8	689.8	113.89%
+Hbenchmark-openj9-8	691.7	106.95%
+Hbenchmark-openj9-8	691.7	106.95%
+Hbenchmark-openj9-8	690	132.68%
+Hbenchmark-openj9-8	690	132.68%
+Hbenchmark-openj9-8	692.1	101.05%
+Hbenchmark-openj9-8	692.1	101.05%
+Hbenchmark-openj9-8	690	103.30%
+Hbenchmark-openj9-8	690	103.30%
+Hbenchmark-openj9-8	690.1	111.84%
+Hbenchmark-openj9-8	690.1	111.84%
+Hbenchmark-openj9-8	690	102.55%
+Hbenchmark-openj9-8	690	102.55%
+Hbenchmark-openj9-8	698.1	117.87%
+Hbenchmark-openj9-8	698.1	117.87%
+Hbenchmark-openj9-8	690	102.31%
+Hbenchmark-openj9-8	690	102.31%
+Hbenchmark-openj9-8	690	105.67%
+Hbenchmark-openj9-8	690	105.67%
+Hbenchmark-openj9-8	690.1	117.80%
+Hbenchmark-openj9-8	690.1	117.80%
+Hbenchmark-openj9-8	690.1	100.17%
+Hbenchmark-openj9-8	690.1	100.17%
+Hbenchmark-openj9-8	696.1	108.81%
+Hbenchmark-openj9-8	696.1	108.81%
+Hbenchmark-openj9-8	690.2	105.37%
+Hbenchmark-openj9-8	690.2	105.37%
+Hbenchmark-openj9-8	690.1	104.04%
+Hbenchmark-openj9-8	690.1	104.04%
+Hbenchmark-openj9-8	690.2	106.08%
+Hbenchmark-openj9-8	690.2	106.08%
+Hbenchmark-openj9-8	690.2	100.81%
+Hbenchmark-openj9-8	690.2	100.81%
+Hbenchmark-openj9-8	690.1	105.24%
+Hbenchmark-openj9-8	690.1	105.24%
+Hbenchmark-openj9-8	690.1	104.59%
+Hbenchmark-openj9-8	690.1	104.59%
+Hbenchmark-openj9-8	690.1	104.02%
+Hbenchmark-openj9-8	690.1	104.02%
+Hbenchmark-openj9-8	694.2	107.31%
+Hbenchmark-openj9-8	694.2	107.31%
+Hbenchmark-openj9-8	690.2	100.68%
+Hbenchmark-openj9-8	690.2	100.68%
+Hbenchmark-openj9-8	690.1	105.22%
+Hbenchmark-openj9-8	690.1	105.22%
+Hbenchmark-openj9-8	690.2	102.60%
+Hbenchmark-openj9-8	690.2	102.60%
+Hbenchmark-openj9-8	690.2	102.22%
+Hbenchmark-openj9-8	690.2	102.22%
+Hbenchmark-openj9-8	694.2	104.06%
+Hbenchmark-openj9-8	694.2	104.06%
+Hbenchmark-openj9-8	709.8	141.19%
+Hbenchmark-openj9-8	709.8	141.19%
+Hbenchmark-openj9-8	731.5	172.52%
+Hbenchmark-openj9-8	731.5	172.52%
+Hbenchmark-openj9-8	735.2	201.86%
+Hbenchmark-openj9-8	735.2	201.86%
+Hbenchmark-openj9-8	736.4	202.14%
+Hbenchmark-openj9-8	736.4	202.14%
+Hbenchmark-openj9-8	737	202.38%
+Hbenchmark-openj9-8	737	202.38%
+Hbenchmark-openj9-8	737.3	203.29%
+Hbenchmark-openj9-8	737.3	203.29%
+Hbenchmark-openj9-8	737.6	204.53%
+Hbenchmark-openj9-8	737.6	204.53%
+Hbenchmark-openj9-8	737.7	208.25%
+Hbenchmark-openj9-8	737.7	208.25%
+Hbenchmark-openj9-8	738.1	208.43%
+Hbenchmark-openj9-8	738.1	208.43%
+Hbenchmark-openj9-8	738.6	206.04%
+Hbenchmark-openj9-8	738.6	206.04%
+Hbenchmark-openj9-8	740.9	208.34%
+Hbenchmark-openj9-8	740.9	208.34%
+Hbenchmark-openj9-8	743.1	209.13%
+Hbenchmark-openj9-8	743.1	209.13%
+Hbenchmark-openj9-8	741.4	207.60%
+Hbenchmark-openj9-8	741.4	207.60%
+Hbenchmark-openj9-8	741.8	209.04%
+Hbenchmark-openj9-8	741.8	209.04%
+Hbenchmark-openj9-8	741.9	211.72%
+Hbenchmark-openj9-8	741.9	211.72%
+Hbenchmark-openj9-8	742.1	206.44%
+Hbenchmark-openj9-8	742.1	206.44%
+Hbenchmark-openj9-8	742.5	209.05%
+Hbenchmark-openj9-8	742.5	209.05%
+Hbenchmark-openj9-8	728.6	211.79%
+Hbenchmark-openj9-8	728.6	211.79%
+Hbenchmark-openj9-8	726.5	205.04%
+Hbenchmark-openj9-8	726.5	205.04%
+Hbenchmark-openj9-8	734.5	218.98%
+Hbenchmark-openj9-8	734.5	218.98%
+Hbenchmark-openj9-8	730.5	202.34%
+Hbenchmark-openj9-8	730.5	202.34%
+Hbenchmark-openj9-8	726.8	213.16%
+Hbenchmark-openj9-8	726.8	213.16%
+Hbenchmark-openj9-8	728.8	212.57%
+Hbenchmark-openj9-8	728.8	212.57%
+Hbenchmark-openj9-8	726.7	212.63%
+Hbenchmark-openj9-8	726.7	212.63%
+Hbenchmark-openj9-8	736.9	207.31%
+Hbenchmark-openj9-8	736.9	207.31%
+Hbenchmark-openj9-8	730.9	210.16%
+Hbenchmark-openj9-8	730.9	210.16%
+Hbenchmark-openj9-8	734.9	213.35%
+Hbenchmark-openj9-8	734.9	213.35%
+Hbenchmark-openj9-8	726.8	210.94%
+Hbenchmark-openj9-8	726.8	210.94%
+Hbenchmark-openj9-8	731	211.64%
+Hbenchmark-openj9-8	731	211.64%
+Hbenchmark-openj9-8	729.1	213.13%
+Hbenchmark-openj9-8	729.1	213.13%
+Hbenchmark-openj9-8	733	217.76%
+Hbenchmark-openj9-8	733	217.76%
+Hbenchmark-openj9-8	733	211.55%
+Hbenchmark-openj9-8	733	211.55%
+Hbenchmark-openj9-8	735	185.33%
+Hbenchmark-openj9-8	735	185.33%
+HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH
