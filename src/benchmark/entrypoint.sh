@@ -21,7 +21,7 @@ echo "(https://renaissance.dev). It tests JVM memory & CPU"
 echo "utilization. "
 echo " "
 echo "This container uses this Java version:"
-java --version
+java -version
 echo " "
 echo "This container uses these Java options:"
 echo "${JAVA_OPTS}"

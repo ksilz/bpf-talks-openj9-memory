@@ -1,8 +1,8 @@
 version: '2.2'
 
 services:
-  benchmark-openj9-8
-    image: 'bpf-talks-openj9-memory-benchmark:openj9-8'
+  benchmark-openj9-8:
+    image: 'joedata/bpf-talks-openj9-memory-benchmark:openj9-8'
     container_name: benchmark-openj9-8
     environment:
       - >-

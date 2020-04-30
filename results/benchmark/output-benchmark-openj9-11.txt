@@ -1,0 +1,361 @@
+~/workspaces/me/services/better-projects-faster/talks/bpf-talks-openj9-memory % time docker-compose -f docker-compose-benchmark-openj9-11.yml up                          16:26:16
+Creating benchmark-openj9-11 ... done
+Attaching to benchmark-openj9-11
+benchmark-openj9-11    |
+benchmark-openj9-11    | *************************************************************
+benchmark-openj9-11    | *                                                           *
+benchmark-openj9-11    | *              A betterprojectsfaster.com Talk              *
+benchmark-openj9-11    | *              -------------------------------              *
+benchmark-openj9-11    | *                                                           *
+benchmark-openj9-11    | *   Eclipse OpenJ9: Memory Diet for Your JVM Applications   *
+benchmark-openj9-11    | *     https://github.com/ksilz/bpf-talks-openj9-memory      *
+benchmark-openj9-11    | *                                                           *
+benchmark-openj9-11    | *************************************************************
+benchmark-openj9-11    |
+benchmark-openj9-11    | This container is part of a presentation about the the
+benchmark-openj9-11    | Eclipse OpenJ9 JVM. Please see here for details:
+benchmark-openj9-11    | https://github.com/ksilz/bpf-talks-openj9-memory
+benchmark-openj9-11    |
+benchmark-openj9-11    | This container runs a number of different, pure Java & Scala
+benchmark-openj9-11    | benchmarks from the "Renaissance Suite"
+benchmark-openj9-11    | (https://renaissance.dev). It tests JVM memory & CPU
+benchmark-openj9-11    | utilization.
+benchmark-openj9-11    |
+benchmark-openj9-11    | This container uses this Java version:
+benchmark-openj9-11    | openjdk 11.0.7 2020-04-14
+benchmark-openj9-11    | OpenJDK Runtime Environment AdoptOpenJDK (build 11.0.7+10)
+benchmark-openj9-11    | Eclipse OpenJ9 VM AdoptOpenJDK (build openj9-0.20.0, JRE 11 Linux amd64-64-Bit Compressed References 20200416_574 (JIT enabled, AOT enabled)
+benchmark-openj9-11    | OpenJ9   - 05fa2d361
+benchmark-openj9-11    | OMR      - d4365f371
+benchmark-openj9-11    | JCL      - 838028fc9d based on jdk-11.0.7+10)
+benchmark-openj9-11    |
+benchmark-openj9-11    | This container uses these Java options:
+benchmark-openj9-11    | -Xmx1024m -Xms256m -Xtune:virtualized
+benchmark-openj9-11    |
+benchmark-openj9-11    | This container uses these benchmarks:
+benchmark-openj9-11    | -r 5 gauss-mix,movie-lens,akka-uct,fj-kmeans,mnemonics,scala-doku,finagle-chirper
+benchmark-openj9-11    |
+benchmark-openj9-11    | Running benchmarks...
+benchmark-openj9-11    | Using Spark's default log4j profile: org/apache/spark/log4j-defaults.properties
+benchmark-openj9-11    | 20/04/30 15:26:45 INFO SparkContext: Running Spark version 2.0.0
+benchmark-openj9-11    | WARNING: An illegal reflective access operation has occurred
+benchmark-openj9-11    | WARNING: Illegal reflective access by org.apache.hadoop.security.authentication.util.KerberosUtil (file:/usr/app/./tmp-jars-14056143034281811557/cp-hadoop-auth-2.2.0.jar5131178780261963929.jar) to method sun.security.krb5.Config.getInstance()
+benchmark-openj9-11    | WARNING: Please consider reporting this to the maintainers of org.apache.hadoop.security.authentication.util.KerberosUtil
+benchmark-openj9-11    | WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+benchmark-openj9-11    | WARNING: All illegal access operations will be denied in a future release
+benchmark-openj9-11    | 20/04/30 15:26:45 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+benchmark-openj9-11    | 20/04/30 15:26:45 WARN SparkConf: In Spark 1.0 and later spark.local.dir will be overridden by the value set by the cluster manager (via SPARK_LOCAL_DIRS in mesos/standalone and LOCAL_DIRS in YARN).
+benchmark-openj9-11    | 20/04/30 15:26:45 INFO SecurityManager: Changing view acls to: root
+benchmark-openj9-11    | 20/04/30 15:26:45 INFO SecurityManager: Changing modify acls to: root
+benchmark-openj9-11    | 20/04/30 15:26:45 INFO SecurityManager: Changing view acls groups to:
+benchmark-openj9-11    | 20/04/30 15:26:45 INFO SecurityManager: Changing modify acls groups to:
+benchmark-openj9-11    | 20/04/30 15:26:45 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(root); groups with view permissions: Set(); users  with modify permissions: Set(root); groups with modify permissions: Set()
+benchmark-openj9-11    | 20/04/30 15:26:45 INFO PlatformDependent: Your platform does not provide complete low-level API for accessing direct buffers reliably. Unless explicitly requested, heap buffer will always be preferred to avoid potential system unstability.
+benchmark-openj9-11    | 20/04/30 15:26:45 INFO Utils: Successfully started service 'sparkDriver' on port 35025.
+benchmark-openj9-11    | 20/04/30 15:26:45 INFO SparkEnv: Registering MapOutputTracker
+benchmark-openj9-11    | 20/04/30 15:26:45 INFO SparkEnv: Registering BlockManagerMaster
+benchmark-openj9-11    | 20/04/30 15:26:45 INFO DiskBlockManager: Created local directory at /usr/app/gauss_mix13182429348259636743/blockmgr-c65c6b41-c81f-4850-8b80-b42e9542e825
+benchmark-openj9-11    | 20/04/30 15:26:45 INFO MemoryStore: MemoryStore started with capacity 434.4 MB
+benchmark-openj9-11    | 20/04/30 15:26:45 INFO SparkEnv: Registering OutputCommitCoordinator
+benchmark-openj9-11    | 20/04/30 15:26:45 INFO Utils: Successfully started service 'SparkUI' on port 4040.
+benchmark-openj9-11    | 20/04/30 15:26:45 INFO SparkUI: Bound SparkUI to 0.0.0.0, and started at http://192.168.48.2:4040
+benchmark-openj9-11    | 20/04/30 15:26:46 INFO Executor: Starting executor ID driver on host localhost
+benchmark-openj9-11    | 20/04/30 15:26:46 INFO Utils: Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 35779.
+benchmark-openj9-11    | 20/04/30 15:26:46 INFO NettyBlockTransferService: Server created on 192.168.48.2:35779
+benchmark-openj9-11    | 20/04/30 15:26:46 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, 192.168.48.2, 35779)
+benchmark-openj9-11    | 20/04/30 15:26:46 INFO BlockManagerMasterEndpoint: Registering block manager 192.168.48.2:35779 with 434.4 MB RAM, BlockManagerId(driver, 192.168.48.2, 35779)
+benchmark-openj9-11    | 20/04/30 15:26:46 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, 192.168.48.2, 35779)
+benchmark-openj9-11    | ====== gauss-mix (apache-spark), iteration 0 started ======
+benchmark-openj9-11    | ====== gauss-mix (apache-spark), iteration 0 completed (7508.339 ms) ======
+benchmark-openj9-11    | ====== gauss-mix (apache-spark), iteration 1 started ======
+benchmark-openj9-11    | ====== gauss-mix (apache-spark), iteration 1 completed (3890.239 ms) ======
+benchmark-openj9-11    | ====== gauss-mix (apache-spark), iteration 2 started ======
+benchmark-openj9-11    | ====== gauss-mix (apache-spark), iteration 2 completed (3722.589 ms) ======
+benchmark-openj9-11    | ====== gauss-mix (apache-spark), iteration 3 started ======
+benchmark-openj9-11    | ====== gauss-mix (apache-spark), iteration 3 completed (3623.957 ms) ======
+benchmark-openj9-11    | ====== gauss-mix (apache-spark), final iteration started ======
+benchmark-openj9-11    | ====== gauss-mix (apache-spark), final iteration completed (3378.934 ms) ======
+benchmark-openj9-11    | Using Spark's default log4j profile: org/apache/spark/log4j-defaults.properties
+benchmark-openj9-11    | 20/04/30 15:27:10 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+benchmark-openj9-11    | 20/04/30 15:27:10 INFO PlatformDependent: Your platform does not provide complete low-level API for accessing direct buffers reliably. Unless explicitly requested, heap buffer will always be preferred to avoid potential system unstability.
+benchmark-openj9-11    | ====== movie-lens (apache-spark), iteration 0 started ======
+benchmark-openj9-11    | Got 100003 ratings from 671 users on 9066 movies.
+benchmark-openj9-11    | Training: 60055, validation: 20285, test: 19854
+RMSE (validation) = 0.925060654173237 for the model trained with rank = 8, lambda = 0.1, and numIter = 10.
+RMSE (validation) = 0.9251849143550224 for the model trained with rank = 8, lambda = 0.1, and numIter = 20.
+benchmark-openj9-11    | RMSE (validation) = 3.6219689545487634 for the model trained with rank = 8, lambda = 10.0, and numIter = 10.
+RMSE (validation) = 3.6219689545487634 for the model trained with rank = 8, lambda = 10.0, and numIter = 20.
+benchmark-openj9-11    | RMSE (validation) = 0.9318895327460568 for the model trained with rank = 12, lambda = 0.1, and numIter = 10.
+benchmark-openj9-11    | RMSE (validation) = 0.9238500659085699 for the model trained with rank = 12, lambda = 0.1, and numIter = 20.
+benchmark-openj9-11    | RMSE (validation) = 3.6219689545487634 for the model trained with rank = 12, lambda = 10.0, and numIter = 10.
+RMSE (validation) = 3.6219689545487634 for the model trained with rank = 12, lambda = 10.0, and numIter = 20.
+benchmark-openj9-11    | The best model was trained with rank = 12 and lambda = 0.1, and numIter = 20, and its RMSE on the test set is 0.9323747418991885.
+benchmark-openj9-11    | The best model improves the baseline by 12.07%.
+benchmark-openj9-11    | Movies recommended for you:
+benchmark-openj9-11    | WARNING: This benchmark provides no result that can be validated.
+benchmark-openj9-11    |          There is no way to check that no silent failure occurred.
+benchmark-openj9-11    | ====== movie-lens (apache-spark), iteration 0 completed (40389.647 ms) ======
+benchmark-openj9-11    | ====== movie-lens (apache-spark), iteration 1 started ======
+benchmark-openj9-11    | Got 100003 ratings from 671 users on 9066 movies.
+benchmark-openj9-11    | Training: 60055, validation: 20285, test: 19854
+benchmark-openj9-11    | RMSE (validation) = 0.9287502908046779 for the model trained with rank = 8, lambda = 0.1, and numIter = 10.
+RMSE (validation) = 0.9247247486199817 for the model trained with rank = 8, lambda = 0.1, and numIter = 20.
+benchmark-openj9-11    | RMSE (validation) = 3.6219689545487634 for the model trained with rank = 8, lambda = 10.0, and numIter = 10.
+benchmark-openj9-11    | RMSE (validation) = 3.6219689545487634 for the model trained with rank = 8, lambda = 10.0, and numIter = 20.
+benchmark-openj9-11    | RMSE (validation) = 0.9250156701593323 for the model trained with rank = 12, lambda = 0.1, and numIter = 10.
+benchmark-openj9-11    | RMSE (validation) = 0.9242319306361007 for the model trained with rank = 12, lambda = 0.1, and numIter = 20.
+RMSE (validation) = 3.6219689545487634 for the model trained with rank = 12, lambda = 10.0, and numIter = 10.
+RMSE (validation) = 3.6219689545487634 for the model trained with rank = 12, lambda = 10.0, and numIter = 20.
+benchmark-openj9-11    | The best model was trained with rank = 12 and lambda = 0.1, and numIter = 20, and its RMSE on the test set is 0.9351535312767016.
+benchmark-openj9-11    | The best model improves the baseline by 11.80%.
+benchmark-openj9-11    | WARNING: This benchmark provides no result that can be validated.
+benchmark-openj9-11    |          There is no way to check that no silent failure occurred.
+benchmark-openj9-11    | Movies recommended for you:
+benchmark-openj9-11    | ====== movie-lens (apache-spark), iteration 1 completed (21587.129 ms) ======
+benchmark-openj9-11    | ====== movie-lens (apache-spark), iteration 2 started ======
+benchmark-openj9-11    | Got 100003 ratings from 671 users on 9066 movies.
+benchmark-openj9-11    | Training: 60055, validation: 20285, test: 19854
+benchmark-openj9-11    | RMSE (validation) = 0.9253023380006743 for the model trained with rank = 8, lambda = 0.1, and numIter = 10.
+benchmark-openj9-11    | RMSE (validation) = 0.9204941200181161 for the model trained with rank = 8, lambda = 0.1, and numIter = 20.
+RMSE (validation) = 3.6219689545487634 for the model trained with rank = 8, lambda = 10.0, and numIter = 10.
+benchmark-openj9-11    | RMSE (validation) = 3.6219689545487634 for the model trained with rank = 8, lambda = 10.0, and numIter = 20.
+RMSE (validation) = 0.9257307940208341 for the model trained with rank = 12, lambda = 0.1, and numIter = 10.
+benchmark-openj9-11    | RMSE (validation) = 0.9230221931407082 for the model trained with rank = 12, lambda = 0.1, and numIter = 20.
+benchmark-openj9-11    | RMSE (validation) = 3.6219689545487634 for the model trained with rank = 12, lambda = 10.0, and numIter = 10.
+benchmark-openj9-11    | RMSE (validation) = 3.6219689545487634 for the model trained with rank = 12, lambda = 10.0, and numIter = 20.
+benchmark-openj9-11    | The best model was trained with rank = 8 and lambda = 0.1, and numIter = 20, and its RMSE on the test set is 0.9326257150503807.
+benchmark-openj9-11    | The best model improves the baseline by 12.04%.
+benchmark-openj9-11    | Movies recommended for you:
+benchmark-openj9-11    | ====== movie-lens (apache-spark), iteration 2 completed (17325.264 ms) ======
+benchmark-openj9-11    | WARNING: This benchmark provides no result that can be validated.
+benchmark-openj9-11    |          There is no way to check that no silent failure occurred.
+benchmark-openj9-11    | ====== movie-lens (apache-spark), iteration 3 started ======
+benchmark-openj9-11    | Got 100003 ratings from 671 users on 9066 movies.
+benchmark-openj9-11    | Training: 60055, validation: 20285, test: 19854
+benchmark-openj9-11    | RMSE (validation) = 0.9348463255478622 for the model trained with rank = 8, lambda = 0.1, and numIter = 10.
+benchmark-openj9-11    | RMSE (validation) = 0.9238633206343341 for the model trained with rank = 8, lambda = 0.1, and numIter = 20.
+benchmark-openj9-11    | RMSE (validation) = 3.6219689545487634 for the model trained with rank = 8, lambda = 10.0, and numIter = 10.
+benchmark-openj9-11    | RMSE (validation) = 3.6219689545487634 for the model trained with rank = 8, lambda = 10.0, and numIter = 20.
+benchmark-openj9-11    | RMSE (validation) = 0.9293398690903935 for the model trained with rank = 12, lambda = 0.1, and numIter = 10.
+benchmark-openj9-11    | RMSE (validation) = 0.9218737182624916 for the model trained with rank = 12, lambda = 0.1, and numIter = 20.
+benchmark-openj9-11    | RMSE (validation) = 3.6219689545487634 for the model trained with rank = 12, lambda = 10.0, and numIter = 10.
+benchmark-openj9-11    | RMSE (validation) = 3.6219689545487634 for the model trained with rank = 12, lambda = 10.0, and numIter = 20.
+benchmark-openj9-11    | The best model was trained with rank = 12 and lambda = 0.1, and numIter = 20, and its RMSE on the test set is 0.9354705005546392.
+benchmark-openj9-11    | The best model improves the baseline by 11.77%.
+benchmark-openj9-11    | Movies recommended for you:
+benchmark-openj9-11    | WARNING: This benchmark provides no result that can be validated.
+benchmark-openj9-11    |          There is no way to check that no silent failure occurred.
+benchmark-openj9-11    | ====== movie-lens (apache-spark), iteration 3 completed (16504.794 ms) ======
+benchmark-openj9-11    | ====== movie-lens (apache-spark), final iteration started ======
+benchmark-openj9-11    | Got 100003 ratings from 671 users on 9066 movies.
+benchmark-openj9-11    | Training: 60055, validation: 20285, test: 19854
+benchmark-openj9-11    | RMSE (validation) = 0.9314155157678308 for the model trained with rank = 8, lambda = 0.1, and numIter = 10.
+benchmark-openj9-11    | RMSE (validation) = 0.9273511445888708 for the model trained with rank = 8, lambda = 0.1, and numIter = 20.
+benchmark-openj9-11    | RMSE (validation) = 3.6219689545487634 for the model trained with rank = 8, lambda = 10.0, and numIter = 10.
+benchmark-openj9-11    | RMSE (validation) = 3.6219689545487634 for the model trained with rank = 8, lambda = 10.0, and numIter = 20.
+RMSE (validation) = 0.9247030995625399 for the model trained with rank = 12, lambda = 0.1, and numIter = 10.
+benchmark-openj9-11    | RMSE (validation) = 0.9238187404266855 for the model trained with rank = 12, lambda = 0.1, and numIter = 20.
+benchmark-openj9-11    | RMSE (validation) = 3.6219689545487634 for the model trained with rank = 12, lambda = 10.0, and numIter = 10.
+benchmark-openj9-11    | RMSE (validation) = 3.6219689545487634 for the model trained with rank = 12, lambda = 10.0, and numIter = 20.
+benchmark-openj9-11    | The best model was trained with rank = 12 and lambda = 0.1, and numIter = 20, and its RMSE on the test set is 0.9339840696884109.
+benchmark-openj9-11    | The best model improves the baseline by 11.91%.
+benchmark-openj9-11    | Movies recommended for you:WARNING: This benchmark provides no result that can be validated.
+benchmark-openj9-11    |
+benchmark-openj9-11    |          There is no way to check that no silent failure occurred.
+benchmark-openj9-11    | ====== movie-lens (apache-spark), final iteration completed (15429.961 ms) ======
+benchmark-openj9-11    | ====== akka-uct (actors), iteration 0 started ======
+benchmark-openj9-11    | final size= 199991
+benchmark-openj9-11    | final height= 9
+benchmark-openj9-11    | final size= 199991
+benchmark-openj9-11    | final height= 9
+benchmark-openj9-11    | final size= 199991
+benchmark-openj9-11    | final height= 9
+benchmark-openj9-11    | final size= 199991
+benchmark-openj9-11    | final height= 9
+benchmark-openj9-11    | final size= 199991
+benchmark-openj9-11    | final height= 9
+benchmark-openj9-11    | final size= 199991
+benchmark-openj9-11    | final height= 9
+benchmark-openj9-11    | final size= 199991
+benchmark-openj9-11    | final height= 9
+benchmark-openj9-11    | final size= 199991
+benchmark-openj9-11    | final height= 9
+benchmark-openj9-11    | final size= 199991
+benchmark-openj9-11    | final height= 9
+benchmark-openj9-11    | final size= 199991
+benchmark-openj9-11    | final height= 9
+benchmark-openj9-11    | WARNING: This benchmark provides no result that can be validated.
+benchmark-openj9-11    |          There is no way to check that no silent failure occurred.
+benchmark-openj9-11    | ====== akka-uct (actors), iteration 0 completed (46319.02 ms) ======
+benchmark-openj9-11    | ====== akka-uct (actors), iteration 1 started ======
+benchmark-openj9-11    | final size= 199991
+benchmark-openj9-11    | final height= 9
+benchmark-openj9-11    | final size= 199991
+benchmark-openj9-11    | final height= 10
+benchmark-openj9-11    | final size= 199991
+benchmark-openj9-11    | final height= 9
+benchmark-openj9-11    | final size= 199991
+benchmark-openj9-11    | final height= 9
+benchmark-openj9-11    | final size= 199991
+benchmark-openj9-11    | final height= 9
+benchmark-openj9-11    | final size= 199991
+benchmark-openj9-11    | final height= 9
+benchmark-openj9-11    | final size= 199991
+benchmark-openj9-11    | final height= 9
+benchmark-openj9-11    | final size= 199991
+benchmark-openj9-11    | final height= 9
+benchmark-openj9-11    | final size= 199991
+benchmark-openj9-11    | final height= 9
+benchmark-openj9-11    | final size= 199991
+benchmark-openj9-11    | final height= 9
+benchmark-openj9-11    | WARNING: This benchmark provides no result that can be validated.
+benchmark-openj9-11    |          There is no way to check that no silent failure occurred.
+benchmark-openj9-11    | ====== akka-uct (actors), iteration 1 completed (38365.757 ms) ======
+benchmark-openj9-11    | ====== akka-uct (actors), iteration 2 started ======
+benchmark-openj9-11    | final size= 199991
+benchmark-openj9-11    | final height= 9
+benchmark-openj9-11    | final size= 199991
+benchmark-openj9-11    | final height= 9
+benchmark-openj9-11    | final size= 199991
+benchmark-openj9-11    | final height= 9
+benchmark-openj9-11    | final size= 199991
+benchmark-openj9-11    | final height= 9
+benchmark-openj9-11    | final size= 199991
+benchmark-openj9-11    | final height= 9
+benchmark-openj9-11    | final size= 199991
+benchmark-openj9-11    | final height= 9
+benchmark-openj9-11    | final size= 199991
+benchmark-openj9-11    | final height= 9
+benchmark-openj9-11    | final size= 199991
+benchmark-openj9-11    | final height= 9
+benchmark-openj9-11    | final size= 199991
+benchmark-openj9-11    | final height= 9
+benchmark-openj9-11    | final size= 199991
+benchmark-openj9-11    | final height= 9
+benchmark-openj9-11    | WARNING: This benchmark provides no result that can be validated.
+benchmark-openj9-11    |          There is no way to check that no silent failure occurred.
+benchmark-openj9-11    | ====== akka-uct (actors), iteration 2 completed (39349.96 ms) ======
+benchmark-openj9-11    | ====== akka-uct (actors), iteration 3 started ======
+benchmark-openj9-11    | final size= 199991
+benchmark-openj9-11    | final height= 9
+benchmark-openj9-11    | final size= 199991
+benchmark-openj9-11    | final height= 9
+benchmark-openj9-11    | final size= 199991
+benchmark-openj9-11    | final height= 9
+benchmark-openj9-11    | final size= 199991
+benchmark-openj9-11    | final height= 9
+benchmark-openj9-11    | final size= 199991
+benchmark-openj9-11    | final height= 9
+benchmark-openj9-11    | final size= 199991
+benchmark-openj9-11    | final height= 9
+benchmark-openj9-11    | final size= 199991
+benchmark-openj9-11    | final height= 9
+benchmark-openj9-11    | final size= 199991
+benchmark-openj9-11    | final height= 10
+benchmark-openj9-11    | final size= 199991
+benchmark-openj9-11    | final height= 9
+benchmark-openj9-11    | final size= 199991
+benchmark-openj9-11    | final height= 9
+benchmark-openj9-11    | ====== akka-uct (actors), iteration 3 completed (38193.037 ms) ======
+benchmark-openj9-11    | ====== akka-uct (actors), final iteration started ======
+benchmark-openj9-11    | WARNING: This benchmark provides no result that can be validated.
+benchmark-openj9-11    |          There is no way to check that no silent failure occurred.
+benchmark-openj9-11    | final size= 199991
+benchmark-openj9-11    | final height= 9
+benchmark-openj9-11    | final size= 199991
+benchmark-openj9-11    | final height= 9
+benchmark-openj9-11    | final size= 199991
+benchmark-openj9-11    | final height= 9
+benchmark-openj9-11    | final size= 199991
+benchmark-openj9-11    | final height= 9
+benchmark-openj9-11    | final size= 199991
+benchmark-openj9-11    | final height= 9
+benchmark-openj9-11    | final size= 199991
+benchmark-openj9-11    | final height= 9
+benchmark-openj9-11    | final size= 199991
+benchmark-openj9-11    | final height= 9
+benchmark-openj9-11    | final size= 199991
+benchmark-openj9-11    | final height= 9
+benchmark-openj9-11    | final size= 199991
+benchmark-openj9-11    | final height= 9
+benchmark-openj9-11    | final size= 199991
+benchmark-openj9-11    | final height= 9
+benchmark-openj9-11    | WARNING: This benchmark provides no result that can be validated.
+benchmark-openj9-11    |          There is no way to check that no silent failure occurred.
+benchmark-openj9-11    | ====== akka-uct (actors), final iteration completed (38841.284 ms) ======
+benchmark-openj9-11    | ====== fj-kmeans (jdk-concurrent), iteration 0 started ======
+benchmark-openj9-11    | WARNING: This benchmark provides no result that can be validated.
+benchmark-openj9-11    |          There is no way to check that no silent failure occurred.
+benchmark-openj9-11    | ====== fj-kmeans (jdk-concurrent), iteration 0 completed (10130.384 ms) ======
+benchmark-openj9-11    | ====== fj-kmeans (jdk-concurrent), iteration 1 started ======
+benchmark-openj9-11    | WARNING: This benchmark provides no result that can be validated.
+benchmark-openj9-11    |          There is no way to check that no silent failure occurred.
+benchmark-openj9-11    | ====== fj-kmeans (jdk-concurrent), iteration 1 completed (8894.159 ms) ======
+benchmark-openj9-11    | ====== fj-kmeans (jdk-concurrent), iteration 2 started ======
+benchmark-openj9-11    | WARNING: This benchmark provides no result that can be validated.
+benchmark-openj9-11    |          There is no way to check that no silent failure occurred.
+benchmark-openj9-11    | ====== fj-kmeans (jdk-concurrent), iteration 2 completed (8845.585 ms) ======
+benchmark-openj9-11    | ====== fj-kmeans (jdk-concurrent), iteration 3 started ======
+benchmark-openj9-11    | WARNING: This benchmark provides no result that can be validated.
+benchmark-openj9-11    |          There is no way to check that no silent failure occurred.
+benchmark-openj9-11    | ====== fj-kmeans (jdk-concurrent), iteration 3 completed (8828.646 ms) ======
+benchmark-openj9-11    | ====== fj-kmeans (jdk-concurrent), final iteration started ======
+benchmark-openj9-11    | WARNING: This benchmark provides no result that can be validated.
+benchmark-openj9-11    |          There is no way to check that no silent failure occurred.
+benchmark-openj9-11    | ====== fj-kmeans (jdk-concurrent), final iteration completed (8824.693 ms) ======
+benchmark-openj9-11    | ====== mnemonics (jdk-streams), iteration 0 started ======
+benchmark-openj9-11    | ====== mnemonics (jdk-streams), iteration 0 completed (6766.552 ms) ======
+benchmark-openj9-11    | ====== mnemonics (jdk-streams), iteration 1 started ======
+benchmark-openj9-11    | ====== mnemonics (jdk-streams), iteration 1 completed (6526.587 ms) ======
+benchmark-openj9-11    | ====== mnemonics (jdk-streams), iteration 2 started ======
+benchmark-openj9-11    | ====== mnemonics (jdk-streams), iteration 2 completed (6480.379 ms) ======
+benchmark-openj9-11    | ====== mnemonics (jdk-streams), iteration 3 started ======
+benchmark-openj9-11    | ====== mnemonics (jdk-streams), iteration 3 completed (6479.532 ms) ======
+benchmark-openj9-11    | ====== mnemonics (jdk-streams), final iteration started ======
+benchmark-openj9-11    | ====== mnemonics (jdk-streams), final iteration completed (6402.988 ms) ======
+benchmark-openj9-11    | ====== scala-doku (scala-sat), iteration 0 started ======
+benchmark-openj9-11    | ====== scala-doku (scala-sat), iteration 0 completed (6757.392 ms) ======
+benchmark-openj9-11    | ====== scala-doku (scala-sat), iteration 1 started ======
+benchmark-openj9-11    | ====== scala-doku (scala-sat), iteration 1 completed (4832.276 ms) ======
+benchmark-openj9-11    | ====== scala-doku (scala-sat), iteration 2 started ======
+benchmark-openj9-11    | ====== scala-doku (scala-sat), iteration 2 completed (4268.883 ms) ======
+benchmark-openj9-11    | ====== scala-doku (scala-sat), iteration 3 started ======
+benchmark-openj9-11    | ====== scala-doku (scala-sat), iteration 3 completed (3964.184 ms) ======
+benchmark-openj9-11    | ====== scala-doku (scala-sat), final iteration started ======
+benchmark-openj9-11    | ====== scala-doku (scala-sat), final iteration completed (3906.785 ms) ======
+benchmark-openj9-11    | SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+benchmark-openj9-11    | SLF4J: Defaulting to no-operation (NOP) logger implementation
+benchmark-openj9-11    | SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+benchmark-openj9-11    | Master port: 42427
+benchmark-openj9-11    | Cache ports: 32773, 42995
+benchmark-openj9-11    | ====== finagle-chirper (twitter-finagle), iteration 0 started ======
+benchmark-openj9-11    | Resetting master, feed map size: 5000
+benchmark-openj9-11    | WARNING: This benchmark provides no result that can be validated.
+benchmark-openj9-11    |          There is no way to check that no silent failure occurred.
+benchmark-openj9-11    | ====== finagle-chirper (twitter-finagle), iteration 0 completed (14874.36 ms) ======
+benchmark-openj9-11    | ====== finagle-chirper (twitter-finagle), iteration 1 started ======
+benchmark-openj9-11    | Resetting master, feed map size: 5000
+benchmark-openj9-11    | WARNING: This benchmark provides no result that can be validated.
+benchmark-openj9-11    |          There is no way to check that no silent failure occurred.
+benchmark-openj9-11    | ====== finagle-chirper (twitter-finagle), iteration 1 completed (4968.7 ms) ======
+benchmark-openj9-11    | ====== finagle-chirper (twitter-finagle), iteration 2 started ======
+benchmark-openj9-11    | Resetting master, feed map size: 5000
+benchmark-openj9-11    | WARNING: This benchmark provides no result that can be validated.
+benchmark-openj9-11    |          There is no way to check that no silent failure occurred.
+benchmark-openj9-11    | ====== finagle-chirper (twitter-finagle), iteration 2 completed (4725.449 ms) ======
+benchmark-openj9-11    | ====== finagle-chirper (twitter-finagle), iteration 3 started ======
+benchmark-openj9-11    | Resetting master, feed map size: 5000
+benchmark-openj9-11    | WARNING: This benchmark provides no result that can be validated.
+benchmark-openj9-11    |          There is no way to check that no silent failure occurred.
+benchmark-openj9-11    | ====== finagle-chirper (twitter-finagle), iteration 3 completed (4321.498 ms) ======
+benchmark-openj9-11    | ====== finagle-chirper (twitter-finagle), final iteration started ======
+benchmark-openj9-11    | Resetting master, feed map size: 5000
+benchmark-openj9-11    | WARNING: This benchmark provides no result that can be validated.
+benchmark-openj9-11    |          There is no way to check that no silent failure occurred.
+benchmark-openj9-11    | ====== finagle-chirper (twitter-finagle), final iteration completed (4163.314 ms) ======
+benchmark-openj9-11    |
+benchmark-openj9-11    |  Done.
+benchmark-openj9-11    |
+benchmark-openj9-11 exited with code 0
+docker-compose -f docker-compose-benchmark-openj9-11.yml up  0.79s user 0.13s system 0% cpu 8:04.16 total
+~/workspaces/me/services/better-projects-faster/talks/bpf-talks-openj9-memory %
