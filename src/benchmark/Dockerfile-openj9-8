@@ -1,0 +1,10 @@
+FROM adoptopenjdk/openjdk11-openj9:x86_64-debianslim-jre8u252-b09_openj9-0.20.0
+
+RUN mkdir -p /usr/app
+
+COPY renaissance-mit-0.10.0.jar /usr/app/renaissance.jar
+COPY entrypoint.sh /usr/app/entrypoint.sh
+
+WORKDIR /usr/app
+
+ENTRYPOINT ["sh", "-c", "chmod +x /usr/app/entrypoint.sh && cd /usr/app && ./entrypoint.sh"]

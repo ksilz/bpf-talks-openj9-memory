@@ -4,7 +4,7 @@
 
 Just running it:
 ````
-docker-compose -f docker-compose-benchmark-openj9-11.yml
+docker-compose -f docker-compose-benchmark-openj9-11.yml up
 ````
 
 Running it and capturing CPU & memory utilization at the same time on Mac:
@@ -14,7 +14,8 @@ docker-compose -f docker-compose-benchmark-openj9-11.yml up && docker stats --fo
 
 
 ## Building The Docker Images
+You need to user your own repository name. In the 
 
 ````
-docker build -t bpf-talks-openj9-memory-benchmark:openj9-11 -f Dockerfile-openj9-11 .
+docker build -t joedata/bpf-talks-openj9-memory-benchmark:openj9-11 -f Dockerfile-openj9-11 .
 ````

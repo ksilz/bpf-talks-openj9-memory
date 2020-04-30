@@ -1,9 +1,9 @@
 version: '2.2'
 
 services:
-  benchmark-hotspot-11:
-    image: 'bpf-talks-openj9-memory-benchmark:hotspot-11'
-    container_name: benchmark-hotspot-11
+  benchmark-hotspot-8:
+    image: 'bpf-talks-openj9-memory-benchmark:hotspot-8'
+    container_name: benchmark-hotspot-8
     environment:
       - >-
         JAVA_OPTS=-Xmx1024m -Xms256m
