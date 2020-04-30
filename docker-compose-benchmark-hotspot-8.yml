@@ -2,7 +2,7 @@ version: '2.2'
 
 services:
   benchmark-hotspot-8:
-    image: 'bpf-talks-openj9-memory-benchmark:hotspot-8'
+    image: 'joedata/bpf-talks-openj9-memory-benchmark:hotspot-8'
     container_name: benchmark-hotspot-8
     environment:
       - >-

@@ -1,0 +1,352 @@
+~/workspaces/me/services/better-projects-faster/talks/bpf-talks-openj9-memory % time docker-compose -f docker-compose-benchmark-hotspot-8.yml up                          17:35:37
+WARNING: Found orphan containers (benchmark-hotspot-11, benchmark-openj9-8, benchmark-openj9-11) for this project. If you removed or renamed this service in your compose file, you can run this command with the --remove-orphans flag to clean it up.
+Creating benchmark-hotspot-8 ... done
+Attaching to benchmark-hotspot-8
+benchmark-hotspot-8    |
+benchmark-hotspot-8    | *************************************************************
+benchmark-hotspot-8    | *                                                           *
+benchmark-hotspot-8    | *              A betterprojectsfaster.com Talk              *
+benchmark-hotspot-8    | *              -------------------------------              *
+benchmark-hotspot-8    | *                                                           *
+benchmark-hotspot-8    | *   Eclipse OpenJ9: Memory Diet for Your JVM Applications   *
+benchmark-hotspot-8    | *     https://github.com/ksilz/bpf-talks-openj9-memory      *
+benchmark-hotspot-8    | *                                                           *
+benchmark-hotspot-8    | *************************************************************
+benchmark-hotspot-8    |
+benchmark-hotspot-8    | This container is part of a presentation about the the
+benchmark-hotspot-8    | Eclipse OpenJ9 JVM. Please see here for details:
+benchmark-hotspot-8    | https://github.com/ksilz/bpf-talks-openj9-memory
+benchmark-hotspot-8    |
+benchmark-hotspot-8    | This container runs a number of different, pure Java & Scala
+benchmark-hotspot-8    | benchmarks from the "Renaissance Suite"
+benchmark-hotspot-8    | (https://renaissance.dev). It tests JVM memory & CPU
+benchmark-hotspot-8    | utilization.
+benchmark-hotspot-8    |
+benchmark-hotspot-8    | This container uses this Java version:
+benchmark-hotspot-8    | openjdk version "1.8.0_252"
+benchmark-hotspot-8    | OpenJDK Runtime Environment (AdoptOpenJDK)(build 1.8.0_252-b09)
+benchmark-hotspot-8    | OpenJDK 64-Bit Server VM (AdoptOpenJDK)(build 25.252-b09, mixed mode)
+benchmark-hotspot-8    |
+benchmark-hotspot-8    | This container uses these Java options:
+benchmark-hotspot-8    | -Xmx1024m -Xms256m
+benchmark-hotspot-8    |
+benchmark-hotspot-8    | This container uses these benchmarks:
+benchmark-hotspot-8    | -r 5 gauss-mix,movie-lens,akka-uct,fj-kmeans,mnemonics,scala-doku,finagle-chirper
+benchmark-hotspot-8    |
+benchmark-hotspot-8    | Running benchmarks...
+benchmark-hotspot-8    | Using Spark's default log4j profile: org/apache/spark/log4j-defaults.properties
+benchmark-hotspot-8    | 20/04/30 16:36:55 INFO SparkContext: Running Spark version 2.0.0
+benchmark-hotspot-8    | 20/04/30 16:36:55 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+benchmark-hotspot-8    | 20/04/30 16:36:55 WARN SparkConf: In Spark 1.0 and later spark.local.dir will be overridden by the value set by the cluster manager (via SPARK_LOCAL_DIRS in mesos/standalone and LOCAL_DIRS in YARN).
+benchmark-hotspot-8    | 20/04/30 16:36:55 INFO SecurityManager: Changing view acls to: root
+benchmark-hotspot-8    | 20/04/30 16:36:55 INFO SecurityManager: Changing modify acls to: root
+benchmark-hotspot-8    | 20/04/30 16:36:55 INFO SecurityManager: Changing view acls groups to:
+benchmark-hotspot-8    | 20/04/30 16:36:55 INFO SecurityManager: Changing modify acls groups to:
+benchmark-hotspot-8    | 20/04/30 16:36:55 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(root); groups with view permissions: Set(); users  with modify permissions: Set(root); groups with modify permissions: Set()
+benchmark-hotspot-8    | 20/04/30 16:36:56 INFO Utils: Successfully started service 'sparkDriver' on port 33425.
+benchmark-hotspot-8    | 20/04/30 16:36:56 INFO SparkEnv: Registering MapOutputTracker
+benchmark-hotspot-8    | 20/04/30 16:36:56 INFO SparkEnv: Registering BlockManagerMaster
+benchmark-hotspot-8    | 20/04/30 16:36:56 INFO DiskBlockManager: Created local directory at /usr/app/gauss_mix6141166931696243492/blockmgr-73269607-057b-4c5f-a980-0da647f4fc7c
+benchmark-hotspot-8    | 20/04/30 16:36:56 INFO MemoryStore: MemoryStore started with capacity 366.3 MB
+benchmark-hotspot-8    | 20/04/30 16:36:56 INFO SparkEnv: Registering OutputCommitCoordinator
+benchmark-hotspot-8    | 20/04/30 16:36:56 INFO Utils: Successfully started service 'SparkUI' on port 4040.
+benchmark-hotspot-8    | 20/04/30 16:36:56 INFO SparkUI: Bound SparkUI to 0.0.0.0, and started at http://192.168.48.2:4040
+benchmark-hotspot-8    | 20/04/30 16:36:56 INFO Executor: Starting executor ID driver on host localhost
+benchmark-hotspot-8    | 20/04/30 16:36:56 INFO Utils: Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 45115.
+benchmark-hotspot-8    | 20/04/30 16:36:56 INFO NettyBlockTransferService: Server created on 192.168.48.2:45115
+benchmark-hotspot-8    | 20/04/30 16:36:56 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, 192.168.48.2, 45115)
+benchmark-hotspot-8    | 20/04/30 16:36:56 INFO BlockManagerMasterEndpoint: Registering block manager 192.168.48.2:45115 with 366.3 MB RAM, BlockManagerId(driver, 192.168.48.2, 45115)
+benchmark-hotspot-8    | 20/04/30 16:36:56 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, 192.168.48.2, 45115)
+benchmark-hotspot-8    | ====== gauss-mix (apache-spark), iteration 0 started ======
+benchmark-hotspot-8    | ====== gauss-mix (apache-spark), iteration 0 completed (4093.174 ms) ======
+benchmark-hotspot-8    | ====== gauss-mix (apache-spark), iteration 1 started ======
+benchmark-hotspot-8    | ====== gauss-mix (apache-spark), iteration 1 completed (2142.694 ms) ======
+benchmark-hotspot-8    | ====== gauss-mix (apache-spark), iteration 2 started ======
+benchmark-hotspot-8    | ====== gauss-mix (apache-spark), iteration 2 completed (1639.986 ms) ======
+benchmark-hotspot-8    | ====== gauss-mix (apache-spark), iteration 3 started ======
+benchmark-hotspot-8    | ====== gauss-mix (apache-spark), iteration 3 completed (1418.772 ms) ======
+benchmark-hotspot-8    | ====== gauss-mix (apache-spark), final iteration started ======
+benchmark-hotspot-8    | ====== gauss-mix (apache-spark), final iteration completed (1281.11 ms) ======
+benchmark-hotspot-8    | Using Spark's default log4j profile: org/apache/spark/log4j-defaults.properties
+benchmark-hotspot-8    | 20/04/30 16:37:09 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+benchmark-hotspot-8    | ====== movie-lens (apache-spark), iteration 0 started ======
+benchmark-hotspot-8    | Got 100003 ratings from 671 users on 9066 movies.
+benchmark-hotspot-8    | Training: 60055, validation: 20285, test: 19854
+RMSE (validation) = 0.9276887707189642 for the model trained with rank = 8, lambda = 0.1, and numIter = 10.
+RMSE (validation) = 0.9258248899765801 for the model trained with rank = 8, lambda = 0.1, and numIter = 20.
+RMSE (validation) = 3.6219689545487634 for the model trained with rank = 8, lambda = 10.0, and numIter = 10.
+benchmark-hotspot-8    | RMSE (validation) = 3.6219689545487634 for the model trained with rank = 8, lambda = 10.0, and numIter = 20.
+RMSE (validation) = 0.9286677033964288 for the model trained with rank = 12, lambda = 0.1, and numIter = 10.
+RMSE (validation) = 0.9272588271706029 for the model trained with rank = 12, lambda = 0.1, and numIter = 20.
+benchmark-hotspot-8    | RMSE (validation) = 3.6219689545487634 for the model trained with rank = 12, lambda = 10.0, and numIter = 10.
+benchmark-hotspot-8    | RMSE (validation) = 3.6219689545487634 for the model trained with rank = 12, lambda = 10.0, and numIter = 20.
+benchmark-hotspot-8    | The best model was trained with rank = 8 and lambda = 0.1, and numIter = 20, and its RMSE on the test set is 0.9369474167949385.
+benchmark-hotspot-8    | The best model improves the baseline by 11.63%.
+benchmark-hotspot-8    | Movies recommended for you:
+benchmark-hotspot-8    | WARNING: This benchmark provides no result that can be validated.
+benchmark-hotspot-8    |          There is no way to check that no silent failure occurred.
+benchmark-hotspot-8    | ====== movie-lens (apache-spark), iteration 0 completed (26086.48 ms) ======
+benchmark-hotspot-8    | ====== movie-lens (apache-spark), iteration 1 started ======
+benchmark-hotspot-8    | Got 100003 ratings from 671 users on 9066 movies.
+benchmark-hotspot-8    | Training: 60055, validation: 20285, test: 19854
+benchmark-hotspot-8    | RMSE (validation) = 0.9283719532177448 for the model trained with rank = 8, lambda = 0.1, and numIter = 10.
+benchmark-hotspot-8    | RMSE (validation) = 0.9249590977997058 for the model trained with rank = 8, lambda = 0.1, and numIter = 20.
+RMSE (validation) = 3.6219689545487634 for the model trained with rank = 8, lambda = 10.0, and numIter = 10.
+benchmark-hotspot-8    | RMSE (validation) = 3.6219689545487634 for the model trained with rank = 8, lambda = 10.0, and numIter = 20.
+benchmark-hotspot-8    | RMSE (validation) = 0.9308110678328996 for the model trained with rank = 12, lambda = 0.1, and numIter = 10.
+benchmark-hotspot-8    | RMSE (validation) = 0.9240086340492455 for the model trained with rank = 12, lambda = 0.1, and numIter = 20.
+benchmark-hotspot-8    | RMSE (validation) = 3.6219689545487634 for the model trained with rank = 12, lambda = 10.0, and numIter = 10.
+benchmark-hotspot-8    | RMSE (validation) = 3.6219689545487634 for the model trained with rank = 12, lambda = 10.0, and numIter = 20.
+benchmark-hotspot-8    | The best model was trained with rank = 12 and lambda = 0.1, and numIter = 20, and its RMSE on the test set is 0.9343554980190305.
+benchmark-hotspot-8    | The best model improves the baseline by 11.88%.
+benchmark-hotspot-8    | Movies recommended for you:
+benchmark-hotspot-8    | WARNING: This benchmark provides no result that can be validated.
+benchmark-hotspot-8    |          There is no way to check that no silent failure occurred.
+benchmark-hotspot-8    | ====== movie-lens (apache-spark), iteration 1 completed (15667.004 ms) ======
+benchmark-hotspot-8    | ====== movie-lens (apache-spark), iteration 2 started ======
+benchmark-hotspot-8    | Got 100003 ratings from 671 users on 9066 movies.
+benchmark-hotspot-8    | Training: 60055, validation: 20285, test: 19854
+RMSE (validation) = 0.9301111806464082 for the model trained with rank = 8, lambda = 0.1, and numIter = 10.
+benchmark-hotspot-8    | RMSE (validation) = 0.9275257977140062 for the model trained with rank = 8, lambda = 0.1, and numIter = 20.
+RMSE (validation) = 3.6219689545487634 for the model trained with rank = 8, lambda = 10.0, and numIter = 10.
+benchmark-hotspot-8    | RMSE (validation) = 3.6219689545487634 for the model trained with rank = 8, lambda = 10.0, and numIter = 20.
+benchmark-hotspot-8    | RMSE (validation) = 0.9272787339733615 for the model trained with rank = 12, lambda = 0.1, and numIter = 10.
+RMSE (validation) = 0.9251553293871776 for the model trained with rank = 12, lambda = 0.1, and numIter = 20.
+benchmark-hotspot-8    | RMSE (validation) = 3.6219689545487634 for the model trained with rank = 12, lambda = 10.0, and numIter = 10.
+benchmark-hotspot-8    | RMSE (validation) = 3.6219689545487634 for the model trained with rank = 12, lambda = 10.0, and numIter = 20.
+benchmark-hotspot-8    | The best model was trained with rank = 12 and lambda = 0.1, and numIter = 20, and its RMSE on the test set is 0.9350140754240284.
+benchmark-hotspot-8    | The best model improves the baseline by 11.82%.
+benchmark-hotspot-8    | Movies recommended for you:
+benchmark-hotspot-8    | WARNING: This benchmark provides no result that can be validated.
+benchmark-hotspot-8    |          There is no way to check that no silent failure occurred.
+benchmark-hotspot-8    | ====== movie-lens (apache-spark), iteration 2 completed (13405.162 ms) ======
+benchmark-hotspot-8    | ====== movie-lens (apache-spark), iteration 3 started ======
+benchmark-hotspot-8    | Got 100003 ratings from 671 users on 9066 movies.
+benchmark-hotspot-8    | Training: 60055, validation: 20285, test: 19854
+benchmark-hotspot-8    | RMSE (validation) = 0.9244204425952531 for the model trained with rank = 8, lambda = 0.1, and numIter = 10.
+RMSE (validation) = 0.930789562698052 for the model trained with rank = 8, lambda = 0.1, and numIter = 20.
+benchmark-hotspot-8    | RMSE (validation) = 3.6219689545487634 for the model trained with rank = 8, lambda = 10.0, and numIter = 10.
+benchmark-hotspot-8    | RMSE (validation) = 3.6219689545487634 for the model trained with rank = 8, lambda = 10.0, and numIter = 20.
+benchmark-hotspot-8    | RMSE (validation) = 0.9265703939460648 for the model trained with rank = 12, lambda = 0.1, and numIter = 10.
+benchmark-hotspot-8    | RMSE (validation) = 0.9254067293767064 for the model trained with rank = 12, lambda = 0.1, and numIter = 20.
+benchmark-hotspot-8    | RMSE (validation) = 3.6219689545487634 for the model trained with rank = 12, lambda = 10.0, and numIter = 10.
+benchmark-hotspot-8    | RMSE (validation) = 3.6219689545487634 for the model trained with rank = 12, lambda = 10.0, and numIter = 20.
+benchmark-hotspot-8    | The best model was trained with rank = 8 and lambda = 0.1, and numIter = 10, and its RMSE on the test set is 0.9376877140624165.
+benchmark-hotspot-8    | The best model improves the baseline by 11.56%.
+benchmark-hotspot-8    | Movies recommended for you:
+benchmark-hotspot-8    | ====== movie-lens (apache-spark), iteration 3 completed (15141.865 ms) ======
+benchmark-hotspot-8    | ====== movie-lens (apache-spark), final iteration started ======
+benchmark-hotspot-8    | WARNING: This benchmark provides no result that can be validated.
+benchmark-hotspot-8    |          There is no way to check that no silent failure occurred.
+benchmark-hotspot-8    | Got 100003 ratings from 671 users on 9066 movies.
+benchmark-hotspot-8    | Training: 60055, validation: 20285, test: 19854
+benchmark-hotspot-8    | RMSE (validation) = 0.92645918586332 for the model trained with rank = 8, lambda = 0.1, and numIter = 10.
+benchmark-hotspot-8    | RMSE (validation) = 0.9266156195604223 for the model trained with rank = 8, lambda = 0.1, and numIter = 20.
+benchmark-hotspot-8    | RMSE (validation) = 3.6219689545487634 for the model trained with rank = 8, lambda = 10.0, and numIter = 10.
+benchmark-hotspot-8    | RMSE (validation) = 3.6219689545487634 for the model trained with rank = 8, lambda = 10.0, and numIter = 20.
+benchmark-hotspot-8    | RMSE (validation) = 0.9297139663111309 for the model trained with rank = 12, lambda = 0.1, and numIter = 10.
+benchmark-hotspot-8    | RMSE (validation) = 0.921529611612828 for the model trained with rank = 12, lambda = 0.1, and numIter = 20.
+benchmark-hotspot-8    | RMSE (validation) = 3.6219689545487634 for the model trained with rank = 12, lambda = 10.0, and numIter = 10.
+benchmark-hotspot-8    | RMSE (validation) = 3.6219689545487634 for the model trained with rank = 12, lambda = 10.0, and numIter = 20.
+benchmark-hotspot-8    | The best model was trained with rank = 12 and lambda = 0.1, and numIter = 20, and its RMSE on the test set is 0.9346411325230923.
+benchmark-hotspot-8    | The best model improves the baseline by 11.85%.
+benchmark-hotspot-8    | Movies recommended for you:
+benchmark-hotspot-8    | ====== movie-lens (apache-spark), final iteration completed (12320.23 ms) ======
+benchmark-hotspot-8    | WARNING: This benchmark provides no result that can be validated.
+benchmark-hotspot-8    |          There is no way to check that no silent failure occurred.
+benchmark-hotspot-8    | ====== akka-uct (actors), iteration 0 started ======
+benchmark-hotspot-8    | final size= 199991
+benchmark-hotspot-8    | final height= 9
+benchmark-hotspot-8    | final size= 199991
+benchmark-hotspot-8    | final height= 9
+benchmark-hotspot-8    | final size= 199991
+benchmark-hotspot-8    | final height= 9
+benchmark-hotspot-8    | final size= 199991
+benchmark-hotspot-8    | final height= 9
+benchmark-hotspot-8    | final size= 199991
+benchmark-hotspot-8    | final height= 9
+benchmark-hotspot-8    | final size= 199991
+benchmark-hotspot-8    | final height= 9
+benchmark-hotspot-8    | final size= 199991
+benchmark-hotspot-8    | final height= 9
+benchmark-hotspot-8    | final size= 199991
+benchmark-hotspot-8    | final height= 9
+benchmark-hotspot-8    | final size= 199991
+benchmark-hotspot-8    | final height= 9
+benchmark-hotspot-8    | final size= 199991
+benchmark-hotspot-8    | final height= 9
+benchmark-hotspot-8    | WARNING: This benchmark provides no result that can be validated.
+benchmark-hotspot-8    |          There is no way to check that no silent failure occurred.
+benchmark-hotspot-8    | ====== akka-uct (actors), iteration 0 completed (34032.477 ms) ======
+benchmark-hotspot-8    | ====== akka-uct (actors), iteration 1 started ======
+benchmark-hotspot-8    | final size= 199991
+benchmark-hotspot-8    | final height= 9
+benchmark-hotspot-8    | final size= 199991
+benchmark-hotspot-8    | final height= 9
+benchmark-hotspot-8    | final size= 199991
+benchmark-hotspot-8    | final height= 9
+benchmark-hotspot-8    | final size= 199991
+benchmark-hotspot-8    | final height= 9
+benchmark-hotspot-8    | final size= 199991
+benchmark-hotspot-8    | final height= 9
+benchmark-hotspot-8    | final size= 199991
+benchmark-hotspot-8    | final height= 9
+benchmark-hotspot-8    | final size= 199991
+benchmark-hotspot-8    | final height= 9
+benchmark-hotspot-8    | final size= 199991
+benchmark-hotspot-8    | final height= 9
+benchmark-hotspot-8    | final size= 199991
+benchmark-hotspot-8    | final height= 9
+benchmark-hotspot-8    | final size= 199991
+benchmark-hotspot-8    | final height= 9
+benchmark-hotspot-8    | WARNING: This benchmark provides no result that can be validated.
+benchmark-hotspot-8    |          There is no way to check that no silent failure occurred.
+benchmark-hotspot-8    | ====== akka-uct (actors), iteration 1 completed (26067.358 ms) ======
+benchmark-hotspot-8    | ====== akka-uct (actors), iteration 2 started ======
+benchmark-hotspot-8    | final size= 199991
+benchmark-hotspot-8    | final height= 9
+benchmark-hotspot-8    | final size= 199991
+benchmark-hotspot-8    | final height= 9
+benchmark-hotspot-8    | final size= 199991
+benchmark-hotspot-8    | final height= 9
+benchmark-hotspot-8    | final size= 199991
+benchmark-hotspot-8    | final height= 9
+benchmark-hotspot-8    | final size= 199991
+benchmark-hotspot-8    | final height= 9
+benchmark-hotspot-8    | final size= 199991
+benchmark-hotspot-8    | final height= 9
+benchmark-hotspot-8    | final size= 199991
+benchmark-hotspot-8    | final height= 9
+benchmark-hotspot-8    | final size= 199991
+benchmark-hotspot-8    | final height= 9
+benchmark-hotspot-8    | final size= 199991
+benchmark-hotspot-8    | final height= 9
+benchmark-hotspot-8    | final size= 199991
+benchmark-hotspot-8    | final height= 9
+benchmark-hotspot-8    | ====== akka-uct (actors), iteration 2 completed (26300.844 ms) ======
+benchmark-hotspot-8    | ====== akka-uct (actors), iteration 3 started ======WARNING: This benchmark provides no result that can be validated.
+benchmark-hotspot-8    |          There is no way to check that no silent failure occurred.
+benchmark-hotspot-8    |
+benchmark-hotspot-8    | final size= 199991
+benchmark-hotspot-8    | final height= 9
+benchmark-hotspot-8    | final size= 199991
+benchmark-hotspot-8    | final height= 9
+benchmark-hotspot-8    | final size= 199991
+benchmark-hotspot-8    | final height= 9
+benchmark-hotspot-8    | final size= 199991
+benchmark-hotspot-8    | final height= 9
+benchmark-hotspot-8    | final size= 199991
+benchmark-hotspot-8    | final height= 9
+benchmark-hotspot-8    | final size= 199991
+benchmark-hotspot-8    | final height= 9
+benchmark-hotspot-8    | final size= 199991
+benchmark-hotspot-8    | final height= 9
+benchmark-hotspot-8    | final size= 199991
+benchmark-hotspot-8    | final height= 9
+benchmark-hotspot-8    | final size= 199991
+benchmark-hotspot-8    | final height= 9
+benchmark-hotspot-8    | final size= 199991
+benchmark-hotspot-8    | final height= 9
+benchmark-hotspot-8    | ====== akka-uct (actors), iteration 3 completed (25886.949 ms) ======
+benchmark-hotspot-8    | ====== akka-uct (actors), final iteration started ======
+benchmark-hotspot-8    | WARNING: This benchmark provides no result that can be validated.
+benchmark-hotspot-8    |          There is no way to check that no silent failure occurred.
+benchmark-hotspot-8    | final size= 199991
+benchmark-hotspot-8    | final height= 9
+benchmark-hotspot-8    | final size= 199991
+benchmark-hotspot-8    | final height= 9
+benchmark-hotspot-8    | final size= 199991
+benchmark-hotspot-8    | final height= 9
+benchmark-hotspot-8    | final size= 199991
+benchmark-hotspot-8    | final height= 9
+benchmark-hotspot-8    | final size= 199991
+benchmark-hotspot-8    | final height= 9
+benchmark-hotspot-8    | final size= 199991
+benchmark-hotspot-8    | final height= 9
+benchmark-hotspot-8    | final size= 199991
+benchmark-hotspot-8    | final height= 9
+benchmark-hotspot-8    | final size= 199991
+benchmark-hotspot-8    | final height= 9
+benchmark-hotspot-8    | final size= 199991
+benchmark-hotspot-8    | final height= 9
+benchmark-hotspot-8    | final size= 199991
+benchmark-hotspot-8    | final height= 9
+benchmark-hotspot-8    | ====== akka-uct (actors), final iteration completed (27048.678 ms) ======
+benchmark-hotspot-8    | WARNING: This benchmark provides no result that can be validated.
+benchmark-hotspot-8    |          There is no way to check that no silent failure occurred.
+benchmark-hotspot-8    | ====== fj-kmeans (jdk-concurrent), iteration 0 started ======
+benchmark-hotspot-8    | WARNING: This benchmark provides no result that can be validated.
+benchmark-hotspot-8    |          There is no way to check that no silent failure occurred.
+benchmark-hotspot-8    | ====== fj-kmeans (jdk-concurrent), iteration 0 completed (7949.701 ms) ======
+benchmark-hotspot-8    | ====== fj-kmeans (jdk-concurrent), iteration 1 started ======
+benchmark-hotspot-8    | WARNING: This benchmark provides no result that can be validated.
+benchmark-hotspot-8    |          There is no way to check that no silent failure occurred.
+benchmark-hotspot-8    | ====== fj-kmeans (jdk-concurrent), iteration 1 completed (7082.179 ms) ======
+benchmark-hotspot-8    | ====== fj-kmeans (jdk-concurrent), iteration 2 started ======
+benchmark-hotspot-8    | ====== fj-kmeans (jdk-concurrent), iteration 2 completed (7250.302 ms) ======
+benchmark-hotspot-8    | ====== fj-kmeans (jdk-concurrent), iteration 3 started ======
+benchmark-hotspot-8    | WARNING: This benchmark provides no result that can be validated.
+benchmark-hotspot-8    |          There is no way to check that no silent failure occurred.
+benchmark-hotspot-8    | ====== fj-kmeans (jdk-concurrent), iteration 3 completed (7142.902 ms) ======
+benchmark-hotspot-8    | ====== fj-kmeans (jdk-concurrent), final iteration started ======
+benchmark-hotspot-8    | WARNING: This benchmark provides no result that can be validated.
+benchmark-hotspot-8    |          There is no way to check that no silent failure occurred.
+benchmark-hotspot-8    | WARNING: This benchmark provides no result that can be validated.
+benchmark-hotspot-8    |          There is no way to check that no silent failure occurred.
+benchmark-hotspot-8    | ====== fj-kmeans (jdk-concurrent), final iteration completed (7153.873 ms) ======
+benchmark-hotspot-8    | ====== mnemonics (jdk-streams), iteration 0 started ======
+benchmark-hotspot-8    | ====== mnemonics (jdk-streams), iteration 0 completed (4320.5 ms) ======
+benchmark-hotspot-8    | ====== mnemonics (jdk-streams), iteration 1 started ======
+benchmark-hotspot-8    | ====== mnemonics (jdk-streams), iteration 1 completed (4372.738 ms) ======
+benchmark-hotspot-8    | ====== mnemonics (jdk-streams), iteration 2 started ======
+benchmark-hotspot-8    | ====== mnemonics (jdk-streams), iteration 2 completed (4248.704 ms) ======
+benchmark-hotspot-8    | ====== mnemonics (jdk-streams), iteration 3 started ======
+benchmark-hotspot-8    | ====== mnemonics (jdk-streams), iteration 3 completed (4204.228 ms) ======
+benchmark-hotspot-8    | ====== mnemonics (jdk-streams), final iteration started ======
+benchmark-hotspot-8    | ====== mnemonics (jdk-streams), final iteration completed (4237.36 ms) ======
+benchmark-hotspot-8    | ====== scala-doku (scala-sat), iteration 0 started ======
+benchmark-hotspot-8    | ====== scala-doku (scala-sat), iteration 0 completed (8146.565 ms) ======
+benchmark-hotspot-8    | ====== scala-doku (scala-sat), iteration 1 started ======
+benchmark-hotspot-8    | ====== scala-doku (scala-sat), iteration 1 completed (10898.556 ms) ======
+benchmark-hotspot-8    | ====== scala-doku (scala-sat), iteration 2 started ======
+benchmark-hotspot-8    | ====== scala-doku (scala-sat), iteration 2 completed (10819.146 ms) ======
+benchmark-hotspot-8    | ====== scala-doku (scala-sat), iteration 3 started ======
+benchmark-hotspot-8    | ====== scala-doku (scala-sat), iteration 3 completed (10786.423 ms) ======
+benchmark-hotspot-8    | ====== scala-doku (scala-sat), final iteration started ======
+benchmark-hotspot-8    | ====== scala-doku (scala-sat), final iteration completed (10635.184 ms) ======
+benchmark-hotspot-8    | SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+benchmark-hotspot-8    | SLF4J: Defaulting to no-operation (NOP) logger implementation
+benchmark-hotspot-8    | SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+benchmark-hotspot-8    | Master port: 45791
+benchmark-hotspot-8    | Cache ports: 32907, 37639
+benchmark-hotspot-8    | ====== finagle-chirper (twitter-finagle), iteration 0 started ======
+benchmark-hotspot-8    | Resetting master, feed map size: 5000
+benchmark-hotspot-8    | WARNING: This benchmark provides no result that can be validated.
+benchmark-hotspot-8    |          There is no way to check that no silent failure occurred.
+benchmark-hotspot-8    | ====== finagle-chirper (twitter-finagle), iteration 0 completed (9761.451 ms) ======
+benchmark-hotspot-8    | ====== finagle-chirper (twitter-finagle), iteration 1 started ======
+benchmark-hotspot-8    | Resetting master, feed map size: 5000
+benchmark-hotspot-8    | WARNING: This benchmark provides no result that can be validated.
+benchmark-hotspot-8    |          There is no way to check that no silent failure occurred.
+benchmark-hotspot-8    | ====== finagle-chirper (twitter-finagle), iteration 1 completed (5713.118 ms) ======
+benchmark-hotspot-8    | ====== finagle-chirper (twitter-finagle), iteration 2 started ======
+benchmark-hotspot-8    | Resetting master, feed map size: 5000
+benchmark-hotspot-8    | WARNING: This benchmark provides no result that can be validated.
+benchmark-hotspot-8    |          There is no way to check that no silent failure occurred.
+benchmark-hotspot-8    | ====== finagle-chirper (twitter-finagle), iteration 2 completed (3986.342 ms) ======
+benchmark-hotspot-8    | ====== finagle-chirper (twitter-finagle), iteration 3 started ======
+benchmark-hotspot-8    | Resetting master, feed map size: 5000
+benchmark-hotspot-8    | ====== finagle-chirper (twitter-finagle), iteration 3 completed (3498.433 ms) ======
+benchmark-hotspot-8    | ====== finagle-chirper (twitter-finagle), final iteration started ======
+benchmark-hotspot-8    | WARNING: This benchmark provides no result that can be validated.
+benchmark-hotspot-8    |          There is no way to check that no silent failure occurred.
+benchmark-hotspot-8    | Resetting master, feed map size: 5000
+benchmark-hotspot-8    | ====== finagle-chirper (twitter-finagle), final iteration completed (3465.794 ms) ======
+benchmark-hotspot-8    | WARNING: This benchmark provides no result that can be validated.
+benchmark-hotspot-8    |          There is no way to check that no silent failure occurred.
+benchmark-hotspot-8    |
+benchmark-hotspot-8    |  Done.
+benchmark-hotspot-8    |
+benchmark-hotspot-8 exited with code 0
+docker-compose -f docker-compose-benchmark-hotspot-8.yml up  0.70s user 0.12s system 0% cpu 6:20.59 total
+~/workspaces/me/services/better-projects-faster/talks/bpf-talks-openj9-memory
