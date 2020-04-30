@@ -1,4 +1,4 @@
-FROM adoptopenjdk/openjdk11:x86_64-debianslim-jre8u252-b09
+FROM adoptopenjdk/openjdk8:x86_64-debianslim-jre8u252-b09
 
 RUN mkdir -p /usr/app
 

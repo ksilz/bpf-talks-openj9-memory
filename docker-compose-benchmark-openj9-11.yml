@@ -1,12 +1,12 @@
 version: '2.2'
 
 services:
-  benchmark-openj9-11
-    image: 'bpf-talks-openj9-memory-benchmark:openj9-11'
+  benchmark-openj9-11:
+    image: 'joedata/bpf-talks-openj9-memory-benchmark:openj9-11'
     container_name: benchmark-openj9-11
     environment:
       - >-
-        JAVA_OPTS=-Xmx1024m -Xms256m -XX:+UseContainerSupport -Xtune:virtualized
+        JAVA_OPTS=-Xmx1024m -Xms256m -Xtune:virtualized
       - BENCHMARKS=-r 5 gauss-mix,movie-lens,akka-uct,fj-kmeans,mnemonics,scala-doku,finagle-chirper
     cpus: 2.0
     mem_limit: 2147483648
