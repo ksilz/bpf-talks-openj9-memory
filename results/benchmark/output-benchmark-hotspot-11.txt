@@ -1,0 +1,359 @@
+~/workspaces/me/services/better-projects-faster/talks/bpf-talks-openj9-memory % time docker-compose -f docker-compose-benchmark-hotspot-11.yml up                         17:02:38
+WARNING: Found orphan containers (benchmark-openj9-8, benchmark-openj9-11) for this project. If you removed or renamed this service in your compose file, you can run this command with the --remove-orphans flag to clean it up.
+Creating benchmark-hotspot-11 ... done
+Attaching to benchmark-hotspot-11
+benchmark-hotspot-11    |
+benchmark-hotspot-11    | *************************************************************
+benchmark-hotspot-11    | *                                                           *
+benchmark-hotspot-11    | *              A betterprojectsfaster.com Talk              *
+benchmark-hotspot-11    | *              -------------------------------              *
+benchmark-hotspot-11    | *                                                           *
+benchmark-hotspot-11    | *   Eclipse OpenJ9: Memory Diet for Your JVM Applications   *
+benchmark-hotspot-11    | *     https://github.com/ksilz/bpf-talks-openj9-memory      *
+benchmark-hotspot-11    | *                                                           *
+benchmark-hotspot-11    | *************************************************************
+benchmark-hotspot-11    |
+benchmark-hotspot-11    | This container is part of a presentation about the the
+benchmark-hotspot-11    | Eclipse OpenJ9 JVM. Please see here for details:
+benchmark-hotspot-11    | https://github.com/ksilz/bpf-talks-openj9-memory
+benchmark-hotspot-11    |
+benchmark-hotspot-11    | This container runs a number of different, pure Java & Scala
+benchmark-hotspot-11    | benchmarks from the "Renaissance Suite"
+benchmark-hotspot-11    | (https://renaissance.dev). It tests JVM memory & CPU
+benchmark-hotspot-11    | utilization.
+benchmark-hotspot-11    |
+benchmark-hotspot-11    | This container uses this Java version:
+benchmark-hotspot-11    | openjdk 11.0.7 2020-04-14
+benchmark-hotspot-11    | OpenJDK Runtime Environment AdoptOpenJDK (build 11.0.7+10)
+benchmark-hotspot-11    | OpenJDK 64-Bit Server VM AdoptOpenJDK (build 11.0.7+10, mixed mode)
+benchmark-hotspot-11    |
+benchmark-hotspot-11    | This container uses these Java options:
+benchmark-hotspot-11    | -Xmx1024m -Xms256m
+benchmark-hotspot-11    |
+benchmark-hotspot-11    | This container uses these benchmarks:
+benchmark-hotspot-11    | -r 5 gauss-mix,movie-lens,akka-uct,fj-kmeans,mnemonics,scala-doku,finagle-chirper
+benchmark-hotspot-11    |
+benchmark-hotspot-11    | Running benchmarks...
+benchmark-hotspot-11    | Using Spark's default log4j profile: org/apache/spark/log4j-defaults.properties
+benchmark-hotspot-11    | 20/04/30 16:13:28 INFO SparkContext: Running Spark version 2.0.0
+benchmark-hotspot-11    | WARNING: An illegal reflective access operation has occurred
+benchmark-hotspot-11    | WARNING: Illegal reflective access by org.apache.hadoop.security.authentication.util.KerberosUtil (file:/usr/app/./tmp-jars-5459270715561147685/cp-hadoop-auth-2.2.0.jar7653875816782374577.jar) to method sun.security.krb5.Config.getInstance()
+benchmark-hotspot-11    | WARNING: Please consider reporting this to the maintainers of org.apache.hadoop.security.authentication.util.KerberosUtil
+benchmark-hotspot-11    | WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+benchmark-hotspot-11    | WARNING: All illegal access operations will be denied in a future release
+benchmark-hotspot-11    | 20/04/30 16:13:28 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+benchmark-hotspot-11    | 20/04/30 16:13:28 WARN SparkConf: In Spark 1.0 and later spark.local.dir will be overridden by the value set by the cluster manager (via SPARK_LOCAL_DIRS in mesos/standalone and LOCAL_DIRS in YARN).
+benchmark-hotspot-11    | 20/04/30 16:13:28 INFO SecurityManager: Changing view acls to: root
+benchmark-hotspot-11    | 20/04/30 16:13:28 INFO SecurityManager: Changing modify acls to: root
+benchmark-hotspot-11    | 20/04/30 16:13:28 INFO SecurityManager: Changing view acls groups to:
+benchmark-hotspot-11    | 20/04/30 16:13:28 INFO SecurityManager: Changing modify acls groups to:
+benchmark-hotspot-11    | 20/04/30 16:13:28 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(root); groups with view permissions: Set(); users  with modify permissions: Set(root); groups with modify permissions: Set()
+benchmark-hotspot-11    | 20/04/30 16:13:28 INFO PlatformDependent: Your platform does not provide complete low-level API for accessing direct buffers reliably. Unless explicitly requested, heap buffer will always be preferred to avoid potential system unstability.
+benchmark-hotspot-11    | 20/04/30 16:13:28 INFO Utils: Successfully started service 'sparkDriver' on port 39233.
+benchmark-hotspot-11    | 20/04/30 16:13:28 INFO SparkEnv: Registering MapOutputTracker
+benchmark-hotspot-11    | 20/04/30 16:13:28 INFO SparkEnv: Registering BlockManagerMaster
+benchmark-hotspot-11    | 20/04/30 16:13:28 INFO DiskBlockManager: Created local directory at /usr/app/gauss_mix93996963730029319/blockmgr-28e44b07-8a3b-473f-b42f-bdc001243d78
+benchmark-hotspot-11    | 20/04/30 16:13:28 INFO MemoryStore: MemoryStore started with capacity 434.4 MB
+benchmark-hotspot-11    | 20/04/30 16:13:29 INFO SparkEnv: Registering OutputCommitCoordinator
+benchmark-hotspot-11    | 20/04/30 16:13:29 INFO Utils: Successfully started service 'SparkUI' on port 4040.
+benchmark-hotspot-11    | 20/04/30 16:13:29 INFO SparkUI: Bound SparkUI to 0.0.0.0, and started at http://192.168.48.2:4040
+benchmark-hotspot-11    | 20/04/30 16:13:29 INFO Executor: Starting executor ID driver on host localhost
+benchmark-hotspot-11    | 20/04/30 16:13:29 INFO Utils: Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 38223.
+benchmark-hotspot-11    | 20/04/30 16:13:29 INFO NettyBlockTransferService: Server created on 192.168.48.2:38223
+benchmark-hotspot-11    | 20/04/30 16:13:29 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, 192.168.48.2, 38223)
+benchmark-hotspot-11    | 20/04/30 16:13:29 INFO BlockManagerMasterEndpoint: Registering block manager 192.168.48.2:38223 with 434.4 MB RAM, BlockManagerId(driver, 192.168.48.2, 38223)
+benchmark-hotspot-11    | 20/04/30 16:13:29 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, 192.168.48.2, 38223)
+benchmark-hotspot-11    | ====== gauss-mix (apache-spark), iteration 0 started ======
+benchmark-hotspot-11    | ====== gauss-mix (apache-spark), iteration 0 completed (4675.081 ms) ======
+benchmark-hotspot-11    | ====== gauss-mix (apache-spark), iteration 1 started ======
+benchmark-hotspot-11    | ====== gauss-mix (apache-spark), iteration 1 completed (2812.299 ms) ======
+benchmark-hotspot-11    | ====== gauss-mix (apache-spark), iteration 2 started ======
+benchmark-hotspot-11    | ====== gauss-mix (apache-spark), iteration 2 completed (2351.071 ms) ======
+benchmark-hotspot-11    | ====== gauss-mix (apache-spark), iteration 3 started ======
+benchmark-hotspot-11    | ====== gauss-mix (apache-spark), iteration 3 completed (1828.665 ms) ======
+benchmark-hotspot-11    | ====== gauss-mix (apache-spark), final iteration started ======
+benchmark-hotspot-11    | ====== gauss-mix (apache-spark), final iteration completed (2106.496 ms) ======
+benchmark-hotspot-11    | Using Spark's default log4j profile: org/apache/spark/log4j-defaults.properties
+benchmark-hotspot-11    | 20/04/30 16:13:44 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+benchmark-hotspot-11    | 20/04/30 16:13:45 INFO PlatformDependent: Your platform does not provide complete low-level API for accessing direct buffers reliably. Unless explicitly requested, heap buffer will always be preferred to avoid potential system unstability.
+benchmark-hotspot-11    | ====== movie-lens (apache-spark), iteration 0 started ======
+benchmark-hotspot-11    | Got 100003 ratings from 671 users on 9066 movies.
+benchmark-hotspot-11    | Training: 60055, validation: 20285, test: 19854
+RMSE (validation) = 0.9257495605845617 for the model trained with rank = 8, lambda = 0.1, and numIter = 10.
+benchmark-hotspot-11    | RMSE (validation) = 0.924214486822794 for the model trained with rank = 8, lambda = 0.1, and numIter = 20.
+benchmark-hotspot-11    | RMSE (validation) = 3.6219689545487634 for the model trained with rank = 8, lambda = 10.0, and numIter = 10.
+benchmark-hotspot-11    | RMSE (validation) = 3.6219689545487634 for the model trained with rank = 8, lambda = 10.0, and numIter = 20.
+benchmark-hotspot-11    | RMSE (validation) = 0.9265844988938196 for the model trained with rank = 12, lambda = 0.1, and numIter = 10.
+benchmark-hotspot-11    | RMSE (validation) = 0.9272426981938025 for the model trained with rank = 12, lambda = 0.1, and numIter = 20.
+benchmark-hotspot-11    | RMSE (validation) = 3.6219689545487634 for the model trained with rank = 12, lambda = 10.0, and numIter = 10.
+RMSE (validation) = 3.6219689545487634 for the model trained with rank = 12, lambda = 10.0, and numIter = 20.
+benchmark-hotspot-11    | The best model was trained with rank = 8 and lambda = 0.1, and numIter = 20, and its RMSE on the test set is 0.9326236931635499.
+benchmark-hotspot-11    | The best model improves the baseline by 12.04%.
+benchmark-hotspot-11    | Movies recommended for you:
+benchmark-hotspot-11    | WARNING: This benchmark provides no result that can be validated.
+benchmark-hotspot-11    |          There is no way to check that no silent failure occurred.
+benchmark-hotspot-11    | ====== movie-lens (apache-spark), iteration 0 completed (32464.482 ms) ======
+benchmark-hotspot-11    | ====== movie-lens (apache-spark), iteration 1 started ======
+benchmark-hotspot-11    | Got 100003 ratings from 671 users on 9066 movies.
+benchmark-hotspot-11    | Training: 60055, validation: 20285, test: 19854
+benchmark-hotspot-11    | RMSE (validation) = 0.9242838586461023 for the model trained with rank = 8, lambda = 0.1, and numIter = 10.
+RMSE (validation) = 0.924074500543257 for the model trained with rank = 8, lambda = 0.1, and numIter = 20.
+benchmark-hotspot-11    | RMSE (validation) = 3.6219689545487634 for the model trained with rank = 8, lambda = 10.0, and numIter = 10.
+benchmark-hotspot-11    | RMSE (validation) = 3.6219689545487634 for the model trained with rank = 8, lambda = 10.0, and numIter = 20.
+benchmark-hotspot-11    | RMSE (validation) = 0.9267311597628598 for the model trained with rank = 12, lambda = 0.1, and numIter = 10.
+benchmark-hotspot-11    | RMSE (validation) = 0.9221668163001873 for the model trained with rank = 12, lambda = 0.1, and numIter = 20.
+benchmark-hotspot-11    | RMSE (validation) = 3.6219689545487634 for the model trained with rank = 12, lambda = 10.0, and numIter = 10.
+RMSE (validation) = 3.6219689545487634 for the model trained with rank = 12, lambda = 10.0, and numIter = 20.
+benchmark-hotspot-11    | The best model was trained with rank = 12 and lambda = 0.1, and numIter = 20, and its RMSE on the test set is 0.9307737112155103.
+benchmark-hotspot-11    | The best model improves the baseline by 12.22%.
+benchmark-hotspot-11    | Movies recommended for you:
+benchmark-hotspot-11    | WARNING: This benchmark provides no result that can be validated.
+benchmark-hotspot-11    |          There is no way to check that no silent failure occurred.
+benchmark-hotspot-11    | ====== movie-lens (apache-spark), iteration 1 completed (19444.566 ms) ======
+benchmark-hotspot-11    | ====== movie-lens (apache-spark), iteration 2 started ======
+benchmark-hotspot-11    | Got 100003 ratings from 671 users on 9066 movies.
+benchmark-hotspot-11    | Training: 60055, validation: 20285, test: 19854
+RMSE (validation) = 0.9354520798478542 for the model trained with rank = 8, lambda = 0.1, and numIter = 10.
+benchmark-hotspot-11    | RMSE (validation) = 0.9277315281580147 for the model trained with rank = 8, lambda = 0.1, and numIter = 20.
+benchmark-hotspot-11    | RMSE (validation) = 3.6219689545487634 for the model trained with rank = 8, lambda = 10.0, and numIter = 10.
+RMSE (validation) = 3.6219689545487634 for the model trained with rank = 8, lambda = 10.0, and numIter = 20.
+RMSE (validation) = 0.9274561052305882 for the model trained with rank = 12, lambda = 0.1, and numIter = 10.
+benchmark-hotspot-11    | RMSE (validation) = 0.9256126110334251 for the model trained with rank = 12, lambda = 0.1, and numIter = 20.
+benchmark-hotspot-11    | RMSE (validation) = 3.6219689545487634 for the model trained with rank = 12, lambda = 10.0, and numIter = 10.
+benchmark-hotspot-11    | RMSE (validation) = 3.6219689545487634 for the model trained with rank = 12, lambda = 10.0, and numIter = 20.
+benchmark-hotspot-11    | The best model was trained with rank = 12 and lambda = 0.1, and numIter = 20, and its RMSE on the test set is 0.9359157201921856.
+benchmark-hotspot-11    | The best model improves the baseline by 11.73%.
+benchmark-hotspot-11    | Movies recommended for you:
+benchmark-hotspot-11    | ====== movie-lens (apache-spark), iteration 2 completed (18186.208 ms) ======
+benchmark-hotspot-11    | ====== movie-lens (apache-spark), iteration 3 started ======
+benchmark-hotspot-11    | WARNING: This benchmark provides no result that can be validated.
+benchmark-hotspot-11    |          There is no way to check that no silent failure occurred.
+benchmark-hotspot-11    | Got 100003 ratings from 671 users on 9066 movies.
+benchmark-hotspot-11    | Training: 60055, validation: 20285, test: 19854
+benchmark-hotspot-11    | RMSE (validation) = 0.9306678213321075 for the model trained with rank = 8, lambda = 0.1, and numIter = 10.
+benchmark-hotspot-11    | RMSE (validation) = 0.9246797202855509 for the model trained with rank = 8, lambda = 0.1, and numIter = 20.
+benchmark-hotspot-11    | RMSE (validation) = 3.6219689545487634 for the model trained with rank = 8, lambda = 10.0, and numIter = 10.
+benchmark-hotspot-11    | RMSE (validation) = 3.6219689545487634 for the model trained with rank = 8, lambda = 10.0, and numIter = 20.
+benchmark-hotspot-11    | RMSE (validation) = 0.9261887413210037 for the model trained with rank = 12, lambda = 0.1, and numIter = 10.
+benchmark-hotspot-11    | RMSE (validation) = 0.9228508213508575 for the model trained with rank = 12, lambda = 0.1, and numIter = 20.
+benchmark-hotspot-11    | RMSE (validation) = 3.6219689545487634 for the model trained with rank = 12, lambda = 10.0, and numIter = 10.
+benchmark-hotspot-11    | RMSE (validation) = 3.6219689545487634 for the model trained with rank = 12, lambda = 10.0, and numIter = 20.
+benchmark-hotspot-11    | The best model was trained with rank = 12 and lambda = 0.1, and numIter = 20, and its RMSE on the test set is 0.935304660387217.
+benchmark-hotspot-11    | The best model improves the baseline by 11.79%.
+benchmark-hotspot-11    | Movies recommended for you:
+benchmark-hotspot-11    | ====== movie-lens (apache-spark), iteration 3 completed (16382.677 ms) ======
+benchmark-hotspot-11    | ====== movie-lens (apache-spark), final iteration started ======
+benchmark-hotspot-11    | WARNING: This benchmark provides no result that can be validated.
+benchmark-hotspot-11    |          There is no way to check that no silent failure occurred.
+benchmark-hotspot-11    | Got 100003 ratings from 671 users on 9066 movies.
+benchmark-hotspot-11    | Training: 60055, validation: 20285, test: 19854
+benchmark-hotspot-11    | RMSE (validation) = 0.9311790078692828 for the model trained with rank = 8, lambda = 0.1, and numIter = 10.
+benchmark-hotspot-11    | RMSE (validation) = 0.9263336020942938 for the model trained with rank = 8, lambda = 0.1, and numIter = 20.
+benchmark-hotspot-11    | RMSE (validation) = 3.6219689545487634 for the model trained with rank = 8, lambda = 10.0, and numIter = 10.
+benchmark-hotspot-11    | RMSE (validation) = 3.6219689545487634 for the model trained with rank = 8, lambda = 10.0, and numIter = 20.
+benchmark-hotspot-11    | RMSE (validation) = 0.9275985877362464 for the model trained with rank = 12, lambda = 0.1, and numIter = 10.
+benchmark-hotspot-11    | RMSE (validation) = 0.923320587743205 for the model trained with rank = 12, lambda = 0.1, and numIter = 20.
+benchmark-hotspot-11    | RMSE (validation) = 3.6219689545487634 for the model trained with rank = 12, lambda = 10.0, and numIter = 10.
+benchmark-hotspot-11    | RMSE (validation) = 3.6219689545487634 for the model trained with rank = 12, lambda = 10.0, and numIter = 20.
+benchmark-hotspot-11    | The best model was trained with rank = 12 and lambda = 0.1, and numIter = 20, and its RMSE on the test set is 0.9342637335820537.
+benchmark-hotspot-11    | The best model improves the baseline by 11.89%.
+benchmark-hotspot-11    | Movies recommended for you:
+benchmark-hotspot-11    | ====== movie-lens (apache-spark), final iteration completed (15216.059 ms) ======
+benchmark-hotspot-11    | WARNING: This benchmark provides no result that can be validated.
+benchmark-hotspot-11    |          There is no way to check that no silent failure occurred.
+benchmark-hotspot-11    | ====== akka-uct (actors), iteration 0 started ======
+benchmark-hotspot-11    | final size= 199991
+benchmark-hotspot-11    | final height= 9
+benchmark-hotspot-11    | final size= 199991
+benchmark-hotspot-11    | final height= 9
+benchmark-hotspot-11    | final size= 199991
+benchmark-hotspot-11    | final height= 9
+benchmark-hotspot-11    | final size= 199991
+benchmark-hotspot-11    | final height= 9
+benchmark-hotspot-11    | final size= 199991
+benchmark-hotspot-11    | final height= 9
+benchmark-hotspot-11    | final size= 199991
+benchmark-hotspot-11    | final height= 9
+benchmark-hotspot-11    | final size= 199991
+benchmark-hotspot-11    | final height= 9
+benchmark-hotspot-11    | final size= 199991
+benchmark-hotspot-11    | final height= 9
+benchmark-hotspot-11    | final size= 199991
+benchmark-hotspot-11    | final height= 9
+benchmark-hotspot-11    | final size= 199991
+benchmark-hotspot-11    | final height= 9
+benchmark-hotspot-11    | ====== akka-uct (actors), iteration 0 completed (42565.153 ms) ======
+benchmark-hotspot-11    | ====== akka-uct (actors), iteration 1 started ======
+benchmark-hotspot-11    | WARNING: This benchmark provides no result that can be validated.
+benchmark-hotspot-11    |          There is no way to check that no silent failure occurred.
+benchmark-hotspot-11    | final size= 199991
+benchmark-hotspot-11    | final height= 9
+benchmark-hotspot-11    | final size= 199991
+benchmark-hotspot-11    | final height= 9
+benchmark-hotspot-11    | final size= 199991
+benchmark-hotspot-11    | final height= 9
+benchmark-hotspot-11    | final size= 199991
+benchmark-hotspot-11    | final height= 9
+benchmark-hotspot-11    | final size= 199991
+benchmark-hotspot-11    | final height= 9
+benchmark-hotspot-11    | final size= 199991
+benchmark-hotspot-11    | final height= 9
+benchmark-hotspot-11    | final size= 199991
+benchmark-hotspot-11    | final height= 9
+benchmark-hotspot-11    | final size= 199991
+benchmark-hotspot-11    | final height= 9
+benchmark-hotspot-11    | final size= 199991
+benchmark-hotspot-11    | final height= 9
+benchmark-hotspot-11    | final size= 199991
+benchmark-hotspot-11    | final height= 10
+benchmark-hotspot-11    | ====== akka-uct (actors), iteration 1 completed (37333.661 ms) ======
+benchmark-hotspot-11    | ====== akka-uct (actors), iteration 2 started ======
+benchmark-hotspot-11    | WARNING: This benchmark provides no result that can be validated.
+benchmark-hotspot-11    |          There is no way to check that no silent failure occurred.
+benchmark-hotspot-11    | final size= 199991
+benchmark-hotspot-11    | final height= 9
+benchmark-hotspot-11    | final size= 199991
+benchmark-hotspot-11    | final height= 9
+benchmark-hotspot-11    | final size= 199991
+benchmark-hotspot-11    | final height= 9
+benchmark-hotspot-11    | final size= 199991
+benchmark-hotspot-11    | final height= 9
+benchmark-hotspot-11    | final size= 199991
+benchmark-hotspot-11    | final height= 9
+benchmark-hotspot-11    | final size= 199991
+benchmark-hotspot-11    | final height= 9
+benchmark-hotspot-11    | final size= 199991
+benchmark-hotspot-11    | final height= 9
+benchmark-hotspot-11    | final size= 199991
+benchmark-hotspot-11    | final height= 9
+benchmark-hotspot-11    | final size= 199991
+benchmark-hotspot-11    | final height= 9
+benchmark-hotspot-11    | final size= 199991
+benchmark-hotspot-11    | final height= 9
+benchmark-hotspot-11    | ====== akka-uct (actors), iteration 2 completed (38276.715 ms) ======WARNING: This benchmark provides no result that can be validated.
+benchmark-hotspot-11    |          There is no way to check that no silent failure occurred.
+benchmark-hotspot-11    |
+benchmark-hotspot-11    | ====== akka-uct (actors), iteration 3 started ======
+benchmark-hotspot-11    | final size= 199991
+benchmark-hotspot-11    | final height= 9
+benchmark-hotspot-11    | final size= 199991
+benchmark-hotspot-11    | final height= 9
+benchmark-hotspot-11    | final size= 199991
+benchmark-hotspot-11    | final height= 9
+benchmark-hotspot-11    | final size= 199991
+benchmark-hotspot-11    | final height= 9
+benchmark-hotspot-11    | final size= 199991
+benchmark-hotspot-11    | final height= 9
+benchmark-hotspot-11    | final size= 199991
+benchmark-hotspot-11    | final height= 9
+benchmark-hotspot-11    | final size= 199991
+benchmark-hotspot-11    | final height= 9
+benchmark-hotspot-11    | final size= 199991
+benchmark-hotspot-11    | final height= 9
+benchmark-hotspot-11    | final size= 199991
+benchmark-hotspot-11    | final height= 9
+benchmark-hotspot-11    | final size= 199991
+benchmark-hotspot-11    | final height= 9
+benchmark-hotspot-11    | ====== akka-uct (actors), iteration 3 completed (36999.453 ms) ======
+benchmark-hotspot-11    | ====== akka-uct (actors), final iteration started ======
+benchmark-hotspot-11    | WARNING: This benchmark provides no result that can be validated.
+benchmark-hotspot-11    |          There is no way to check that no silent failure occurred.
+benchmark-hotspot-11    | final size= 199991
+benchmark-hotspot-11    | final height= 9
+benchmark-hotspot-11    | final size= 199991
+benchmark-hotspot-11    | final height= 9
+benchmark-hotspot-11    | final size= 199991
+benchmark-hotspot-11    | final height= 9
+benchmark-hotspot-11    | final size= 199991
+benchmark-hotspot-11    | final height= 9
+benchmark-hotspot-11    | final size= 199991
+benchmark-hotspot-11    | final height= 9
+benchmark-hotspot-11    | final size= 199991
+benchmark-hotspot-11    | final height= 9
+benchmark-hotspot-11    | final size= 199991
+benchmark-hotspot-11    | final height= 9
+benchmark-hotspot-11    | final size= 199991
+benchmark-hotspot-11    | final height= 9
+benchmark-hotspot-11    | final size= 199991
+benchmark-hotspot-11    | final height= 9
+benchmark-hotspot-11    | final size= 199991
+benchmark-hotspot-11    | final height= 10
+benchmark-hotspot-11    | ====== akka-uct (actors), final iteration completed (35585.686 ms) ======
+benchmark-hotspot-11    | WARNING: This benchmark provides no result that can be validated.
+benchmark-hotspot-11    |          There is no way to check that no silent failure occurred.
+benchmark-hotspot-11    | ====== fj-kmeans (jdk-concurrent), iteration 0 started ======
+benchmark-hotspot-11    | WARNING: This benchmark provides no result that can be validated.
+benchmark-hotspot-11    |          There is no way to check that no silent failure occurred.
+benchmark-hotspot-11    | ====== fj-kmeans (jdk-concurrent), iteration 0 completed (12100.993 ms) ======
+benchmark-hotspot-11    | ====== fj-kmeans (jdk-concurrent), iteration 1 started ======
+benchmark-hotspot-11    | WARNING: This benchmark provides no result that can be validated.
+benchmark-hotspot-11    |          There is no way to check that no silent failure occurred.
+benchmark-hotspot-11    | ====== fj-kmeans (jdk-concurrent), iteration 1 completed (10564.141 ms) ======
+benchmark-hotspot-11    | ====== fj-kmeans (jdk-concurrent), iteration 2 started ======
+benchmark-hotspot-11    | WARNING: This benchmark provides no result that can be validated.
+benchmark-hotspot-11    |          There is no way to check that no silent failure occurred.
+benchmark-hotspot-11    | ====== fj-kmeans (jdk-concurrent), iteration 2 completed (8471.752 ms) ======
+benchmark-hotspot-11    | ====== fj-kmeans (jdk-concurrent), iteration 3 started ======
+benchmark-hotspot-11    | WARNING: This benchmark provides no result that can be validated.
+benchmark-hotspot-11    |          There is no way to check that no silent failure occurred.
+benchmark-hotspot-11    | ====== fj-kmeans (jdk-concurrent), iteration 3 completed (8236.774 ms) ======
+benchmark-hotspot-11    | ====== fj-kmeans (jdk-concurrent), final iteration started ======
+benchmark-hotspot-11    | WARNING: This benchmark provides no result that can be validated.
+benchmark-hotspot-11    |          There is no way to check that no silent failure occurred.
+benchmark-hotspot-11    | ====== fj-kmeans (jdk-concurrent), final iteration completed (8017.24 ms) ======
+benchmark-hotspot-11    | ====== mnemonics (jdk-streams), iteration 0 started ======
+benchmark-hotspot-11    | ====== mnemonics (jdk-streams), iteration 0 completed (5405.851 ms) ======
+benchmark-hotspot-11    | ====== mnemonics (jdk-streams), iteration 1 started ======
+benchmark-hotspot-11    | ====== mnemonics (jdk-streams), iteration 1 completed (5422.05 ms) ======
+benchmark-hotspot-11    | ====== mnemonics (jdk-streams), iteration 2 started ======
+benchmark-hotspot-11    | ====== mnemonics (jdk-streams), iteration 2 completed (5480.471 ms) ======
+benchmark-hotspot-11    | ====== mnemonics (jdk-streams), iteration 3 started ======
+benchmark-hotspot-11    | ====== mnemonics (jdk-streams), iteration 3 completed (5486.486 ms) ======
+benchmark-hotspot-11    | ====== mnemonics (jdk-streams), final iteration started ======
+benchmark-hotspot-11    | ====== mnemonics (jdk-streams), final iteration completed (5439.361 ms) ======
+benchmark-hotspot-11    | ====== scala-doku (scala-sat), iteration 0 started ======
+benchmark-hotspot-11    | ====== scala-doku (scala-sat), iteration 0 completed (5039.446 ms) ======
+benchmark-hotspot-11    | ====== scala-doku (scala-sat), iteration 1 started ======
+benchmark-hotspot-11    | ====== scala-doku (scala-sat), iteration 1 completed (8890.646 ms) ======
+benchmark-hotspot-11    | ====== scala-doku (scala-sat), iteration 2 started ======
+benchmark-hotspot-11    | ====== scala-doku (scala-sat), iteration 2 completed (8703.707 ms) ======
+benchmark-hotspot-11    | ====== scala-doku (scala-sat), iteration 3 started ======
+benchmark-hotspot-11    | ====== scala-doku (scala-sat), iteration 3 completed (8601.647 ms) ======
+benchmark-hotspot-11    | ====== scala-doku (scala-sat), final iteration started ======
+benchmark-hotspot-11    | ====== scala-doku (scala-sat), final iteration completed (8598.665 ms) ======
+benchmark-hotspot-11    | SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+benchmark-hotspot-11    | SLF4J: Defaulting to no-operation (NOP) logger implementation
+benchmark-hotspot-11    | SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+benchmark-hotspot-11    | Master port: 45011
+benchmark-hotspot-11    | Cache ports: 41563, 36887
+benchmark-hotspot-11    | ====== finagle-chirper (twitter-finagle), iteration 0 started ======
+benchmark-hotspot-11    | Resetting master, feed map size: 5000
+benchmark-hotspot-11    | WARNING: This benchmark provides no result that can be validated.
+benchmark-hotspot-11    |          There is no way to check that no silent failure occurred.
+benchmark-hotspot-11    | ====== finagle-chirper (twitter-finagle), iteration 0 completed (10052.909 ms) ======
+benchmark-hotspot-11    | ====== finagle-chirper (twitter-finagle), iteration 1 started ======
+benchmark-hotspot-11    | Resetting master, feed map size: 5000
+benchmark-hotspot-11    | ====== finagle-chirper (twitter-finagle), iteration 1 completed (6045.413 ms) ======
+benchmark-hotspot-11    | WARNING: This benchmark provides no result that can be validated.
+benchmark-hotspot-11    |          There is no way to check that no silent failure occurred.
+benchmark-hotspot-11    | ====== finagle-chirper (twitter-finagle), iteration 2 started ======
+benchmark-hotspot-11    | Resetting master, feed map size: 5000
+benchmark-hotspot-11    | ====== finagle-chirper (twitter-finagle), iteration 2 completed (4884.327 ms) ======
+benchmark-hotspot-11    | ====== finagle-chirper (twitter-finagle), iteration 3 started ======
+benchmark-hotspot-11    | WARNING: This benchmark provides no result that can be validated.
+benchmark-hotspot-11    |          There is no way to check that no silent failure occurred.
+benchmark-hotspot-11    | Resetting master, feed map size: 5000
+benchmark-hotspot-11    | WARNING: This benchmark provides no result that can be validated.
+benchmark-hotspot-11    |          There is no way to check that no silent failure occurred.
+benchmark-hotspot-11    | ====== finagle-chirper (twitter-finagle), iteration 3 completed (3596.762 ms) ======
+benchmark-hotspot-11    | ====== finagle-chirper (twitter-finagle), final iteration started ======
+benchmark-hotspot-11    | Resetting master, feed map size: 5000
+benchmark-hotspot-11    | WARNING: This benchmark provides no result that can be validated.
+benchmark-hotspot-11    |          There is no way to check that no silent failure occurred.
+benchmark-hotspot-11    | ====== finagle-chirper (twitter-finagle), final iteration completed (3443.553 ms) ======
+benchmark-hotspot-11    |
+benchmark-hotspot-11    |  Done.
+benchmark-hotspot-11    |
+benchmark-hotspot-11 exited with code 0
+docker-compose -f docker-compose-benchmark-hotspot-11.yml up  0.77s user 0.13s system 0% cpu 7:42.12 total
+~/workspaces/me/services/better-projects-faster/talks/bpf-talks-openj9-memory %
