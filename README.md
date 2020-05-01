@@ -1,6 +1,9 @@
-# betterprojectsfaster.com Talk: OpenJ9
+# Eclipse OpenJ9: Memory Diet for Your JVM Applications
 
-## Running The Benchmarks
+## What is this?
+
+
+## How can I run the Benchmarks Myself?
 ### Benchmark Suite
 
 Just running it:
@@ -36,7 +39,7 @@ docker stats --format "{{.Name}}\t{{.MemUsage}}"
 ````
 
 
-## Building The Docker Images
+## How can I build the benchmarks myself?
 ### Benchmark Suite
 
 ````
