@@ -19,6 +19,8 @@ You need Docker & Docker Compose. I used two different applications to test Open
 - A [Spring Boot](https://spring.io/projects/spring-boot) web application with a [PostgreSQL database](https://www.postgresql.org), generated with[JHipster](https://www.jhipster.tech)
 - 7 benchmarks from the [Rennaissance Suite](https://renaissance.dev)
 
+Both applications use the most recent Java 8 and 11 versions from [AdoptOpenJDK](https://adoptopenjdk.net), as of April 2020.
+
 The containers are limited to 2 GB RAM and 2 CPUs. So I recommend at least 8 GB of RAM and 4 CPU cores to run these applications on your test machine.
 
 ## How do I run OpenJ9 vs HotSpot myself?
@@ -27,10 +29,10 @@ Each applications has four different Docker Compose Files in the root directory 
 
 JVM Type | JVM Version | Web application | Benchmarks
 ---------|-------------|-----------------|----------------
-HotSpot  | 8 | [`docker-compose-web-app-hotspot-8.yml`](https://github.com/ksilz/bpf-talks-openj9-memory/blob/master/docker-compose-web-app-hotspot-8.yml) | `docker-compose-benchmark-hotspot-8.yml`
-HotSpot | 11 | `docker-compose-web-app-hotspot-11.yml` | `docker-compose-benchmark-hotspot-11.yml`
-OpenJ9 | 8 | `docker-compose-web-app-openj9-8.yml` | `docker-compose-benchmark-openj9-8.yml`
-OpenJ9 | 11 | `docker-compose-web-app-openj9-11.yml` | `docker-compose-benchmark-openj9-11.yml`
+HotSpot  | 8 | [`docker-compose-web-app-hotspot-8.yml`](https://github.com/ksilz/bpf-talks-openj9-memory/blob/master/docker-compose-web-app-hotspot-8.yml) | [`docker-compose-benchmark-hotspot-8.yml`](https://github.com/ksilz/bpf-talks-openj9-memory/blob/master/docker-compose-benchmark-hotspot-8.yml)
+HotSpot | 11 | [`docker-compose-web-app-hotspot-11.yml`](https://github.com/ksilz/bpf-talks-openj9-memory/blob/master/docker-compose-web-app-hotspot-11.yml) | [`docker-compose-benchmark-hotspot-11.yml`](https://github.com/ksilz/bpf-talks-openj9-memory/blob/master/docker-compose-benchmark-hotspot-11.yml)
+OpenJ9 | 8 | [`docker-compose-web-app-openj9-8.yml`](https://github.com/ksilz/bpf-talks-openj9-memory/blob/master/docker-compose-web-app-openj9-8.yml) | [`docker-compose-benchmark-openj9-8.yml`](https://github.com/ksilz/bpf-talks-openj9-memory/blob/master/docker-compose-benchmark-openj9-8.yml)
+OpenJ9 | 11 | [`docker-compose-web-app-openj9-11.yml`](https://github.com/ksilz/bpf-talks-openj9-memory/blob/master/docker-compose-web-app-openj9-11.yml) | [`docker-compose-benchmark-openj9-11.yml`](https://github.com/ksilz/bpf-talks-openj9-memory/blob/master/docker-compose-benchmark-openj9-11.yml)
 
 So here's how you run the web application with HotSpot 11:
 
@@ -69,21 +71,72 @@ For both applications, I monitored CPU & memory utilization with `docker stats`:
 docker stats --format "{{.Name}}\t{{.MemUsage}}\t{{.CPUPerc}}"
 ````
 
-This produces tab-separated output. You  can redirect that to a file and then import into a spreadsheet. I did: The benchmark data is in [this folder](https://github.com/ksilz/bpf-talks-openj9-memory/tree/master/results/benchmark) as `data-benchmark-*.txt`. 
+This produces tab-separated output. You  can redirect that to a file and then import into a spreadsheet. I did: The benchmark data is in [this folder](https://github.com/ksilz/bpf-talks-openj9-memory/tree/master/results/benchmark) as `data-benchmark-*.txt`. The log output of the benchmark runs is in the same folder as `output-benchmark-*.txt`
 
 ## How do I tweak OpenJ9 and HotSpot?
 
-You can tweak both the Java options and the CPUs and memory of the container. For example, here's the Docker Compose 
-
-## How can I build the benchmarks myself?
-### Benchmark Suite
+You can tweak both the Java options and the CPUs and memory of the container right in the Docker Compose files. For example, here's [the Docker Compose file for running the benchmark in OpenJ9](https://github.com/ksilz/bpf-talks-openj9-memory/blob/master/docker-compose-benchmark-openj9-8.yml):
 
 ````
-docker build -t bpf-talks-openj9-memory-benchmark:openj9-11 -f Dockerfile-openj9-11 .
+version: '2.2'
+
+services:
+  benchmark-openj9-8:
+    image: 'joedata/bpf-talks-openj9-memory-benchmark:openj9-8'
+    container_name: benchmark-openj9-8
+    environment:
+      - >-
+        JAVA_OPTS=-Xmx1024m -Xms256m -Xtune:virtualized
+      - BENCHMARKS=-r 5 gauss-mix,movie-lens,akka-uct,fj-kmeans,mnemonics,scala-doku,finagle-chirper
+    cpus: 2.0
+    mem_limit: 2147483648
 ````
 
-### Web Application
+You can change the Java options in the `JAVA_OPTS` line. Which Java options can you use?
+- For OpenJ9, check [this link for switching from HotSpot](https://www.eclipse.org/openj9/docs/cmdline_migration/). And [this page](https://www.eclipse.org/openj9/docs/cmdline_specifying/) provides links to more information on system properties and command line options in OpenJ9.
+- For HotSpot, Java 8 command line options [are listed here](https://docs.oracle.com/javase/8/docs/technotes/tools/unix/java.html). The Java 11 command line options [are here](https://docs.oracle.com/en/java/javase/11/tools/java.html).
 
+The number of CPUs is in the `cpus:` line, and the memory in the `mem_limit` one (in Bytes).
+
+For the benchmark only, you can tweek the `BENCHMARKS` line. The number of repitions is five here (`-r 5`). The comma separated list of benchmarks follows right after. The complete list of benchmarks is on [the Rennaissance Suite web site](https://renaissance.dev/docs). Please note that some of them actually crashed in my environemnt.
+
+## How can I change the Java version?
+
+You can't through the Docker Compose files. I build all the Docker images myself, so the Java version is hard-coded in there. If you want a different version of Java, you need to build the Docker images yourself. 
+
+I used the "Debian Slim JRE" images from AdoptOpenJDK. Here are their Docker Hub repositories:
+- [HotSpot 8]()
+- [HotSpot 11]()
+- [OpenJ9 8](https://hub.docker.com/r/adoptopenjdk/openjdk8-openj9)
+- [OpenJ9 11](https://hub.docker.com/r/adoptopenjdk/openjdk11-openj9)
+
+You can find my Docker Images on Docker Hub, two:
+- [Benchmark](https://hub.docker.com/repository/docker/joedata/bpf-talks-openj9-memory-benchmark)
+- [Web Application](https://hub.docker.com/repository/docker/joedata/bpf-talks-openj9-memory-web-app)
+
+### How do I Build the Benchmark Docker image?
+
+- Change into the [`src/benchmark`](https://github.com/ksilz/bpf-talks-openj9-memory/tree/master/src/benchmark) folder.
+- This folder has 4 Dockerfile: HotSpot and OpenJ9, Java 8 and Java 11. I'm sure you can tell them apart by their names! 😉
+- Download version 0.10.0 of the Renaissance Suite JAR file [from the web site](v0.10.0) and save it in this folder. It's huge: 415 MB. 
+- There's [an MD5 checksum](https://github.com/ksilz/bpf-talks-openj9-memory/blob/master/src/benchmark/renaissance-mit-0.10.0.jar.md5) in the folder so you can test if the JAR file is ok.
+- Edit the first line of the Dockerfile you want to change to the new Java Docker image. Here's that line for OpenJ9 8:
 ````
-docker build -t bpf-talks-openj9-memory-web-app:openj9-11 -f Dockerfile-openj9-11 .
+FROM adoptopenjdk/openjdk8-openj9:x86_64-debianslim-jre8u252-b09_openj9-0.20.0
 ````
+- Now build the Docker image by running a `docker build` in this directory. Here's how you build the OpenJ9 8 image. Please note that I didn't specify a repository here:
+````
+docker build -t my-memory-benchmark:openj9-8-new -f Dockerfile-openj9-8 .
+````
+- As the last step, update the Docker Compose file to use your new image. That's the `image:` line in there. For the sample image that you just build in the line above, your Docker Compose file would have this `image:` line:
+````
+    image: 'my-memory-benchmark:openj9-8-new'
+````
+
+### How do I Build the web application Docker image?
+
+- Change into the [`src/web-app`](https://github.com/ksilz/bpf-talks-openj9-memory/tree/master/src/web-app) folder.
+- This folder also has 4 Dockerfile: HotSpot and OpenJ9, Java 8 and Java 11.
+- Download [the web application JAR file](https://bpfr.blob.core.windows.net/talks/openj9-memory-ljc-2020/simple-shop-1.0.0.jar) and save it in this folder. It's 61 MB. 
+- There's [an MD5 checksum](https://github.com/ksilz/bpf-talks-openj9-memory/blob/master/src/web-app/simple-shop-1.0.0.jar.md5) in the folder so you can test if the JAR file is ok.
+- Now you can edit the Dockerfile, build it and use it in you Docker Compose files the same way as described in the previous section. 
