@@ -8,7 +8,7 @@ I demonstrated the memory savings in a lightning talk to the [London Java Commun
 
 ## Why Should I Believe You?
 
-You **shouldn't** believe everything you read on the Internet. Granted, I'm a full-stack developer with [21 years of Java experience](https://ksilz.com). And think of myself as trustworthy. But don't we all?!
+You **shouldn't** believe everything you read on the Internet. Granted, I'm a full-stack developer with [21 years of Java experience](https://ksilz.com). And I think of myself as trustworthy. But don't we all?!
 
 That's why you can run OpenJ9 against HotSpot yourselves. And you can tweak them &mdash; change the Java options or build a whole new container image!
 
