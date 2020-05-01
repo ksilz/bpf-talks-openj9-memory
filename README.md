@@ -1,12 +1,12 @@
 # Eclipse OpenJ9: Memory Diet for Your JVM Applications
 
-## What is this?
+## What Is This?
 
 [Eclipse OpenJ9](https://www.eclipse.org/openj9/) is a Java Virtual Machine (JVM) that uses less container memory and therefore achieves lower cost. It's mostly a drop-in replacement for the standard [Oracle HotSpot JVM](https://www.oracle.com/java/technologies/javase-downloads.html).
 
 I demonstrated the memory savings in a lightning talk to the [London Java Community](https://www.meetup.com/Londonjavacommunity/) (LJC) on May 1, 2020. Please **[read the slides](https://github.com/ksilz/bpf-talks-openj9-memory/blob/master/Eclipse%20OpenJ9%20Memory%20Diet%20-%20LJC%20Lightning%20Talk%202020.pdf)** first! My detailed results are in [an Excel file](https://github.com/ksilz/bpf-talks-openj9-memory/blob/master/Detailed%20Results.xlsx).
 
-## Why should I believe you?
+## Why Should I Believe You?
 
 You **shouldn't** believe everything you read on the Internet. Granted, I'm a full-stack developer with [21 years of Java experience](https://ksilz.com). And think of myself as trustworthy. But don't we all?!
 
@@ -14,7 +14,7 @@ That's why you can run OpenJ9 against HotSpot yourselves. And you can tweak them
 
 And now for some shameless self-promotion. I write a blog about how to get [better Java projects faster with JHipster and Docker](https://betterprojectsfaster.com). It's been dormant [since the end of 2019](https://betterprojectsfaster.com/blog/), but I'll pick it up again by June 2020. Spoiler alert: I'll also write about [Flutter](https://flutter.dev), Google's cross-platform UI toolkit for native mobile, web & desktop apps. I built [a mobile prototype with it](https://www.youtube.com/watch?v=dxqA6RhEwdQ&t=1s) last year. 
 
-## What do I need to test OpenJ9 vs HotSpot myself?
+## What Do I Need to Test OpenJ9 and Hotspot Myself?
 
 You need Docker & Docker Compose. I used two different applications to test OpenJ9 vs HotSpot:
 
@@ -25,7 +25,7 @@ Both applications use the most recent Java 8 and 11 versions from [AdoptOpenJDK]
 
 The containers are limited to 2 GB RAM and 2 CPUs. So I recommend at least 8 GB of RAM and 4 CPU cores to run these applications on your test machine.
 
-## How do I run OpenJ9 vs HotSpot myself?
+## How Do I Run OpenJ9 and HotSpot Myself?
 
 Each application has four different Docker Compose Files in the root directory of this repository:
 
@@ -75,7 +75,7 @@ docker stats --format "{{.Name}}\t{{.MemUsage}}\t{{.CPUPerc}}"
 
 This command produces tab-separated output. You  can redirect that to a file and then import into a spreadsheet. I did: The benchmark data is in [this folder](https://github.com/ksilz/bpf-talks-openj9-memory/tree/master/results/benchmark) as `data-benchmark-*.txt`. The log output of the benchmark runs is in the same folder as `output-benchmark-*.txt`
 
-## How do I tweak OpenJ9 and HotSpot?
+## How Do I Tweak OpenJ9 and HotSpot?
 
 You can tweak both the Java options and the CPUs and memory of the container right in the Docker Compose files. For example, here's [the Docker Compose file for running the benchmark in OpenJ9](https://github.com/ksilz/bpf-talks-openj9-memory/blob/master/docker-compose-benchmark-openj9-8.yml):
 
@@ -102,7 +102,7 @@ The number of CPUs is in the `cpus:` line, and the memory in the `mem_limit` one
 
 For the benchmark only, you can tweak the `BENCHMARKS` line. The number of repetitions is 5 here (`-r 5`). The comma-separated list of benchmarks follows right afterwards. The complete list of benchmarks is on [the Rennaissance Suite web site](https://renaissance.dev/docs). Please note that some of them actually crashed in my environment.
 
-## How can I change the Java version?
+## How Can I Change the Java Version?
 
 You can't through the Docker Compose files. I build all the Docker images myself, so the Java version is hard-coded in there. If you want a different version of Java, you need to build the Docker images yourself. 
 
@@ -116,7 +116,7 @@ You can find my Docker Images on Docker Hub, two:
 - [Benchmark](https://hub.docker.com/repository/docker/joedata/bpf-talks-openj9-memory-benchmark)
 - [Web Application](https://hub.docker.com/repository/docker/joedata/bpf-talks-openj9-memory-web-app)
 
-### How do I Build the Benchmark Docker image?
+### How Do I Build the Benchmark Docker Image?
 
 - Change into the [`src/benchmark`](https://github.com/ksilz/bpf-talks-openj9-memory/tree/master/src/benchmark) folder.
 - This folder has 4 Dockerfile: HotSpot and OpenJ9, Java 8 and Java 11. I'm sure you can tell them apart by their names! 😉
@@ -138,7 +138,7 @@ docker build -t my-memory-benchmark:openj9-8-new -f Dockerfile-openj9-8 .
     image: 'my-memory-benchmark:openj9-8-new'
 ````
 
-### How do I Build the web application Docker image?
+### How Do I Build the Web Application Docker Image?
 
 - Change into the [`src/web-app`](https://github.com/ksilz/bpf-talks-openj9-memory/tree/master/src/web-app) folder.
 - This folder also has 4 Dockerfile: HotSpot and OpenJ9, Java 8 and Java 11.
