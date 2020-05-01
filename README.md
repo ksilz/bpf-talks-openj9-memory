@@ -14,20 +14,20 @@ That's why you can run OpenJ9 against HotSpot yourselves. And you can tweak them
 
 ## What do I need to test OpenJ9 vs HotSpot myself?
 
-You need Docker & Docker Compose. The containers are limited to 2 GB RAM and 2 CPUs. So I recommend 8 GB of RAM and 4 CPU cores on your test machine.
-
-I used two different applications to test OpenJ9 vs HotSpot:
+You need Docker & Docker Compose. I used two different applications to test OpenJ9 vs HotSpot:
 
 - A [Spring Boot](https://spring.io/projects/spring-boot) web application with a [PostgreSQL database](https://www.postgresql.org), generated with[JHipster](https://www.jhipster.tech)
 - 7 benchmarks from the [Rennaissance Suite](https://renaissance.dev)
 
+The containers are limited to 2 GB RAM and 2 CPUs. So I recommend at least 8 GB of RAM and 4 CPU cores to run these applications on your test machine.
+
 ## How do I run OpenJ9 vs HotSpot myself?
 
-Each applications has four different Docker Compose Files:
+Each applications has four different Docker Compose Files in the root directory of this repository:
 
 JVM Type | JVM Version | Web application | Benchmarks
 ---------|-------------|-----------------|----------------
-HotSpot  | 8 | `docker-compose-web-app-hotspot-8.yml` | `docker-compose-benchmark-hotspot-8.yml`
+HotSpot  | 8 | [`docker-compose-web-app-hotspot-8.yml`](https://github.com/ksilz/bpf-talks-openj9-memory/blob/master/docker-compose-web-app-hotspot-8.yml) | `docker-compose-benchmark-hotspot-8.yml`
 HotSpot | 11 | `docker-compose-web-app-hotspot-11.yml` | `docker-compose-benchmark-hotspot-11.yml`
 OpenJ9 | 8 | `docker-compose-web-app-openj9-8.yml` | `docker-compose-benchmark-openj9-8.yml`
 OpenJ9 | 11 | `docker-compose-web-app-openj9-11.yml` | `docker-compose-benchmark-openj9-11.yml`
@@ -63,17 +63,17 @@ Started SimpleShopApp in 18.302 seconds (JVM running for 19.362)
 
 I used the second number in my slides: `JVM running for 19.362`
 
-I monitored CPU & memory utilization with `docker stats`: 
+For both applications, I monitored CPU & memory utilization with `docker stats`: 
 
 ````
 docker stats --format "{{.Name}}\t{{.MemUsage}}\t{{.CPUPerc}}"
 ````
 
-This produces a tab-separated output. You  can redirect to a file and then import into a spreadsheet. I did: The benchmark data is in [this folder](https://github.com/ksilz/bpf-talks-openj9-memory/tree/master/results/benchmark) as `data-benchmark-*.txt`. 
+This produces tab-separated output. You  can redirect that to a file and then import into a spreadsheet. I did: The benchmark data is in [this folder](https://github.com/ksilz/bpf-talks-openj9-memory/tree/master/results/benchmark) as `data-benchmark-*.txt`. 
 
 ## How do I tweak OpenJ9 and HotSpot?
 
-
+You can tweak both the Java options and the CPUs and memory of the container. For example, here's the Docker Compose 
 
 ## How can I build the benchmarks myself?
 ### Benchmark Suite
