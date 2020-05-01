@@ -112,7 +112,7 @@ I used the "Debian Slim JRE" images from AdoptOpenJDK as my base images. Here ar
 - [OpenJ9 8](https://hub.docker.com/r/adoptopenjdk/openjdk8-openj9)
 - [OpenJ9 11](https://hub.docker.com/r/adoptopenjdk/openjdk11-openj9)
 
-You can find my Docker Images on Docker Hub, two:
+You can find my Docker Images on Docker Hub, too:
 - [Benchmark](https://hub.docker.com/repository/docker/joedata/bpf-talks-openj9-memory-benchmark)
 - [Web Application](https://hub.docker.com/repository/docker/joedata/bpf-talks-openj9-memory-web-app)
 
@@ -133,7 +133,7 @@ FROM adoptopenjdk/openjdk8-openj9:x86_64-debianslim-jre8u252-b09_openj9-0.20.0
 ````
 docker build -t my-memory-benchmark:openj9-8-new -f Dockerfile-openj9-8 .
 ````
-- As the last step, update the Docker Compose file to use your new image. That's the `image:` line in there. For the sample image that you just build in the line above, your Docker Compose file would have this `image:` line:
+- As the last step, update the Docker Compose file to use your new image. That's the `image:` line in there. For the sample image that you just built in the line above, your Docker Compose file would have this `image:` line:
 ````
     image: 'my-memory-benchmark:openj9-8-new'
 ````
