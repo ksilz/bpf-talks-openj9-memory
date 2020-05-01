@@ -8,16 +8,18 @@ I demonstrated the memory savings in a lightning talk to the [London Java Commun
 
 ## Why should I believe you?
 
-You **shouldn't** believe everything you read on the Internet. Granted, I'm a full-stack developer with [21 years of Java experience](https://ksilz.com) and would like to be trustworthy, but still!
+You **shouldn't** believe everything you read on the Internet. Granted, I'm a full-stack developer with [21 years of Java experience](https://ksilz.com). Aand think of myself as trustworthy. But don't we all?!
 
-That's why you can run OpenJ9 against HotSpot yourselves. And you can tweak them &mdash; change the Java options or even the whole container image!
+That's why you can run OpenJ9 against HotSpot yourselves. And you can tweak them &mdash; change the Java options or build a a whole new container image!
+
+I also got a blog about how to get [better Java projects faster with JHipster and Docker](https://betterprojectsfaster.com). It's been dormant [since the end of 2019](https://betterprojectsfaster.com/blog/), but I'll pick it up again by June 2020. Spoiler alert: I'll also write about [Flutter](https://flutter.dev), Google's cross-platform UI toolkit for native mobile, web & desktop apps. I built [a mobile prototype with it](https://www.youtube.com/watch?v=dxqA6RhEwdQ&t=1s) last year. 
 
 ## What do I need to test OpenJ9 vs HotSpot myself?
 
 You need Docker & Docker Compose. I used two different applications to test OpenJ9 vs HotSpot:
 
 - A [Spring Boot](https://spring.io/projects/spring-boot) web application with a [PostgreSQL database](https://www.postgresql.org), generated with[JHipster](https://www.jhipster.tech)
-- 7 benchmarks from the [Rennaissance Suite](https://renaissance.dev)
+- 7 benchmarks from the open source [Rennaissance Suite](https://renaissance.dev)
 
 Both applications use the most recent Java 8 and 11 versions from [AdoptOpenJDK](https://adoptopenjdk.net), as of April 2020.
 
@@ -98,15 +100,15 @@ You can change the Java options in the `JAVA_OPTS` line. Which Java options can 
 
 The number of CPUs is in the `cpus:` line, and the memory in the `mem_limit` one (in Bytes).
 
-For the benchmark only, you can tweek the `BENCHMARKS` line. The number of repitions is five here (`-r 5`). The comma separated list of benchmarks follows right after. The complete list of benchmarks is on [the Rennaissance Suite web site](https://renaissance.dev/docs). Please note that some of them actually crashed in my environemnt.
+For the benchmark only, you can tweek the `BENCHMARKS` line. The number of repitions is 5 here (`-r 5`). The comma separated list of benchmarks follows right afterwards. The complete list of benchmarks is on [the Rennaissance Suite web site](https://renaissance.dev/docs). Please note that some of them actually crashed in my environemnt.
 
 ## How can I change the Java version?
 
 You can't through the Docker Compose files. I build all the Docker images myself, so the Java version is hard-coded in there. If you want a different version of Java, you need to build the Docker images yourself. 
 
-I used the "Debian Slim JRE" images from AdoptOpenJDK. Here are their Docker Hub repositories:
-- [HotSpot 8]()
-- [HotSpot 11]()
+I used the "Debian Slim JRE" images from AdoptOpenJDK as my base images. Here are their Docker Hub repositories:
+- [HotSpot 8](https://hub.docker.com/r/adoptopenjdk/openjdk8)
+- [HotSpot 11](https://hub.docker.com/r/adoptopenjdk/openjdk11)
 - [OpenJ9 8](https://hub.docker.com/r/adoptopenjdk/openjdk8-openj9)
 - [OpenJ9 11](https://hub.docker.com/r/adoptopenjdk/openjdk11-openj9)
 
@@ -119,12 +121,15 @@ You can find my Docker Images on Docker Hub, two:
 - Change into the [`src/benchmark`](https://github.com/ksilz/bpf-talks-openj9-memory/tree/master/src/benchmark) folder.
 - This folder has 4 Dockerfile: HotSpot and OpenJ9, Java 8 and Java 11. I'm sure you can tell them apart by their names! 😉
 - Download version 0.10.0 of the Renaissance Suite JAR file [from the web site](v0.10.0) and save it in this folder. It's huge: 415 MB. 
-- There's [an MD5 checksum](https://github.com/ksilz/bpf-talks-openj9-memory/blob/master/src/benchmark/renaissance-mit-0.10.0.jar.md5) in the folder so you can test if the JAR file is ok.
+- There's [an MD5 checksum](https://github.com/ksilz/bpf-talks-openj9-memory/blob/master/src/benchmark/renaissance-mit-0.10.0.jar.md5) in the folder so you can test if the JAR file is ok:
+````
+md5sum --check renaissance-mit-0.10.0.jar.md5
+````
 - Edit the first line of the Dockerfile you want to change to the new Java Docker image. Here's that line for OpenJ9 8:
 ````
 FROM adoptopenjdk/openjdk8-openj9:x86_64-debianslim-jre8u252-b09_openj9-0.20.0
 ````
-- Now build the Docker image by running a `docker build` in this directory. Here's how you build the OpenJ9 8 image. Please note that I didn't specify a repository here:
+- Now build the Docker image by running a `docker build` in this directory. Here's how you build the OpenJ9 8 image. Please note that I didn't specify a Docker repository here (before the image name):
 ````
 docker build -t my-memory-benchmark:openj9-8-new -f Dockerfile-openj9-8 .
 ````
@@ -138,5 +143,8 @@ docker build -t my-memory-benchmark:openj9-8-new -f Dockerfile-openj9-8 .
 - Change into the [`src/web-app`](https://github.com/ksilz/bpf-talks-openj9-memory/tree/master/src/web-app) folder.
 - This folder also has 4 Dockerfile: HotSpot and OpenJ9, Java 8 and Java 11.
 - Download [the web application JAR file](https://bpfr.blob.core.windows.net/talks/openj9-memory-ljc-2020/simple-shop-1.0.0.jar) and save it in this folder. It's 61 MB. 
-- There's [an MD5 checksum](https://github.com/ksilz/bpf-talks-openj9-memory/blob/master/src/web-app/simple-shop-1.0.0.jar.md5) in the folder so you can test if the JAR file is ok.
+- There's also [an MD5 checksum](https://github.com/ksilz/bpf-talks-openj9-memory/blob/master/src/web-app/simple-shop-1.0.0.jar.md5) in the folder:
+````
+md5sum --check simple-shop-1.0.0.jar.md5
+````
 - Now you can edit the Dockerfile, build it and use it in you Docker Compose files the same way as described in the previous section. 
