@@ -2,15 +2,15 @@
 
 ## What is this?
 
-[Eclipse OpenJ9](https://www.eclipse.org/openj9/) is a Java Virtual Machine (JVM) that uses less container memory and therefore gives you lower cost. It's mostly a drop-in replacement for the standard [Oracle HotSpot JVM](https://www.oracle.com/java/technologies/javase-downloads.html).
+[Eclipse OpenJ9](https://www.eclipse.org/openj9/) is a Java Virtual Machine (JVM) that uses less container memory and therefore achieves lower cost. It's mostly a drop-in replacement for the standard [Oracle HotSpot JVM](https://www.oracle.com/java/technologies/javase-downloads.html).
 
 I demonstrated the memory savings in a lightning talk to the [London Java Community](https://www.meetup.com/Londonjavacommunity/) (LJC) on May 1, 2020. Please **[read the slides](https://github.com/ksilz/bpf-talks-openj9-memory/blob/master/Eclipse%20OpenJ9%20Memory%20Diet%20-%20LJC%20Lightning%20Talk%202020.pdf)** first! My detailed results are in [an Excel file](https://github.com/ksilz/bpf-talks-openj9-memory/blob/master/Detailed%20Results.xlsx).
 
 ## Why should I believe you?
 
-You **shouldn't** believe everything you read on the Internet. Granted, I'm a full-stack developer with [21 years of Java experience](https://ksilz.com). Aand think of myself as trustworthy. But don't we all?!
+You **shouldn't** believe everything you read on the Internet. Granted, I'm a full-stack developer with [21 years of Java experience](https://ksilz.com). And think of myself as trustworthy. But don't we all?!
 
-That's why you can run OpenJ9 against HotSpot yourselves. And you can tweak them &mdash; change the Java options or build a a whole new container image!
+That's why you can run OpenJ9 against HotSpot yourselves. And you can tweak them &mdash; change the Java options or build a whole new container image!
 
 And now for some shameless self-promotion. I write a blog about how to get [better Java projects faster with JHipster and Docker](https://betterprojectsfaster.com). It's been dormant [since the end of 2019](https://betterprojectsfaster.com/blog/), but I'll pick it up again by June 2020. Spoiler alert: I'll also write about [Flutter](https://flutter.dev), Google's cross-platform UI toolkit for native mobile, web & desktop apps. I built [a mobile prototype with it](https://www.youtube.com/watch?v=dxqA6RhEwdQ&t=1s) last year. 
 
@@ -18,8 +18,8 @@ And now for some shameless self-promotion. I write a blog about how to get [bett
 
 You need Docker & Docker Compose. I used two different applications to test OpenJ9 vs HotSpot:
 
-- A [Spring Boot](https://spring.io/projects/spring-boot) web application with a [PostgreSQL database](https://www.postgresql.org), generated with[JHipster](https://www.jhipster.tech)
-- 7 benchmarks from the open source [Rennaissance Suite](https://renaissance.dev)
+- A [Spring Boot](https://spring.io/projects/spring-boot) web application with a [PostgreSQL database](https://www.postgresql.org), generated with [JHipster](https://www.jhipster.tech)
+- 7 benchmarks from the open-source [Rennaissance Suite](https://renaissance.dev)
 
 Both applications use the most recent Java 8 and 11 versions from [AdoptOpenJDK](https://adoptopenjdk.net), as of April 2020.
 
@@ -27,7 +27,7 @@ The containers are limited to 2 GB RAM and 2 CPUs. So I recommend at least 8 GB 
 
 ## How do I run OpenJ9 vs HotSpot myself?
 
-Each applications has four different Docker Compose Files in the root directory of this repository:
+Each application has four different Docker Compose Files in the root directory of this repository:
 
 JVM Type | JVM Version | Web application | Benchmarks
 ---------|-------------|-----------------|----------------
@@ -73,7 +73,7 @@ For both applications, I monitored CPU & memory utilization with `docker stats`:
 docker stats --format "{{.Name}}\t{{.MemUsage}}\t{{.CPUPerc}}"
 ````
 
-This produces tab-separated output. You  can redirect that to a file and then import into a spreadsheet. I did: The benchmark data is in [this folder](https://github.com/ksilz/bpf-talks-openj9-memory/tree/master/results/benchmark) as `data-benchmark-*.txt`. The log output of the benchmark runs is in the same folder as `output-benchmark-*.txt`
+This command produces tab-separated output. You  can redirect that to a file and then import into a spreadsheet. I did: The benchmark data is in [this folder](https://github.com/ksilz/bpf-talks-openj9-memory/tree/master/results/benchmark) as `data-benchmark-*.txt`. The log output of the benchmark runs is in the same folder as `output-benchmark-*.txt`
 
 ## How do I tweak OpenJ9 and HotSpot?
 
@@ -95,12 +95,12 @@ services:
 ````
 
 You can change the Java options in the `JAVA_OPTS` line. Which Java options can you use?
-- For OpenJ9, check [this link for switching from HotSpot](https://www.eclipse.org/openj9/docs/cmdline_migration/). And [this page](https://www.eclipse.org/openj9/docs/cmdline_specifying/) provides links to more information on system properties and command line options in OpenJ9.
-- For HotSpot, Java 8 command line options [are listed here](https://docs.oracle.com/javase/8/docs/technotes/tools/unix/java.html). The Java 11 command line options [are here](https://docs.oracle.com/en/java/javase/11/tools/java.html).
+- For OpenJ9, check [this link for switching from HotSpot](https://www.eclipse.org/openj9/docs/cmdline_migration/). And [this page](https://www.eclipse.org/openj9/docs/cmdline_specifying/) provides links to more information on system properties and command-line options in OpenJ9.
+- For HotSpot, Java 8 command-line options [are listed here](https://docs.oracle.com/javase/8/docs/technotes/tools/unix/java.html). The Java 11 command-line options [are here](https://docs.oracle.com/en/java/javase/11/tools/java.html).
 
 The number of CPUs is in the `cpus:` line, and the memory in the `mem_limit` one (in Bytes).
 
-For the benchmark only, you can tweek the `BENCHMARKS` line. The number of repitions is 5 here (`-r 5`). The comma separated list of benchmarks follows right afterwards. The complete list of benchmarks is on [the Rennaissance Suite web site](https://renaissance.dev/docs). Please note that some of them actually crashed in my environemnt.
+For the benchmark only, you can tweak the `BENCHMARKS` line. The number of repetitions is 5 here (`-r 5`). The comma-separated list of benchmarks follows right afterwards. The complete list of benchmarks is on [the Rennaissance Suite web site](https://renaissance.dev/docs). Please note that some of them actually crashed in my environment.
 
 ## How can I change the Java version?
 
