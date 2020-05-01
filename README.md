@@ -2,41 +2,77 @@
 
 ## What is this?
 
+[Eclipse OpenJ9](https://www.eclipse.org/openj9/) is a Java Virtual Machine (JVM) that uses less container memory and therefore gives you lower cost. It's mostly a drop-in replacement for the standard [Oracle HotSpot JVM](https://www.oracle.com/java/technologies/javase-downloads.html).
 
-## How can I run the Benchmarks Myself?
-### Benchmark Suite
+I demonstrated the memory savings in a lightning talk to the [London Java Community](https://www.meetup.com/Londonjavacommunity/) (LJC) on May 1, 2020. Please **[read the slides](https://github.com/ksilz/bpf-talks-openj9-memory/blob/master/Eclipse%20OpenJ9%20Memory%20Diet%20-%20LJC%20Lightning%20Talk%202020.pdf)** first! My detailed results are in [an Excel file](https://github.com/ksilz/bpf-talks-openj9-memory/blob/master/Detailed%20Results.xlsx).
 
-Just running it:
+## Why should I believe you?
+
+You **shouldn't** believe everything you read on the Internet. Granted, I'm a full-stack developer with [21 years of Java experience](https://ksilz.com) and would like to be trustworthy, but still!
+
+That's why you can run OpenJ9 against HotSpot yourselves. And you can tweak them &mdash; change the Java options or even the whole container image!
+
+## What do I need to test OpenJ9 vs HotSpot myself?
+
+You need Docker & Docker Compose. The containers are limited to 2 GB RAM and 2 CPUs. So I recommend 8 GB of RAM and 4 CPU cores on your test machine.
+
+I used two different applications to test OpenJ9 vs HotSpot:
+
+- A [Spring Boot](https://spring.io/projects/spring-boot) web application with a [PostgreSQL database](https://www.postgresql.org), generated with[JHipster](https://www.jhipster.tech)
+- 7 benchmarks from the [Rennaissance Suite](https://renaissance.dev)
+
+## How do I run OpenJ9 vs HotSpot myself?
+
+Each applications has four different Docker Compose Files:
+
+JVM Type | JVM Version | Web application | Benchmarks
+---------|-------------|-----------------|----------------
+HotSpot  | 8 | `docker-compose-web-app-hotspot-8.yml` | `docker-compose-benchmark-hotspot-8.yml`
+HotSpot | 11 | `docker-compose-web-app-hotspot-11.yml` | `docker-compose-benchmark-hotspot-11.yml`
+OpenJ9 | 8 | `docker-compose-web-app-openj9-8.yml` | `docker-compose-benchmark-openj9-8.yml`
+OpenJ9 | 11 | `docker-compose-web-app-openj9-11.yml` | `docker-compose-benchmark-openj9-11.yml`
+
+So here's how you run the web application with HotSpot 11:
 
 ````
-docker-compose -f docker-compose-benchmark-openj9-11.yml up
+docker-compose -f docker-compose-web-app-hotspot-11.yml up
 ````
 
-Running it and capturing CPU & memory utilization at the same time on Mac:
+And this is how you run the benchmarks with OpenJ9 8:
 
 ````
-time docker-compose -f docker-compose-benchmark-openj9-11.yml up && 
+docker-compose -f docker-compose-benchmark-openj9-8.yml up
 ````
 
-Run this at the same time in a different terminal:
+When the benchmarks are done, the container stops. That's why I used the `time` command on the Mac to measure how much CPU time they took:
 
 ````
-docker stats --format "{{.Name}}\t{{.MemUsage}}\t{{.CPUPerc}}" > benchmark-openj9-11.txt
+time docker-compose -f docker-compose-benchmark-openj9-8.yml up
+
+[...]
+
+benchmark-openj9-8 exited with code 0
+docker-compose -f docker-compose-benchmark-openj9-8.yml up  0.73s user 0.12s system 0% cpu 7:50.92 total
 ````
 
-### Web Application
-
-Just running it:
+The web application runs until you manually stop the container. So I only took the time that Spring Boot self-reports in the log:
 
 ````
-docker-compose -f docker-compose-web-app-openj9-11.yml down && docker container prune -f && docker-compose -f docker-compose-web-app-openj9-11.yml up
+Started SimpleShopApp in 18.302 seconds (JVM running for 19.362)
 ````
 
-Capturing memory utilization at the same time on Mac: Run this at the same time in a different terminal:
+I used the second number in my slides: `JVM running for 19.362`
+
+I monitored CPU & memory utilization with `docker stats`: 
 
 ````
-docker stats --format "{{.Name}}\t{{.MemUsage}}"
+docker stats --format "{{.Name}}\t{{.MemUsage}}\t{{.CPUPerc}}"
 ````
+
+This produces a tab-separated output. You  can redirect to a file and then import into a spreadsheet. I did: The benchmark data is in [this folder](https://github.com/ksilz/bpf-talks-openj9-memory/tree/master/results/benchmark) as `data-benchmark-*.txt`. 
+
+## How do I tweak OpenJ9 and HotSpot?
+
 
 
 ## How can I build the benchmarks myself?
